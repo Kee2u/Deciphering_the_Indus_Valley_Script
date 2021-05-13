@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>TamilTB.v.0.1</title>
+
+
+
+  
+
+  
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  
+  <link rel="StyleSheet" href="sinorcaish-screen.css" type="text/css" media="screen" />
+
+  
+  <link rel="StyleSheet" href="sinorcaish-print.css" type="text/css" media="print" /></head><body>
+<!-- For non-visual or non-stylesheet-capable user agents -->
+<div id="mainlink"><a href="#main">Skip to main content.</a></div>
+
+<div id="header">
+<div class="left">
+<p /><h3>&nbsp;Tamil Dependency Treebank v0.1 </h3><h3>
+</h3></div>
+<div class="subheader">
+</div>
+</div>
+
+<!-- ======== Left Sidebar ======== -->
+<div id="sidebar">
+<div>
+<p class="title">Main Menu<br />
+</p>
+<ol>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+  <li><a href="morph_annotation.html">Morphological Annotation</a> </li>
+  <li><a href="dependency_annotation.html">Syntactic Annotation</a></li>
+  <li><a href="download.html">Download</a></li>
+  <li><a href="authors.html">Authors</a></li>
+  <li><a href="license.html">License</a></li>
+  <li><a href="acknowledgements.html">Acknowledgements</a><br />
+  </li>
+</ol>
+</div>
+</div>
+
+<!-- ======== Main Content ======== -->
+<div id="main"><br />
+<h1>Morphological Annotation<br />
+</h1>
+<div class="navbox" style="width: 13em;">
+<ul>
+  <li> Morphological Annotation<br />
+    <ul>
+      <li><a href="morph_annotation.html#2.3.Positional_Tagging">Positional
+Tagging</a></li>
+      <li><a href="morph_annotation.html#2.4.Positional_Tagset_for_Tamil">Positional
+Tagset
+for Tamil</a><br />
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+<p><span style="font-style: italic;"><span style="font-style: italic;">This
+page will give a detailed description about how the data is annotated
+at morphological layer (m-layer). <br />
+<br />
+</span></span></p>
+<h2><a name="2.3.Positional_Tagging">Positional Tagging</a></h2>
+<br />
+For m-layer annotation (aka POS tagging in general), we chose to
+annotate separate word tokens with morphological features in addition
+to single main POS. Having morphological features would be ideal and
+necessary for morphologically rich languages such as Tamil. Just by
+knowing those features it may be possible to identify certain syntactic
+phenomena (such as case markers can identify syntactic relations). So
+to include morphological information (such as case, person, number and
+etc) in addition to main POS, we decided to adopt the positional
+tagging scheme which has been successfully applied for the Czech
+language. <br />
+<br />
+<table style="text-align: left; width: 100%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Figure_3.1:_An_Example_Tagging_of_a">Figure 3.1: An Example
+Tagging of a Tamil Word</a></span><a name="Figure_3.1:_An_Example_Tagging_of_a"><br />
+  </a></caption> <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 500px; height: 258px;" alt="Positional Tag Example" title="Positional Tag Example" src="images/postag_ex.png" /><br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+In positional tagging, each token (word) is tagged with a fixed length
+string. Each position or character in the tag will&nbsp; represent a
+particular morphological feature of the token.&nbsp; The first position
+or character of the tag will indicate the broad word category (such as
+noun, verb etc) to which the token belongs and the 2nd position will
+indicate the detailed POS (for ex, what kind of verb? whether finite or
+non finite). The original <a href="http://ufal.mff.cuni.cz/pdt2.0/doc/manuals/en/m-layer/html/ch02s02s01.html">Czech
+positional tagset</a> includes 15 positions, and we designed a 9
+positional tagset for Tamil. The <a href="#Figure_3.1:_An_Example_Tagging_of_a"><span style="color: red;">Figure
+3.1</span></a> illustrates the tagging of a Tamil word using positional
+tagging scheme.<br />
+<h2><a name="2.4.Positional_Tagset_for_Tamil">Positional Tagset for
+Tamil</a></h2>
+<br />
+This section describes the positional tagset we designed for m-layer
+annotation of Tamil dataset. As mentioned in the <a href="morph_annotation.html#2.3.Positional_Tagging">previous section</a>,
+positional tag
+for Tamil contains <span style="font-style: italic; font-weight: bold;">9
+positions</span>. We describe each position in detail with all possible
+values a position can take. The <a style="color: red;" href="morph_annotation.html#Table_2.1:_Positional_Tagset_for_Tamil">Table
+2.1</a> shows the
+Tamil positional tagset in general.<br />
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.1:_Positional_Tagset_for_Tamil">Table 2.1: Positional
+Tagset for Tamil</a></span><br />
+  </caption><tbody>
+    <tr>
+      <th style="vertical-align: top; text-align: center;">Position<br />
+      </th>
+      <th style="vertical-align: top;">Tag<br />
+      </th>
+      <th style="vertical-align: top;">#Num of Positions<br />
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+6<br />
+7<br />
+8<br />
+9</td>
+      <td style="vertical-align: top;">POS<br />
+Sub POS<br />
+Case<br />
+Tense<br />
+Person<br />
+Number<br />
+Gender<br />
+Voice<br />
+Negation<br />
+      </td>
+      <td style="vertical-align: top;">14<br />
+48<br />
+07<br />
+04<br />
+03<br />
+02<br />
+05<br />
+02<br />
+02</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Position 1: POS</h3>
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.2:_POS">Table 2.2: POS</a></span><br />
+  </caption><tbody>
+    <tr>
+      <th style="vertical-align: top; text-align: center;">Value </th>
+      <th style="vertical-align: top;">Description<br />
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">A<br />
+C<br />
+D<br />
+I<br />
+J<br />
+N<br />
+P<br />
+Q<br />
+R<br />
+T<br />
+U<br />
+V<br />
+X<br />
+Z</td>
+      <td style="vertical-align: top;">Adverbs<br />
+Conjunctions<br />
+Determiners<br />
+Interjections<br />
+Adjectives<br />
+Nouns<br />
+Postpositions<br />
+Quantifiers<br />
+Pronouns<br />
+Particles<br />
+Numerals<br />
+Verbs<br />
+Unknown<br />
+Punctuations </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<h3>Position 2: Sub POS</h3>
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+
+
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.3:_SubPOS">Table 2.3:
+SubPOS</a></span><br />
+  </caption> <tbody>
+    <tr>
+      <td style="vertical-align: top;">Value<br />
+      </td>
+      <th style="vertical-align: top;">Description<br />
+      </th>
+      <th style="vertical-align: top;">Examples<br />
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">#<br />
+      </td>
+      <td style="vertical-align: top;">Sentence boundary</td>
+      <td style="vertical-align: top;">The dot at&nbsp; the end of the
+sentences</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">:<br />
+      </td>
+      <td style="vertical-align: top;">Comma</td>
+      <td style="vertical-align: top;">,</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">=<br />
+      </td>
+      <td style="vertical-align: top;">Numbers using digits</td>
+      <td style="vertical-align: top;">10, 15 etc.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">b<br />
+      </td>
+      <td style="vertical-align: top;">Comparative particle</td>
+      <td style="vertical-align: top;">காட்டிலும்/kAttilum/'than',
+விட/vita/'than'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">c<br />
+      </td>
+      <td style="vertical-align: top;">Connective particle</td>
+      <td style="vertical-align: top;">உம்/um/'also, and'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">d<br />
+      </td>
+      <td style="vertical-align: top;">Adjectival particle</td>
+      <td style="vertical-align: top;">ஓடுகிற/OtukiRa/'which is
+running' , ஓடிய/Otiya/'which ran', ஓடும்/'which will run'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">e<br />
+      </td>
+      <td style="vertical-align: top;">Interrogative particle</td>
+      <td style="vertical-align: top;">ஆ/A</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">f<br />
+      </td>
+      <td style="vertical-align: top;">Civility particle</td>
+      <td style="vertical-align: top;">உம்/um/'may please' :
+வரவும்/varavum/'may you please come'<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">g<br />
+      </td>
+      <td style="vertical-align: top;">Particles, general</td>
+      <td style="vertical-align: top;">ஆக/Aka, ஆன/Ana</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">h<br />
+      </td>
+      <td style="vertical-align: top;">Reflexive pronouns</td>
+      <td style="vertical-align: top;">தான்/TAn</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">i<br />
+      </td>
+      <td style="vertical-align: top;">Interrogative pronouns</td>
+      <td style="vertical-align: top;">யார்/yAr/'who',&nbsp;
+எவன்/evan/'who he', எது/eTu/'which', என்ன/enna/'what'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">j<br />
+      </td>
+      <td style="vertical-align: top;">Lexical, Imperative verb</td>
+      <td style="vertical-align: top;">ஓடு/Otu/'run', உதவு/uTavu/'help'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">k<br />
+      </td>
+      <td style="vertical-align: top;">Intensifier particle</td>
+      <td style="vertical-align: top;">ஏ/E/'very, indeed, itself'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">l<br />
+      </td>
+      <td style="vertical-align: top;">Particle 'ஆவது/AvaTu'</td>
+      <td style="vertical-align: top;">ஆவது/AvaTu/'at least'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">m<br />
+      </td>
+      <td style="vertical-align: top;">Particle 'மட்டும்/mattum'</td>
+      <td style="vertical-align: top;">மட்டும்/mattum/'only'<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">n<br />
+      </td>
+      <td style="vertical-align: top;">Complementizing nouns</td>
+      <td style="vertical-align: top;">படி, மாதிரி/pati, mATiri/'<em>manner,
+way</em>', போது/pOTu/'when'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">o<br />
+      </td>
+      <td style="vertical-align: top;">Particle of doubt or
+indefiniteness</td>
+      <td style="vertical-align: top;">ஓ/O</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">p<br />
+      </td>
+      <td style="vertical-align: top;">Personal pronouns</td>
+      <td style="vertical-align: top;">நான்/wAn/'I', நீ/wI/'you',
+அவன்/avan/'he,remote'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">q<br />
+      </td>
+      <td style="vertical-align: top;">Emphatic particle</td>
+      <td style="vertical-align: top;">ஏ/E, தான்/tAn - ex:
+என்னையே/ennaiyE/'just me', ராமன்தான்/rAmanTAn/'It was<br />
+ram ...'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">r<br />
+      </td>
+      <td style="vertical-align: top;">Lexical, finite verb</td>
+      <td style="vertical-align: top;">ஓடுகிறான்/OtukiRAn/'he is
+running', உதவுகிறாள்/uTavukiRAL/'she helps'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">s<br />
+      </td>
+      <td style="vertical-align: top;">Concessive particle</td>
+      <td style="vertical-align: top;">உம்/um/ - ex:
+ஓடியும்/Otiyum/'although ran', உதவினாலும்/uTavinAlum/'evenif helps...'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">t<br />
+      </td>
+      <td style="vertical-align: top;">Lexical, verbal particle</td>
+      <td style="vertical-align: top;">வந்து/vawTu/'having come',
+ஓடி/Oti/'having run', உதவி/uTavi/'having helped'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">u<br />
+      </td>
+      <td style="vertical-align: top;">Lexical, infinitive</td>
+      <td style="vertical-align: top;">வர/vara/'to come', ஓட/Ota/'to
+run', உதவ/uTava/'to help'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">v<br />
+      </td>
+      <td style="vertical-align: top;">Inclusive particle</td>
+      <td style="vertical-align: top;">உம்/um/'also' , for ex:
+ராமனும்/rAmanum/'also rAman'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w<br />
+      </td>
+      <td style="vertical-align: top;">Lexical, conditional</td>
+      <td style="vertical-align: top;">வந்தால்/vawTAl/'if come',
+ஓடினால்/OtinAl/'if ran', உதவினால்/uTavinAl/'if helped'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">x<br />
+      </td>
+      <td style="vertical-align: top;">Cardinals</td>
+      <td style="vertical-align: top;">ஒன்று/onRu/'one',
+இரண்டு/iraNtu/'two'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">y<br />
+      </td>
+      <td style="vertical-align: top;">Ordinals</td>
+      <td style="vertical-align: top;">ஒன்றாம்/onRAm/'first',
+இரண்டாம்/iraNtAm/'second', மூன்றாம்/mUnRam/'third'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">z<br />
+      </td>
+      <td style="vertical-align: top;">Lexical, verbal nouns</td>
+      <td style="vertical-align: top;">வந்தது/vawTaTu/'the thing which
+came', ஓடியது/OtiyaTu/'the thing which ran'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">A<br />
+      </td>
+      <td style="vertical-align: top;">Adverbs, general</td>
+      <td style="vertical-align: top;">விரைவாக/viraivAka/'quickly',
+அடிக்கடி/atikkati/'frequently'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">B<br />
+      </td>
+      <td style="vertical-align: top;">General referential pronouns</td>
+      <td style="vertical-align: top;">யாரும்/yArum/'anyone',
+எவனும்/evanum/'anyone, he', எதுவும்/eTuvum/'anything'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">C<br />
+      </td>
+      <td style="vertical-align: top;">Coordinating conjunctions,
+general</td>
+      <td style="vertical-align: top;">மற்றும்/maRRum/'and',
+அல்லது/allaTu/'or'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">D<br />
+      </td>
+      <td style="vertical-align: top;">Determiners, general</td>
+      <td style="vertical-align: top;">அந்த/awTa/'that',
+இந்த/iwTa/'this', எந்த/ewTa/'which'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">E<br />
+      </td>
+      <td style="vertical-align: top;">Proper names</td>
+      <td style="vertical-align: top;">கௌதமா/kauTamA/'Gautama',
+பிராக்/pirAk/'Prague'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">F<br />
+      </td>
+      <td style="vertical-align: top;">Specific indefinite referential
+pronouns</td>
+      <td style="vertical-align: top;">யாரோ/yArO/'someone',
+எவனோ/evanO/'someone, he', எதுவோ/eTuvO/'something'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">G<br />
+      </td>
+      <td style="vertical-align: top;">Non specific indefinite pronouns</td>
+      <td style="vertical-align: top;">யாராவது/yArAvaTu/'someone,
+atleast', எவனாவது/evanAvaTu/'someone,he, atleast',
+எதாவது/eTAvaTu/'something, atleast'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">I<br />
+      </td>
+      <td style="vertical-align: top;">Interjections, general</td>
+      <td style="vertical-align: top;">ஆஹா/AhA/'aha'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">J<br />
+      </td>
+      <td style="vertical-align: top;">Adjectives, general</td>
+      <td style="vertical-align: top;">அழகான/azakAna/'beautiful',
+நல்ல/walla/'good'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">N<br />
+      </td>
+      <td style="vertical-align: top;">Nouns, general</td>
+      <td style="vertical-align: top;">நாற்காலி/wARkAli/'chair',
+பேருந்து/pEruwTu/'bus'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">O<br />
+      </td>
+      <td style="vertical-align: top;">Oblique nouns</td>
+      <td style="vertical-align: top;">மர/mara/'wooden',
+புத்தக/puTTaka/'of book'</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">P<br />
+      </td>
+      <td style="vertical-align: top;">Participial nouns</td>
+      <td style="vertical-align: top;">ஓடியவள்/OtiyavaL/'she who ran',
+உதவியவர்/uTaviyavar/'he-she who helped'<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Q<br />
+      </td>
+      <td style="vertical-align: top;">Quantifiers, general</td>
+      <td style="vertical-align: top;">கொஞ்சம்/konjcam/'a bit'<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">R<br />
+      </td>
+      <td style="vertical-align: top;">Auxiliary, finite verb</td>
+      <td style="vertical-align: top;">கொண்டிருக்கிறார்/koNtirukkiRAr/'he-she
+has been doing'<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">S<br />
+      </td>
+      <td style="vertical-align: top;">Immediacy particle</td>
+      <td style="vertical-align: top;">வந்ததும்/vawTaTum/'as soon as
+came', ஓடியதும்/OtiyaTum/'as soon as ran'<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">T<br />
+      </td>
+      <td style="vertical-align: top;">Auxiliary, verbal participle</td>
+      <td style="vertical-align: top;">கொண்டு/koNtu<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">U<br />
+      </td>
+      <td style="vertical-align: top;">Auxiliary, infinitive</td>
+      <td style="vertical-align: top;">பட/pata: passive infinitive<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">W<br />
+      </td>
+      <td style="vertical-align: top;">Auxiliary, conditional</td>
+      <td style="vertical-align: top;">பட்டால்/pattAl: passive
+conditional<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">X<br />
+      </td>
+      <td style="vertical-align: top;">Unknown</td>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Z<br />
+      </td>
+      <td style="vertical-align: top;">Auxiliary, verbal nouns</td>
+      <td style="vertical-align: top;">பட்டது/pattaTu: passive verbal
+noun (neuter)<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<h3>Position 3: Case</h3>
+<br />
+<table style="text-align: left; width: 100px;" class="simple wrap" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><a name="Table_2.4:_Case"><span style="font-style: italic;">Table 2.4: Case</span><br />
+  </a></caption> <tbody>
+    <tr>
+      <th style="vertical-align: top;">Value<br />
+      </th>
+      <th style="vertical-align: top;">Description<br />
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">A<br />
+      </td>
+      <td style="vertical-align: top;">Accusative<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">D<br />
+      </td>
+      <td style="vertical-align: top;">Dative<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">I<br />
+      </td>
+      <td style="vertical-align: top;">Instrumental<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">G<br />
+      </td>
+      <td style="vertical-align: top;">Genitive<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">L<br />
+      </td>
+      <td style="vertical-align: top;">Locative<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">N<br />
+      </td>
+      <td style="vertical-align: top;">Nominative<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">S<br />
+      </td>
+      <td style="vertical-align: top;">Sociative<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<h3>Position 4: Tense</h3>
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.5:_Tense">Table 2.5: Tense</a></span><br />
+  </caption> <tbody>
+    <tr>
+      <th style="vertical-align: top;">Value<br />
+      </th>
+      <th style="vertical-align: top;">Description<br />
+      </th>
+      <th style="vertical-align: top;">Example<br />
+      </th>
+      <th style="vertical-align: top;">Tag<br />
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">D<br />
+      </td>
+      <td style="vertical-align: top;">Past<br />
+      </td>
+      <td style="vertical-align: top;">தெரிவித்தார்/TeriviTTAr/'informed,
+he'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-D3SHAA<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">F<br />
+      </td>
+      <td style="vertical-align: top;">Future<br />
+      </td>
+      <td style="vertical-align: top;">உதவும்/uTavum/'it will help'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-F3SNAA<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">P<br />
+      </td>
+      <td style="vertical-align: top;">Present<br />
+      </td>
+      <td style="vertical-align: top;">செல்கிறார்/celkiRAr/'he is going'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-P3SHAA<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">T<br />
+      </td>
+      <td style="vertical-align: top;">Tenseless<br />
+      </td>
+      <td style="vertical-align: top;">இல்லை/illai/'neg auxiliary'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-T3PNAA<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<h3>Position 5: Person</h3>
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.6:_Person">Table 2.6:
+Person</a></span><br />
+  </caption> <tbody>
+    <tr>
+      <th style="vertical-align: top;">Value<br />
+      </th>
+      <th style="vertical-align: top;">Description<br />
+      </th>
+      <th style="vertical-align: top;">Example<br />
+      </th>
+      <th style="vertical-align: top;">Tag<br />
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">1<br />
+      </td>
+      <td style="vertical-align: top;">1st person<br />
+      </td>
+      <td style="vertical-align: top;">மேற்கொண்டேன்/mERkoNtEn/'undertook,I'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-D1SAAA<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">2<br />
+      </td>
+      <td style="vertical-align: top;">2nd person<br />
+      </td>
+      <td style="vertical-align: top;">நீங்கள்/wIngkaL/'you,polite'<br />
+      </td>
+      <td style="vertical-align: top;">RpN-2SH--<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">3<br />
+      </td>
+      <td style="vertical-align: top;">3rd person<br />
+      </td>
+      <td style="vertical-align: top;">கட்டினார்/kattinAr/'he built'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-D3SHAA <br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">X<br />
+      </td>
+      <td style="vertical-align: top;">Person not marked<br />
+      </td>
+      <td style="vertical-align: top;">not used so far<br />
+      </td>
+      <td style="vertical-align: top;">not used so far</td>
+    </tr>
+  </tbody>
+</table>
+<h5>Rules for Gender Person Attribute</h5>
+<ol class="highlight">
+  <li>1st person is always tagged with <span style="font-style: italic;">"Animate gender"</span>.</li>
+  <li>If a person is not marked then use "X" which means person not
+marked. <br />
+  </li>
+</ol>
+<ol>
+  
+  
+</ol>
+<h3>Position 6: Number</h3>
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.7:_Number">Table 2.7:
+Number</a></span><br />
+  </caption><tbody>
+    <tr>
+      <th style="vertical-align: top;">Value<br />
+      </th>
+      <th style="vertical-align: top; text-align: left;">Description<br />
+      </th><th style="vertical-align: top; text-align: center;">Example<br />
+      </th>
+      <th style="vertical-align: top; text-align: center;">Tag<br />
+      </th>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">S<br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">Singular&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      </td><td style="vertical-align: top; text-align: center;">இந்தியா/iwTiyA/'India'<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">NEN-3SN--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">P<br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">Plural&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      </td><td style="vertical-align: top; text-align: center;">நாடுகள்/wAtukaL/'countries'<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">NNN-3PN--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">X<br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">Number not &nbsp; &nbsp; &nbsp; &nbsp; marked<br />
+      </td><td style="vertical-align: top; text-align: center;">not used so far<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">not used so far<br />
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+<br />
+<h3>Position 7: Gender</h3>
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="0" cellspacing="0">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.8:_Gender">Table 2.8:
+Gender</a></span><br />
+  </caption><tbody>
+    <tr>
+      <th style="vertical-align: top;">Value<br />
+      </th>
+      <th style="vertical-align: top;">Description<br />
+      </th><th style="vertical-align: top;">Example<br />
+      </th>
+      <th style="vertical-align: top;">Tag<br />
+      </th>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">F<br />
+      </td>
+      <td style="vertical-align: top;">Feminine<br />
+      </td><td style="vertical-align: top;">வருவாள்/varuvAL/'she will come'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-F3SFAA<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">M<br />
+      </td>
+      <td style="vertical-align: top;">Masculine<br />
+      </td><td style="vertical-align: top;">ஆடவனின்/Atavanin/"adult's(he)"<br />
+      </td>
+      <td style="vertical-align: top;">NNN-3SM--<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">N<br />
+      </td>
+      <td style="vertical-align: top;">Neuter<br />
+      </td><td style="vertical-align: top;">எடுத்தது/etuTTaTu/'took it'<br />
+      </td>
+      <td style="vertical-align: top;">Vr-D3SNAA<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">H<br />
+      </td>
+      <td style="vertical-align: top;">Honorific (both F &amp; M)<br />
+      </td><td style="vertical-align: top;">அவர்/avar/'he or she, polite'<br />
+      </td>
+      <td style="vertical-align: top;">RpN-3SH--<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">A<br />
+      </td>
+      <td style="vertical-align: top;">Anitmate (humans)<br />
+      </td><td style="vertical-align: top;">யார்/yAr/'who'<br />
+      </td>
+      <td style="vertical-align: top;">RiN-3SA--<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">I<br />
+      </td>
+      <td style="vertical-align: top;">Inanimate (non humans)<br />
+      </td><td style="vertical-align: top;">not used so far<br />
+      </td>
+      <td style="vertical-align: top;">not used so far<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">X<br />
+      </td>
+      <td style="vertical-align: top;">Gender not marked<br />
+      </td><td style="vertical-align: top;">not used so far<br />
+      </td>
+      <td style="vertical-align: top;">not used so far<br />
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+<br />
+<h3>Position 8: Voice</h3>
+Tamil passive sentences are always constructed with auxiliary verb
+படு/patu/'experience'.&nbsp; Only&nbsp; the auxiliary verb
+படு/patu/'experience' receives this feature value <span style="font-weight: bold;">"P". </span>All other verbs receive <span style="font-weight: bold;">"A"</span><br style="font-weight: bold;" />
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="0" cellspacing="0">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.9:_Voice">Table 2.9:
+Voice</a></span><br />
+  </caption><tbody>
+    <tr>
+      <th style="vertical-align: top;">Value<br />
+      </th>
+      <th style="vertical-align: top;">Description<br />
+      </th><th style="vertical-align: top;">Example<br />
+      </th>
+      <th style="vertical-align: top;">Tag<br />
+      </th>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">A<br />
+      </td>
+      <td style="vertical-align: top;">Active<br />
+      </td><td style="vertical-align: top;">எடுத்தது/etuTTaTu/'took &nbsp;&nbsp; it'</td>
+      <td style="vertical-align: top;">Vr-D3SNAA</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">P<br />
+      </td>
+      <td style="vertical-align: top;">Passive<br />
+      </td><td style="vertical-align: top;">படுகிறது/patukiRaTu/'being....[past participle]'<br />
+      </td>
+      <td style="vertical-align: top;">VR-P3SNPA<br />
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+<br />
+<h3>Position 9: Negation</h3>
+<br />
+<br />
+<table class="simple wrap" style="text-align: left;" border="1" cellpadding="0" cellspacing="0">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_2.10:_Negation">Table
+2.10: Negation</a></span><br />
+  </caption><tbody>
+    <tr>
+      <th style="vertical-align: top;">Value<br />
+      </th>
+      <th style="vertical-align: top;">Description<br />
+      </th><th style="vertical-align: top;">Example<br />
+      </th>
+      <th style="vertical-align: top;">Tag<br />
+      </th>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">A<br />
+      </td>
+      <td style="vertical-align: top;">Affirmative<br />
+      </td><td style="vertical-align: top;">பின்பற்ற/pinpaRRa/'to follow'<br />
+      </td>
+      <td style="vertical-align: top;">Vu-T---AA<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">N<br />
+      </td>
+      <td style="vertical-align: top;">Negated</td><td style="vertical-align: top;">முடியாது/mutiyATu/'cannot'<br />
+      </td>
+      <td style="vertical-align: top;">VR-T3SN-N<br />
+      </td>
+
+    </tr>
+  </tbody>
+</table><br />
+<h5>Rules for Negation<br />
+</h5>
+
+<ol class="highlight">
+<li>This feature is marked on wordforms which are morphologically marked for negation. The word form should be negated with <span style="font-weight: bold;">"AT"</span></li><li>If a person is not marked then use <span style="font-weight: bold;">"X"</span> which means person not
+marked. <br />
+  </li>
+</ol>
+
+
+
+</div>
+
+<!-- ======== Footer ======== -->
+<div id="footer">
+<div style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width: 0pt;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">TamilTB.v0.1</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ufal.mff.cuni.cz/" property="cc:attributionName" rel="cc:attributionURL">Institute of Formal and Applied Linguistics
+(UFAL)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+The webpages are maintained by <a href="mailto:ramasamy@ufal.mff.cuni.cz">Loganathan
+Ramasamy</a>. Last modified: 8th May, 2011.
+</div>
+</div>
+
+</body></html>

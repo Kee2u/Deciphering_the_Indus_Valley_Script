@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>TamilTB.v.0.1</title>
+
+
+  
+
+  
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  
+  <link rel="StyleSheet" href="sinorcaish-screen.css" type="text/css" media="screen" />
+
+  
+  <link rel="StyleSheet" href="sinorcaish-print.css" type="text/css" media="print" /></head><body>
+<!-- For non-visual or non-stylesheet-capable user agents -->
+<div id="mainlink"><a href="#main">Skip to main content.</a></div>
+
+<div id="header">
+<div class="left">
+<p /><h3>&nbsp;Tamil Dependency Treebank v0.1 </h3><h3>
+</h3></div>
+<div class="subheader">
+</div>
+</div>
+
+
+<!-- ======== Left Sidebar ======== -->
+<div id="sidebar">
+<div>
+<p class="title">Main Menu<br />
+</p>
+<ol>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+  <li><a href="morph_annotation.html">Morphological Annotation</a> </li>
+  <li><a href="dependency_annotation.html">Syntactic Annotation</a></li>
+  <li><a href="download.html">Download</a></li>
+  <li><a href="authors.html">Authors</a></li>
+  <li><a href="license.html">License</a></li>
+  <li><a href="acknowledgements.html">Acknowledgements</a><br />
+  </li>
+</ol>
+</div>
+</div>
+
+<!-- ======== Main Content ======== -->
+<div id="main"><br />
+<h1>Introduction</h1>
+<div class="navbox" style="width: 13em;">
+<ul>
+  <li> Introduction
+    <ul>
+      <li><a href="introduction.html#1.1.Background">Background</a></li>
+      <li><a href="introduction.html#1.2.Data">Data</a></li>
+      <li><a href="introduction.html#Text_preprocessing">Text Processing</a><br />
+      </li>
+      <li><a href="introduction.html#1.3.Layers_of_Annotation">Layers
+of Annotation</a></li>
+      <li><a href="introduction.html#Download_Data">Download Data</a><br />
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+The abbreviation <span style="font-style: italic;">TamilTB.v0.1</span>
+will be used throughout the document instead of <span style="font-style: italic;">Tamil
+Dependency Treebank v0.1</span>. This page will serve as a summary of different annotation layers. <br />
+<br />
+<h2>Background &amp; Objectives<br />
+</h2>
+<br />
+Treebank is an important resource in building parsers and analyzing the
+language. As far as our knowledge is concerned, this is the first
+attempt to build a treebank for Tamil language. Tamil belongs to
+Dravidian family of languages and mainly spoken in Southern part of India. Main features of the
+Tamil language include Subject-Object-Verb (SOV) word order,
+morphologically rich and agglutination. <br />
+<br />
+The main objectives of this project include,<br />
+<ol>
+  <li>Annotate data at word level and syntactic level</li>
+  <li>In each level of annotation, trying for maximum level of linguistic
+representation</li>
+  <li>Building large annotated corpora using automatic annotation
+process.<br />
+  </li>
+</ol>
+<h2><a name="1.2.Data">Data</a></h2>
+<br />
+The data used for the <span style="font-style: italic;">TamilTB.v0.1</span>
+annotation comes from the news domain. We decided to use the news data
+for&nbsp; two reasons: (i) huge amount of data is available in digital
+format and can be easily downloadable and (ii) the news data can be
+considered as
+representative of written Tamil. At present, the data for the
+annotation comes from&nbsp; <a href="http://www.dinamani.com/">www.dinamani.com</a>
+, and we downloaded pages randomly covering various news topics. The <a href="introduction.html#Table_1.1:_Corpus_Information"><span style="color: red;">Table 2.1&nbsp; </span></a>below summarises the
+data used for annotation.<br />
+<br />
+<table class="simple nowrap" style="text-align: left;" title="Corpus Information" border="1">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table_1.1:_Corpus_Information">Table 2.1:
+Corpus Information</a></span><a name="Table_1.1:_Corpus_Information"><br />
+  </a></caption><tbody>
+    <tr>
+      <th style="vertical-align: top; text-align: center;">No<br />
+      </th>
+      <th style="vertical-align: top;">Description<br />
+      </th>
+      <th style="vertical-align: top; text-align: center;">Value<br />
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">1<br />
+      </td>
+      <td style="vertical-align: top;">Source<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;"><a href="http://www.dinamani.com/">www.dinamani.com</a><br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">2<br />
+      </td>
+      <td style="vertical-align: top;">Source Transliterated<br />
+      </td>
+      <td style="vertical-align: top;">Yes<br />
+      </td>
+    </tr>
+<tr>
+      <td style="vertical-align: top;">3<br />
+      </td>
+      <td style="vertical-align: top;">Number of Words </td>
+      <td style="vertical-align: top; text-align: center;">9581<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">4<br />
+      </td>
+      <td style="vertical-align: top;">Number of Sentences<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">600<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">5<br />
+      </td>
+      <td style="vertical-align: top;">Morphological Layer Annotation
+(sen)<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">600<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">6<br />
+      </td>
+      <td style="vertical-align: top;">Syntactic Annotation (sen)<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">600<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">7<br />
+      </td>
+      <td style="vertical-align: top;">Tectogrammatical Layer Annotation<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">-<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<h2><a name="Text_preprocessing">Text preprocessing</a></h2>
+<!-- <br /> -->
+<p>Before starting the annotation, the
+text has been preprocessed in
+three steps:
+</p>
+<ol>
+  <li>Transliteration</li>
+  <li>Sentence segmentation</li>
+  <li>Tokenization</li>
+</ol>
+<h3>Transliteration</h3>
+<p>
+The UTF-8 encoded Tamil raw text was
+transliterated to Latin for ease
+of processing during all levels of annotation. The
+raw UTF-8 encoded text can be obtained by applying reverse
+transliteration to the
+Latin-transcribed text. The transliteration of basic vowels and
+consonants are given below, <br />
+</p>
+<table class="simple nowrap" style="text-align: left;" border="0" cellpadding="0" cellspacing="0"><caption style="caption-side: bottom;"><span style="font-style: italic;">Table 2.2: Transliteration</span><br />
+  </caption>
+  <tbody>
+    <tr>
+      <th style="vertical-align: top; text-align: center; font-weight: normal;">Tamil vowels:</th>
+
+      <td style="vertical-align: top;">அ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஆ<br />
+
+      </td>
+      <td style="vertical-align: top;">இ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஈ<br />
+
+      </td>
+      <td style="vertical-align: top;">உ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஊ<br />
+
+      </td>
+      <td style="vertical-align: top;">எ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஏ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஐ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஒ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஓ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஔ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஃ<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      
+      
+    </tr>
+    <tr>
+      <th style="vertical-align: top; font-weight: normal;">Transl. vowels:<br />
+
+      </th>
+
+      <td style="vertical-align: top;">a<br />
+
+      </td>
+      <td style="vertical-align: top;">A<br />
+
+      </td>
+      <td style="vertical-align: top;">i<br />
+
+      </td>
+      <td style="vertical-align: top;">I<br />
+
+      </td>
+      <td style="vertical-align: top;">u<br />
+
+      </td>
+      <td style="vertical-align: top;">U<br />
+
+      </td>
+      <td style="vertical-align: top;">e<br />
+
+      </td>
+      <td style="vertical-align: top;">E<br />
+
+      </td>
+      <td style="vertical-align: top;">ai<br />
+
+      </td>
+      <td style="vertical-align: top;">o<br />
+
+      </td>
+      <td style="vertical-align: top;">O<br />
+
+      </td>
+      <td style="vertical-align: top;">au<br />
+
+      </td>
+      <td style="vertical-align: top;">q<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      
+      
+    </tr>
+    <tr>
+      <th style="vertical-align: top; font-weight: normal;">Consonants:<br />
+
+      </th>
+
+      <td style="vertical-align: top;">க்<br />
+
+      </td>
+      <td style="vertical-align: top;">ங்<br />
+
+      </td>
+      <td style="vertical-align: top;">ச்<br />
+
+      </td>
+      <td style="vertical-align: top;">ஞ்<br />
+
+      </td>
+      <td style="vertical-align: top;">ட்<br />
+
+      </td>
+      <td style="vertical-align: top;">ண்<br />
+
+      </td>
+      <td style="vertical-align: top;">த்<br />
+
+      </td>
+      <td style="vertical-align: top;">ந்<br />
+
+      </td>
+      <td style="vertical-align: top;">ப்<br />
+
+      </td>
+      <td style="vertical-align: top;">ம்<br />
+
+      </td>
+      <td style="vertical-align: top;">ய்<br />
+
+      </td>
+      <td style="vertical-align: top;">ர்<br />
+
+      </td>
+      <td style="vertical-align: top;">ல்<br />
+
+      </td>
+      <td style="vertical-align: top;">வ்<br />
+
+      </td>
+      <td style="vertical-align: top;">ழ்<br />
+
+      </td>
+      <td style="vertical-align: top;">ள்<br />
+
+      </td>
+      <td style="vertical-align: top;">ற்<br />
+
+      </td>
+      <td style="vertical-align: top;">ன்<br />
+
+      </td>
+      
+      
+    </tr>
+    <tr>
+      <th style="vertical-align: top; font-weight: normal;">Transl.
+consonants:<br />
+
+      </th>
+
+      <td style="vertical-align: top;">k<br />
+
+      </td>
+      <td style="vertical-align: top;">ng<br />
+
+      </td>
+      <td style="vertical-align: top;">c<br />
+
+      </td>
+      <td style="vertical-align: top;">nj<br />
+
+      </td>
+      <td style="vertical-align: top;">t<br />
+
+      </td>
+      <td style="vertical-align: top;">N<br />
+
+      </td>
+      <td style="vertical-align: top;">T<br />
+
+      </td>
+      <td style="vertical-align: top;">w<br />
+
+      </td>
+      <td style="vertical-align: top;">p<br />
+
+      </td>
+      <td style="vertical-align: top;">m<br />
+
+      </td>
+      <td style="vertical-align: top;">y<br />
+
+      </td>
+      <td style="vertical-align: top;">r<br />
+
+      </td>
+      <td style="vertical-align: top;">l<br />
+
+      </td>
+      <td style="vertical-align: top;">v<br />
+
+      </td>
+      <td style="vertical-align: top;">z<br />
+
+      </td>
+      <td style="vertical-align: top;">L<br />
+
+      </td>
+      <td style="vertical-align: top;">R<br />
+
+      </td>
+      <td style="vertical-align: top;">n<br />
+
+      </td>
+      
+      
+    </tr>
+    <tr>
+      <th style="vertical-align: top; font-weight: normal;">Sanskrit
+sounds:<br />
+
+      </th>
+
+      <td style="vertical-align: top;">ஷ்<br />
+
+      </td>
+      <td style="vertical-align: top;">ஹ்<br />
+
+      </td>
+      <td style="vertical-align: top;">ஜ்<br />
+
+      </td>
+      <td style="vertical-align: top;">ஸ்ரீ<br />
+
+      </td>
+      <td style="vertical-align: top;">ஸ்<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      
+      
+    </tr>
+    <tr>
+      <th style="vertical-align: top; font-weight: normal;">Transl.
+sanskrit sounds:<br />
+
+      </th>
+
+      <td style="vertical-align: top;">sh<br />
+
+      </td>
+      <td style="vertical-align: top;">h<br />
+
+      </td>
+      <td style="vertical-align: top;">j<br />
+
+      </td>
+      <td style="vertical-align: top;">sri<br />
+
+      </td>
+      <td style="vertical-align: top;">S<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+
+      </td>
+      
+      
+    </tr>
+  </tbody>
+</table>The above table illustrates only the transliteration of basic
+Tamil alphabets and their transliteration. Vowel+consonant combinations
+are separate characters in Tamil.&nbsp; Mapping for those combinations
+are given in a separate mapping file. The transliteration for the
+entire Tamil character set can be found here: <a href="utf8_to_latin_map.txt">utf8_to_latin_map.txt</a> (change the encoding of the browser to UTF-8 to view the contents properly).<br />
+
+
+<h3>Sentence segmentation</h3>
+Before the annotation takes place, the raw
+corpus downloaded from the
+source is sentence segmented automatically . Like English, Tamil can
+also be ambiguous at various places that will
+look like sentence boundaries. But in reality they may not be sentence
+boundaries. Those
+ambiguous sentence boundaries (such as <span style="font-style: italic;">dots</span>
+at decimal numbers, <span style="font-style: italic;">initials</span>
+in names and dates) are detected through heuristics and the sentences
+are segmented only at appropriate
+places.&nbsp;
+<h3>Tokenization</h3>
+Tokenization is one of the important
+module that helps the annotation
+task. This module splits the sentence into words. Tamil uses spaces to
+mark word boundaries. But yet, a lot of Tamil wordforms are agglutinative
+in nature, meaning they glue together atleast two words (in majority of
+cases). Those cases can be identified as determiners+nouns,
+nouns+postpositions, verbs+particles, nouns+particles and etc. Except
+the first pattern (determiners+nouns), in all other cases, the second
+part of the wordforms are restricted and can be listed. So it is
+possible to split certain Tamil agglutinative wordforms into separate
+tokens. Certain particles (also called clitics) such as&nbsp;
+{உம்/um/also},&nbsp; {ஓ/O/or}&nbsp; are not treated as separate tokens
+in Tamil. But
+for the purpose of annotation we treat them as separate tokens. The
+same module will be used for tokenization when parsing the raw Tamil
+text.<br />
+<br />
+<table class="simple wrap" style="text-align: left; width: 782px; height: 151px;" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;">Example 2.1: Splitting Agglutinative
+Combinations in Tokenization</span><br />
+  </caption> <tbody>
+    <tr>
+      <th style="vertical-align: top; font-weight: bold;">Before
+Splitting </th>
+      <td style="vertical-align: top;">puTiya cattaTTin<span style="font-style: italic; font-weight: bold;">pati</span> , pATukAkkap<span style="font-style: italic; font-weight: bold;">patta</span> winaivuc
+cinnaTT<span style="font-style: italic; font-weight: bold;">iliruwTu</span>
+1000 ati varai ewTa kattumAnam<span style="font-style: italic; font-weight: bold;">um</span> katta anumaTi
+illai . </td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top;"><span style="font-weight: bold;">After
+Splitting</span><br />
+      </th>
+      <td style="vertical-align: top;">puTiya cattaTTin <span style="font-style: italic; font-weight: bold;">pati</span> ,
+pATukAkkap <span style="font-style: italic; font-weight: bold;">patta</span>
+winaivuc cinnaTT <span style="font-style: italic; font-weight: bold;">iliruwTu</span>
+1000 ati varai ewTa kattumAnam <span style="font-style: italic; font-weight: bold;">um</span> katta anumaTi
+illai . </td>
+    </tr>
+  </tbody>
+</table>
+In the <span style="color: red;">Example 2.1</span>
+above, <span style="font-style: italic; font-weight: bold;">pati </span>and
+<span style="font-style: italic; font-weight: bold;">iliruwTu </span>are
+postpositions, <span style="font-style: italic; font-weight: bold;">patta
+</span>is an auxiliary verb and <span style="font-style: italic; font-weight: bold;">um </span>is a clitic.
+This kind of agglutination is very prevalent in Tamil, and it would be
+useful to tagging process if we are able to reduce the vocabulary size
+by splitting the known combinations as separate tokens.<br />
+<br />
+<table class="simple wrap" style="text-align: left; width: 573px; height: 171px;" border="1" cellpadding="2" cellspacing="2">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Table:_Words_and_Suffixes_for" />Table 2.3: Words and Suffixes for
+Tokenization</span><br />
+  </caption><tbody>
+    <tr>
+      <th style="vertical-align: top;">Clitics<br />
+      </th>
+      <td style="vertical-align: top;"><span style="font-style: italic;"><span style="font-weight: bold;">um</span>,&nbsp; E, EyE, AvaTu</span><br />
+      </td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top;">Postpositions<br />
+      </th>
+      <td style="vertical-align: top;"><span style="font-style: italic;">kUta,
+utan, <span style="font-weight: bold;">pati</span>, kuRiTTu, <span style="font-weight: bold;">iliruwTu</span>, anRu, uL, ARu, Tavira,
+pOTu,
+pOla, pinnar, pin, arukE, aRRa, inRi, illATa, mITu, kIz, mEl, munpE,
+otti, paRRi, paRRiya, pOnRa, mUlam, vaziyAka </span>etc.<br />
+      </td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top;">Auxiliary verbs<br />
+      </th>
+      <td style="vertical-align: top;"><span style="font-style: italic;"><span style="font-weight: bold;">patta</span>, pattu, uLLa, pata, mAttATu,
+patuvArkaL, uLLAr, uLLanar, illai, iruwTAr, iruwTaTu, pattaTu, pattana,
+mutiyum, kUtATu, vENtum, kUtum, iruppin, uLLana, mutiyATu, patATu,
+koNtu, ceyTu </span>etc. <br />
+      </td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top;">Particles<br />
+      </th>
+      <td style="vertical-align: top;"><span style="font-style: italic;">Aka,
+Ana</span> and their spelling variants such as <span style="font-style: italic;">Akak, Akac, AkaT</span><br />
+      </td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top;">Demonstrative pronouns (as
+prefixes)<br />
+      </th>
+      <td style="vertical-align: top;"><span style="font-style: italic;">ap,
+ac, ic, iw, aw</span></td>
+    </tr>
+  </tbody>
+</table>
+Some of the most commonly occurring (from
+the corpus) words and
+suffixes which participate in agglutination is given in the <a href="#Table:_Words_and_Suffixes_for">Table 2.3</a> above.&nbsp; Except demonstrative pronouns, all other words and suffixes
+are added after the stem. Among the categories in the <a href="introduction.html#Table:_Words_and_Suffixes_for">Table 2.3&nbsp;</a> above.
+Clitics and Particles are the most participated in the agglutination.
+The tokenizer will make use of this list and try to separate these
+words from the original wordform. Even after the tokenization it would
+be possible to reconstruct the original sentence by making use of the
+attribute called <span style="font-family: Courier New,Courier,monospace;">'no_space_after'</span>.&nbsp;
+The <span style="font-family: Courier New,Courier,monospace;">'no_space_after'
+</span>will be set to 1 if the following token is part of the current
+token. Whenever the splitting takes place this attribute will be set to
+1 for the first token. For example,&nbsp; The <span style="font-family: Courier New,Courier,monospace;">'no_space_after' </span>attribute
+for <span style="font-style: italic;">pATukAkkap</span><span style="font-family: Courier New,Courier,monospace; font-style: italic;">&nbsp;
+</span>will be <span style="font-style: italic; font-weight: bold;">1</span>.
+Whereas the <span style="font-family: Courier New,Courier,monospace;">'no_space_after'
+</span>attribute for <span style="font-style: italic; font-weight: bold;">um </span>will be <span style="font-style: italic;"><span style="font-weight: bold;">0.&nbsp;&nbsp;
+</span></span>The splitting for the&nbsp; corpora has been done&nbsp;
+semi automatically using&nbsp; some&nbsp; of the most commonly occuring
+combination from the&nbsp; above list and edited manually during the
+annotation process.&nbsp; At present, the tokenizer includes only few
+commonly occurring combinations from the <a href="introduction.html#Table:_Words_and_Suffixes_for">Table 2.3</a> such as Clitics,
+Particles and very few postpositions. <br />
+<br />
+We evaluated how much such combinations have been splitted from the
+original corpora. We found that <span style="font-weight: bold;">953</span>
+splits took place out of <span style="font-weight: bold;">9581</span>
+words. We simply did this by counting how many <span style="font-family: Courier New,Courier,monospace;">'no_space_after' </span>attributes
+have been set to 1.&nbsp; We can say that almost <span style="font-weight: bold;">10%&nbsp; </span>of the additional corpus
+size is due to splitting some wordforms into separate tokens.
+<h2><a name="1.3.Layers_of_Annotation">Layers of Annotation</a></h2>
+<br />
+The annotation scheme followed for <span style="font-style: italic;">TamilTB.v0.1</span> is similar to that of <a href="http://ufal.mff.cuni.cz/pdt2.0/doc/pdt-guide/en/html/ch02.html"><span style="font-style: italic;">Prague Dependency Treebank 2.0 (PDT 2.0)</span></a>.
+PDT 2.0 uses the notion 'layers' to distinguish annotation at various
+levels (linguistic) such as word level and structural level. Precisely,
+PDT 2.0 is annotated on 3 levels or layers: (i) <span style="font-style: italic;">morphological layer</span> <span style="font-style: italic;">(m-layer)</span>, (ii) <span style="font-style: italic;">analytical layer (a-layer) </span>and
+(iii)<span style="font-style: italic;"> tectogrammatical layer
+(t-layer).</span> At present, <span style="font-style: italic;">TamilTB<small>.</small>v0.1</span>
+is annotated on only two layers: m-layer and a-layer.&nbsp; <br />
+<br />
+<table style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+  <caption style="caption-side: bottom;"><a name="Example_1.1:_An_Example_Tamil_Sentence"><span style="font-style: italic;">Example 2.2: A Tamil Sentence</span><br />
+  </a></caption><tbody>
+    <tr>
+      <th style="vertical-align: top; font-style: italic; color: rgb(0, 102, 170);"><small><small>Tamil:
+      <br />
+      </small></small></th>
+      <td style="vertical-align: top;"><small><small>பண்பாட்டு&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>அடையாளங்களைப்&nbsp;&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>பாதுகாக்க&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>தொல்பொருள்&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>ஆய்வுத்&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>துறை&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>உருவாக்கப்&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>பட்டு&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>&nbsp;,&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>தனிச்&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>சட்டங்கள்&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>இயற்றப்&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>பட்டு&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>உள்ளன&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>&nbsp;.<br />
+      </small></small></td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top; font-style: italic; color: rgb(0, 102, 170);"><small><small>Tr:<br />
+      </small></small></th>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>paNpAttu&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>ataiyALangkaLaip&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>pATukAkka&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>TolporuL
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>AyvuT
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>TuRai&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>uruvAkkap&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>pattu&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>&nbsp;,
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>Tanic&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>cattangkaL&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>iyaRRap&nbsp;&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>pattu&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>uLLana&nbsp;
+      <br />
+      </small></small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><small>&nbsp;.<br />
+      </small></small></td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top; font-style: italic; color: rgb(0, 102, 170);"><small><small>Gloss:<br />
+      </small></small></th>
+      <td style="vertical-align: top;"><small><small>Cultural<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>symbols<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>to protect<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>Archaelogy<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>department&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>to create<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>AUX<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>, <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>separate&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>laws <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>to enact&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>AUX<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>AUX<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><br />
+      </small></small></td>
+    </tr>
+    <tr>
+      <th style="vertical-align: top; color: rgb(0, 102, 170);"><small><small><span style="font-style: italic;">English:</span> <br />
+      </small></small></th>
+      <td colspan="15" style="vertical-align: top;"><small><small>Having
+created Arachelogical Department, separate laws have been enacted to
+protect cultural symbols .<br />
+      </small></small></td>
+    </tr>
+  </tbody>
+</table>
+<span style="font-weight: normal;"><br />
+In the above example, t</span>he actual setence is given in Tamil
+script (indicated as <span style="font-style: italic; font-weight: bold;">Tamil:</span>) in the
+1st row, the transliterated (indicated as <span style="font-style: italic; font-weight: bold;">Tr:</span>)
+version in
+the 2nd row, gloss in the 3rd row, and the actual English translation
+in the 4th row. The same format is used to illustrate sentence examples
+elsewhere in the document. There are 15 words in the Tamil sentence
+(including punctuations), each word will be treated as a node in each
+annotation layer. Each node will have general attributes and attributes
+specifict to a particular annotation layer. For ex:&nbsp; a node in
+morphological layer will have attributes such as, <span style="font-family: Courier New,Courier,monospace;">'lemma',&nbsp; 'form',&nbsp; 'tag'</span>&nbsp; and <span style="font-family: Courier New,Courier,monospace;">'no_space_after'</span>
+corresponding to lemma,&nbsp; wordfom, POS tag of a particular wordform
+and whether the following word is part of the current node (wordform).
+A node in analytical layer will have attributes such as dependency
+label (<span style="font-family: Courier New,Courier,monospace;">'afun'</span>) of the current node, whether the current node is an element in the coordination conjunction (<span style="font-family: Courier New,Courier,monospace;">'is_member'</span>) etc. These attributes will be set automically during annotation when using <span style="font-family: Courier New,Courier,monospace;">TrEd.</span> Also, the lower layer (m-layer) attributes are visible to upper layers (a-layer or t-layer). <br />
+<br />
+Only transliterated version of the text will be used in all layers of
+annotation for the ease of processing. Examples in Tamil script are
+shown only for display purposes. <br />
+<br />
+The
+following subsections briefly describe the annotation layers of <span style="font-style: italic;">TamilTB.v0.1</span> with an example. <br />
+<h3>Morphological Layer</h3>
+The purpose of m-layer is to assign Parts of Speech (POS) tag or more
+refined morphological tag to each word in the sentence. This is
+accomplished by setting <span style="font-family: Courier New,Courier,monospace;">the 'tag'</span>
+attribute of the node (corresponds to word) to the POS or morphological
+tag. The '<span style="font-family: Courier New,Courier,monospace;">lemma</span>' attribute will store the conceptual root or the word listed in dictionary as the <span style="font-family: Courier New,Courier,monospace;">'lemma'</span> of
+the wordform. The following <a href="introduction.html#Figure_1.1:_An_Example_for_Morphological"><span style="color: red;">Figure 2.1</span></a> illustrates m-layer
+annotation.<br />
+<br />
+<br />
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Figure_1.1:_An_Example_for_Morphological">Figure 2.1: An
+Example for Morphological Layer Annotation</a></span><a name="Figure_1.1:_An_Example_for_Morphological"><br />
+  </a></caption><tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 991px; height: 117px;" alt="An example for m-layer annotation" title="An example for m-layer annotation" src="images/m-layer-ex.png" /><br />
+</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+The <a href="introduction.html#Figure_1.1:_An_Example_for_Morphological"><span style="color: red;">Figure 2.1</span></a> shows, there are three text
+values that are displayed at each node. The text at the top of the node
+is the <span style="font-family: Courier New,Courier,monospace;">'form</span>'
+or the exact word which appeared in the text. The text at the middle
+(for ex: paNpAttu) of the node is the '<span style="font-family: Courier New,Courier,monospace;">lemma'</span>, and
+the text at the bottom (for ex: NO--3SN--) of the node is the
+morphological tag of the wordform. The length (string) of each
+morphological tag is <span style="font-weight: bold;">9</span>
+and each character position will correspond to
+some feature of a wordform. The first 2 positions in the morpholgical
+tag corresponds to main POS and refined POS. Both together will
+represent fine details of a wordform. Thus it is possible to train the
+POS tagger for a fine grained tagset or coarse grained tagset. This
+kind of tagging is known
+as <span style="font-style: italic;">positional tagging</span>.
+Positional tagging is suitable for morphologically rich languages and
+has been successfully applied to languages such as Czech.&nbsp; The&nbsp; <a href="morph_annotation.html">Section: Morphological Annotation</a> will give a detailed
+description about positional tagging and the tagset used to perform
+annotation for <span style="font-style: italic;">TamilTB.v0.1</span>.<br />
+<h3>Analytical Layer</h3>
+Analytical layer (a-layer) is used to annotate the sentence at syntactic level. There are two phases in a-layer annotation: (i)
+capture the dependency structure of the sentence in the form of tree
+and (ii) identify the relationship between words or nodes in the
+tree.&nbsp; From m-layer, we know that each word
+corresponds to a node in the tree but they are without their parents
+assigned. The dependency structure is captured by hanging the <span style="font-style: italic;">dependent nodes</span> (words) under their
+<span style="font-style: italic;">governing nodes</span> (words).
+Visually, dependent nodes will hang as children&nbsp; of their
+governing nodes. There will be one extra node called <span style="font-style: italic;">technical root</span> to which the
+predicate node and the terminal node (end of the sentence) will be
+attached. The following <a href="introduction.html#Figure_1.2:_Analytical_Layer_Annotation">Figure 2.2</a> illustrates the a-layer annotation of a sentence shown in the <a href="introduction.html#Example_1.1:_An_Example_Tamil_Sentence">Example 2.2</a>.<br />
+<br />
+<table style="text-align: left; width: 100%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+  <caption style="caption-side: bottom;"><span style="font-style: italic;"><a name="Figure_1.2:_Analytical_Layer_Annotation">Figure 2.2: An
+Example for Analytical Layer (a-layer) Annotation</a></span><a name="Figure_1.2:_Analytical_Layer_Annotation"><br />
+  </a></caption><tbody align="center">
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 560px; height: 286px;" alt="An example for a-layer annotation" title="An example for a-layer annotation" src="images/a-layer-ex.png" /><br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+Edges between the nodes indicate the relationship with which they are
+connected. In linguistic terms, it is called <span style="font-style: italic;">syntactic relation</span> between governor
+and dependent. The relationship between two nodes are stored in the
+attribute called <span style="font-style: italic;">afun</span>.
+Instead of storing the <span style="font-style: italic;">afun</span>
+along the edges, the <span style="font-style: italic;">afun</span> is
+treated as another attribute of the dependent node. So the <span style="font-style: italic;">afun</span> value of a node indicates the
+relation with which it connects to its governing node. For example, the
+<span style="font-style: italic;">afun</span> value of the word <span style="font-style: italic;">'cattangkaL'(laws) </span>is <span style="font-weight: bold;">'Sb'</span> meaning Subject, is connected
+to the verb <span style="font-style: italic;">'iyaRRap(to enact)</span>'.
+<br />
+<br />
+The more detailed treatment of various syntactic relationships and
+a-layer annotation scheme is given in <a href="dependency_annotation.html">Section: Syntactic Annotation</a>. <br />
+<h2><a name="Download_Data">Obtaining Data<br />
+</a></h2>
+<p>
+The annotated data is available in three formats:
+</p>
+<ul>
+  <li> TMT format - XML-based format used in the TectoMT system</li>
+  <li>CoNLL format - tabular-separated format in the CoNLL shared task
+style </li>
+  <li> TnT style POS tagged format - tabular-separated columns with
+word forms, POS tags, and lemmas. </li>
+</ul>
+<p>
+The syntactic trees can be comfortably browsed in the <a href="http://ufal.mff.cuni.cz/%7Epajas/tred">TrEd</a>
+tree editor, after installing the TMT file support extension into it
+(Menu: Setup-&gt;Manage extensions... install TMT files support
+extension).
+</p>
+Go to the <a href="download.html">download</a> section to obtain the data<br id="endmain" />
+</div>
+
+<!-- ======== Footer ======== -->
+<div id="footer">
+<div style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width: 0pt;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">TamilTB.v0.1</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ufal.mff.cuni.cz/" property="cc:attributionName" rel="cc:attributionURL">Institute of Formal and Applied Linguistics
+(UFAL)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+The webpages are maintained by <a href="mailto:ramasamy@ufal.mff.cuni.cz">Loganathan
+Ramasamy</a>. Last modified: 8th May, 2011.
+</div>
+</div>
+
+</body></html>
