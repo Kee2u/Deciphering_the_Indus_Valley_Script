@@ -1,0 +1,3299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>TamilTB.v.0.1</title>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  
+  <link rel="StyleSheet" href="sinorcaish-screen.css" type="text/css" media="screen" />
+
+  
+  <link rel="StyleSheet" href="sinorcaish-print.css" type="text/css" media="print" /></head><body>
+<!-- For non-visual or non-stylesheet-capable user agents -->
+<div id="mainlink"><a href="#main">Skip to main content.</a></div>
+
+<div id="header">
+<div class="left">
+<p /><h3>&nbsp;Tamil Dependency Treebank v0.1 </h3><h3>
+</h3></div>
+<div class="subheader">
+</div>
+</div>
+
+<!-- ======== Left Sidebar ======== -->
+<div id="sidebar">
+<div>
+<p class="title">Main Menu<br />
+</p>
+<ol>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+  <li><a href="morph_annotation.html">Morphological Annotation</a> </li>
+  <li><a href="dependency_annotation.html">Syntactic Annotation</a></li>
+  <li><a href="download.html">Download</a></li>
+  <li><a href="authors.html">Authors</a></li>
+  <li><a href="license.html">License</a></li>
+  <li><a href="acknowledgements.html">Acknowledgements</a><br />
+  </li>
+</ol>
+</div>
+</div>
+
+<!-- ======== Main Content ======== -->
+<div id="main"><br />
+<h1>Syntactic Annotation<br />
+</h1>
+<div class="navbox" style="width: 13em;">
+<ul>
+  <li>Syntactic Annotation<br />
+    <ul>
+      <li><a href="#4.1.Identifying_the_Structure">Identifying
+the
+Structure</a><br />
+      </li>
+      <li><a href="#4.2.Dependency_Relations_Analytical">Dependency Relations</a></li>
+      <li><a href="#4.3.Detailed_Description_of_Analytical">Detatiled
+Description of Analytical Functions</a></li>
+      <li><a href="#4.4.References">References</a><br />
+      </li>
+
+    </ul>
+  </li>
+</ul>
+</div>
+<p><span style="font-style: italic;">This section will give a
+detatiled description about how annotation takes place at the syntactic
+level. The syntactic annotation consists of two phases: (i)
+identifying the structure (dependency) of the sentence in the form of
+tree and (ii) identifying the dependency relations and assigning those
+relations to the edges in the tree structure.<br />
+</span></p>
+<h2><a name="4.1.Identifying_the_Structure">Identifying the Structure</a></h2>
+<br />
+
+The structure of the sentence is identified manually by attaching the
+dependent nodes to the governing nodes. In the sentential structure,
+the head of the sentence will be predicate, and the predicate will have
+arguments (noun phrases, adverbials) as their children. The objective
+of this step would be, identifying the predicate rooted structure and
+attaching to the techincal root (AuxS, defined below) of the tree. The
+end of the sentence will also be attached to the technical root.&nbsp;
+Once the structure is identified, all the edges have to be labeled with
+their relations. For technical reasons, the relation between the
+dependent and the governing node is stored as an a-layer attribute of the
+dependent node. The attribute is called <span style="font-weight: bold; font-family: Courier New,Courier,monospace;">'afun'</span>. The following sections
+explains each relation in detail. <br />
+
+<br />
+
+<h2><a name="4.2.Dependency_Relations_Analytical">Dependency Relations (Analytical functions)</a></h2>
+
+<table class="simple wrap" style="text-align: left; width: 572px; height: 636px;" border="1" cellpadding="2" cellspacing="2"><caption style="caption-side: bottom;"><a name="Table_4.1:_Dependency_Relations_Afun">Table 4.1: Dependency Relations (Afun values)<br />
+  </a></caption>
+  <tbody>
+    <tr>
+      <th style="vertical-align: top;">No<br />
+
+      </th>
+
+      <th style="vertical-align: top;">Afun<br />
+
+      </th>
+
+      <th style="vertical-align: top;">Description<br />
+
+      </th>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">1<br />
+      </td>
+      <td style="vertical-align: top;">AAdjn<br />
+      </td>
+      <td style="vertical-align: top;">Adverbial Adjunct<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">2<br />
+      </td>
+      <td style="vertical-align: top;">AComp<br />
+      </td>
+      <td style="vertical-align: top;">Adverbial Complement<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">3<br />
+      </td>
+      <td style="vertical-align: top;">Apos<br />
+      </td>
+      <td style="vertical-align: top;">Apposition<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">4<br />
+      </td>
+      <td style="vertical-align: top;">Atr<br />
+      </td>
+      <td style="vertical-align: top;">Attribute<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">5<br />
+      </td>
+      <td style="vertical-align: top;">AdjAtr</td>
+      <td style="vertical-align: top;">Adjectival participial or
+Adjectivalized verbs<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">6<br />
+      </td>
+      <td style="vertical-align: top;">AuxA<br />
+      </td>
+      <td style="vertical-align: top;">Determiners<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">7<br />
+      </td>
+      <td style="vertical-align: top;">AuxC<br />
+      </td>
+      <td style="vertical-align: top;">Subordinating conjunctions<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">8<br />
+      </td>
+      <td style="vertical-align: top;">AuxG<br />
+      </td>
+      <td style="vertical-align: top;">Symbols other than comma<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">9<br />
+      </td>
+      <td style="vertical-align: top;">AuxK<br />
+      </td>
+      <td style="vertical-align: top;">Sentence termination symbols<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">10<br />
+      </td>
+      <td style="vertical-align: top;">AuxP<br />
+      </td>
+      <td style="vertical-align: top;">Postpositions<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">11<br />
+      </td>
+      <td style="vertical-align: top;">AuxS<br />
+      </td>
+      <td style="vertical-align: top;">Technical root<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">12<br />
+      </td>
+      <td style="vertical-align: top;">AuxV<br />
+      </td>
+      <td style="vertical-align: top;">Auxiliary verb<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">13<br />
+      </td>
+      <td style="vertical-align: top;">AuxX<br />
+      </td>
+      <td style="vertical-align: top;">Comma other than in coordination<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">14<br />
+      </td>
+      <td style="vertical-align: top;">AuxZ<br />
+      </td>
+      <td style="vertical-align: top;">Emphasis words or particles<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">15<br />
+      </td>
+      <td style="vertical-align: top;">CC<br />
+      </td>
+      <td style="vertical-align: top;">Part of a word <br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">16<br />
+      </td>
+      <td style="vertical-align: top;">Comp<br />
+      </td>
+      <td style="vertical-align: top;">Complement other than attaching
+to verbs<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">17<br />
+      </td>
+      <td style="vertical-align: top;">Coord<br />
+      </td>
+      <td style="vertical-align: top;">Coordination node<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">18<br />
+      </td>
+      <td style="vertical-align: top;">Obj<br />
+      </td>
+      <td style="vertical-align: top;">Object (both direct and indirect)<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">19<br />
+      </td>
+      <td style="vertical-align: top;">Pnom<br />
+      </td>
+      <td style="vertical-align: top;">Predicate nominal<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">20<br />
+      </td>
+      <td style="vertical-align: top;">Pred<br />
+      </td>
+      <td style="vertical-align: top;">Predicate<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">21<br />
+      </td>
+      <td style="vertical-align: top;">Sb<br />
+      </td>
+      <td style="vertical-align: top;">Subject<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a name="4.2.Dependency_Relations_Analytical"><br />
+The usage of analytical function or <span style="font-family: Courier New,Courier,monospace;">'afun</span>'
+or dependency relation in the following sections, they all refer to the
+dependency relation between dependent node and the governing node.<br />
+
+</a><h2><a name="4.3.Detailed_Description_of_Analytical">Detailed
+Description of Analytical Functions</a></h2>
+<br />
+
+In this sub section, each analytical function defined in the <a href="#Table_4.1:_Dependency_Relations_Afun">Table 4.1</a>&nbsp; is explained in
+detail.<br />
+<br />
+<h3><span style="font-weight: bold;">AAdjn</span></h3>The <span style="font-style: italic;">AAdjn</span> relation is used to mark the adverbial adjuncts. The adverbial
+adjuncts are optional adverbial phrases, postpositional phrase, clauses or&nbsp; simple adverbs modifying the verbs.&nbsp; <br />
+<br />
+<br />
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 451px; height: 339px;" alt="An example for AAdjn" title="An example for AAdjn" src="images/aadjn.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.1:_Analytical_Function_-_AAdjn">Figure 4.1: Analytical Function - AAdjn</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">பின்னர்</span>  
+      </td>
+      <td style="vertical-align: top; text-align: center;">எப்படி&nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">உங்கள்&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">மதச்சார்பின்மையை&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">நம்புவது 
+      </td>
+      <td style="vertical-align: top;">என்று&nbsp;  <br />
+      </td><td style="vertical-align: top;">கேள்வி <br />
+      </td>
+      <td style="vertical-align: top;">எழுப்பினார் <br />
+      </td>
+      <td style="vertical-align: top;">. <br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">pinnar</span> <br />
+      </td>
+      <td style="vertical-align: top;">eppati<br />
+      </td>
+      <td style="vertical-align: top;">ungkaL<br />
+      </td>
+      <td style="vertical-align: top;">maTaccArpinmaiyai <br />
+      </td>
+      <td style="vertical-align: top;">wampuvaTu <br />
+      </td>
+      <td style="vertical-align: top;">enRu <br />
+      </td><td style="vertical-align: top;">kELvi <br />
+      </td>
+      <td style="vertical-align: top;">ezuppinAr <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">then</span><br />
+      </td>
+      <td style="vertical-align: top;">how<br />
+      </td>
+      <td style="vertical-align: top;">your  <br />
+      </td>
+      <td style="vertical-align: top;">secular credential-ACC <br />
+      </td>
+      <td style="vertical-align: top;">believing<br />
+</td>
+      <td style="vertical-align: top;">that <br />
+      </td><td style="vertical-align: top;">question<br />
+      </td>
+      <td style="vertical-align: top;">raised-he<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="9" style="vertical-align: top;">" <span style="text-decoration: underline;">Then</span> how to believe your secular credentials ", he raised a question<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table><br />
+The <a href="#Figure_4.1:_Analytical_Function_-_AAdjn">Figure 4.1</a> shows how<span style="font-style: italic;"> </span>simple adverb (pinnar/'then, later') has been labeled with <span style="font-style: italic;">AAdjn </span>label.&nbsp; The following <a href="#Figure_4.2:_Analytical_Function_-_AAdjn">Figure 4.2</a> shows how an adverbial phrase ("by putting forward ...") has been labeled with <span style="font-style: italic;">AAdjn </span>label.<br />
+<br />
+<br />
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 525px; height: 336px;" alt="An example for AAdjn" title="An example for AAdjn" src="images/aadjn1.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.2:_Analytical_Function_-_AAdjn">Figure 4.2: Analytical Function - AAdjn</a></span><br />
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+
+
+
+
+  
+    
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><small><span style="font-weight: bold;">Tamil</span>:<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>நாங்கள்  <br />
+      </small></td>
+      <td style="vertical-align: top; text-align: center;"><small>சமூக&nbsp;
+      <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>நீதியை&nbsp;  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>உம்<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>சமதர்மத்தை <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>உம்&nbsp;&nbsp;  <br />
+
+      </small></td><td style="vertical-align: top;"><small>சமமான <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>வளர்ச்சியை <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>உம்  <br />
+
+      </small></td><td style="vertical-align: top;"><small>முன்னிறுத்தி <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>பிரசாரம்&nbsp;  <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>செய்கிறோம்<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+      </small></td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><span style="font-weight: bold;">Tr:</span><br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>wAngkaL  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>camUka&nbsp; <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>wITiyai&nbsp; <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>um  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>camaTarmaTTai&nbsp;  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>um  <br />
+
+      </small></td><td style="vertical-align: top;"><small>camamAna&nbsp;  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>vaLarcciyai&nbsp;  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>um&nbsp; <br />
+
+      </small></td><td style="vertical-align: top;"><small>munniRuTTi&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>piracAram&nbsp;  <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>ceykiROm <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+      </small></td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><span style="font-weight: bold;">Gloss:</span><br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>we<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>social <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>justice <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>-&nbsp;<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>equality
+      </small></td>
+      <td style="vertical-align: top;"><small>-&nbsp;<br />
+
+      </small></td><td style="vertical-align: top;"><small>equal <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>development&nbsp; <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>&nbsp;-<br />
+
+      </small></td><td style="vertical-align: top;"><small>by putting forward<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>campaign <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>do<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+      </small></td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><span style="font-weight: bold;">English:</span><br />
+
+      </small></td>
+      <td rowspan="1" colspan="13" style="vertical-align: top;"><small>We are doing campaign <span style="font-style: italic;">by putting forward social justice, equality and equal development .</span><br />
+      </small></td></tr></tbody>
+</table>
+<br />
+
+<br />
+<h3>AComp</h3>
+The <span style="font-style: italic;">AComp</span> relation is used to mark the obligatory adverbials or adverbial complements in the structure. The context of occurrence of <span style="font-style: italic;">AComp</span> relation is same as that of <span style="font-style: italic;">AAdjn</span> relation. The only difference is that the '<span style="font-style: italic;">adverbial adjuncts' (AAdjn)</span> are optional elements in the sentential structure whereas <span style="font-style: italic;">'adverbial complements (AComp)'</span>are
+obligatory elements in the sentence structure. While doing
+annotation, this relationship is determined by whether&nbsp; the
+'adverbial
+structure' is required to complete the sentence. If the removal of the
+adverbial structure does not affect the sentence as a whole, then it is
+labeled
+as <span style="font-style: italic;">AAdjn</span> or it will be labeled as <span style="font-style: italic;">AComp</span>. The following <a href="#Figure_4.3:_Analytical_Function_-_AComp">Figure 4.3</a> illustrate this idea.<br />
+<br />
+<br />
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 185px; height: 229px;" alt="An example for AComp" title="An example for AComp" src="images/acomp.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.3:_Analytical_Function_-_AComp">Figure 4.3: Analytical Function - AComp</a></span><br />
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+
+
+
+
+  
+    
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">வளர்ச்சிக்க்&nbsp;</span>  
+      </td>
+      <td style="vertical-align: top; text-align: left;">ஆக &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">போராடுவோம்&nbsp;  <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">. <br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">vaLarccikk</span><br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">Aka<br />
+      </td>
+      <td style="vertical-align: top;">pOrAtuvOm<br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">development<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">for (the sake of) <br />
+</td>
+      <td style="vertical-align: top;">struggle-we<br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="4" style="vertical-align: top;">We will struggle <span style="text-decoration: underline;">for development</span> .<br />
+</td></tr></tbody>
+</table>
+<br />
+In <a href="#Figure_4.3:_Analytical_Function_-_AComp">Figure 4.3</a>,
+the
+phrase "<span style="font-style: italic;">vaLarccikkk Aka (for development)</span>" occurs as an obligatory
+element in the sentence. Though it can be argued that in Tamil it is
+possible to write a minimal sentence with just a verb, the decision is
+made mainly based on whether the sentence conveys the meaning without
+loosing the essential information.<br />
+<br />
+<h3>Apos</h3>The adjectival clauses headed by <span style="font-style: italic;">enRa </span>are appositional clauses. The entire finite clause will be attached to <span style="font-style: italic;">enRa </span>which will act as a modifier to a noun phrase. The clausal head which is attached to <span style="font-style: italic;">enRa </span>will receive <span style="font-style: italic;">Apos </span>label.&nbsp; The following <a href="#Figure_4.4:_Analytical_Function_-_Apos_">Figure 4.4</a> illustrates the labeling of <span style="font-style: italic;">Apos.<br />
+<br />
+</span><br />
+
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 456px; height: 396px;" alt="An example for Apos" title="An example for Apos" src="images/apos.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.4:_Analytical_Function_-_Apos_">Figure 4.4: Analytical Function - Apos</a></span><br />
+
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<br />
+
+
+
+
+
+
+  
+    
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">அதுபோன்று&nbsp;  
+      </td>
+      <td style="vertical-align: top; text-align: left;">பிகாரில்<br />
+      </td>
+      <td style="vertical-align: top;">உம் <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">காங்கிரஸ் <br />
+      </td><td style="vertical-align: top;">வெற்றி&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">பெறும் </span><br />
+      </td>
+      <td style="vertical-align: top;">என்ற <br />
+      </td>
+      <td style="vertical-align: top;">நம்பிக்கை&nbsp; <br />
+      </td>
+<td style="vertical-align: top;">எனக்கு <br />
+      </td><td style="vertical-align: top;">உள்ளது <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">aTupOnRu <br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">pikAril <br />
+      </td>
+      <td style="vertical-align: top;">um<br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">kAngkiraS&nbsp; <br />
+      </td><td style="vertical-align: top;">veRRi <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">peRum</span>&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">enRa&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">wampikkai&nbsp; <br />
+      </td>
+<td style="vertical-align: top;">enakku&nbsp; <br />
+      </td><td style="vertical-align: top;">uLLaTu&nbsp;&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">like that<br />
+</td>
+      <td style="vertical-align: top; text-align: center;">in Bihar <br />
+</td>
+      <td style="vertical-align: top;">also<br />
+</td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">Congress <br />
+</td><td style="vertical-align: top;">victory<br />
+</td>
+      <td style="vertical-align: top;">gain<br />
+</td>
+      <td style="vertical-align: top;">that <br />
+</td>
+      <td style="vertical-align: top;">confidence<br />
+      </td>
+<td style="vertical-align: top;">me<br />
+</td><td style="vertical-align: top;">be-exist<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="11" style="vertical-align: top;">&nbsp;I have a confidence that similarly in Bihar too the Congress <span style="text-decoration: underline;">will gain</span> victory .<br />
+</td></tr></tbody>
+</table>
+
+<br />
+Other occurrence of appositions are not handled at present. It will be included in future versions of the annotation.<br />
+
+<br />
+<h3>Atr</h3>
+
+Attribute (refer <a href="http://ufal.mff.cuni.cz/pdt2.0/doc/manuals/en/a-layer/html/ch03s02x03.html">PDT
+documentation</a>) is a sentence member which depends on noun and
+closely determines its meaning. Original PDT annotation diferentiates <span style="font-style: italic;">"agreeing"</span> and <span style="font-style: italic;">"non-agreeing"</span>
+attribute. But, since Tamil does not have any agreement between nouns
+and their modifers, all noun modifers will receive the afun label Atr.
+The noun modifiers include nouns (except the head noun) in noun
+compounds, adjectives, numerals and adjectival participles. The <a href="#Figure_4.5:_Analytical_Function_-_Atr">Figure 4.5</a>&nbsp;
+shows the usage of afun Atr. <br />
+
+<br />
+<br />
+
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 494px; height: 340px;" alt="An example for Atr" title="An example for Atr" src="images/Atr.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.5:_Analytical_Function_-_Atr">Figure 4.5: Analytical Function - Atr</a></span><br />
+
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<br />
+
+
+
+
+
+
+  
+    
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">வடக்கு </span>&nbsp;  
+      </td>
+      <td style="vertical-align: top; text-align: left;">மற்றும் &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">கிழக்குப்</span> &nbsp;  <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">பகுதிகளுக்க்  <br />
+      </td><td style="vertical-align: top;">ஆக <br />
+      </td>
+      <td style="vertical-align: top;">55 <br />
+      </td>
+      <td style="vertical-align: top;">பேருந்துகளை <br />
+      </td>
+      <td style="vertical-align: top;">இந்தியா <br />
+      </td>
+      <td style="vertical-align: top;">வழங்கிய்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">உள்ளது <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">vatakku</span><br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">maRRum&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">kizakkup </span><br />
+</td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">pakuTikaLukk&nbsp; <br />
+      </td><td style="vertical-align: top;">Aka&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">55&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">pEruwTukaLai&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">iwTiyA&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">vazangkiy&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">uLLaTu&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">north<br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">and <br />
+</td>
+      <td style="vertical-align: top;">east <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">regions<br />
+      </td><td style="vertical-align: top;">for <br />
+      </td>
+      <td style="vertical-align: top;">55<br />
+      </td>
+      <td style="vertical-align: top;">buses <br />
+      </td>
+      <td style="vertical-align: top;">India<br />
+      </td>
+      <td style="vertical-align: top;">give<br />
+      </td>
+      <td style="vertical-align: top;">AUX-PERF<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="11" style="vertical-align: top;">&nbsp;India has provided 55 buses to <span style="text-decoration: underline;">north</span> and <span style="text-decoration: underline;">eastern</span> regions .</td></tr></tbody>
+</table>
+
+<br />
+<h3>AdjAtr</h3><span style="font-style: italic;">AdjAtr</span> label is
+used to mark the adjectival clauses, adjectivalized verbs or adjectival participials. They
+are equivalent to -ing, -ed (<span style="font-style: italic;">singing</span> girl, <span style="font-style: italic;">departed</span>
+train) forms in English. Verbs in Tamil can be adjectivalized for all
+three tenses, and they take appropriate tags depending on the word form
+features. The Figure shows an example for <span style="font-style: italic;">AdjAtr </span>labeling.<br />
+
+<br />
+
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 748px; height: 393px;" alt="An example for AdjAtr" title="An example for AdjAtr" src="images/AdjAtr.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.6:_Analytical_Function_-_AdjAtr">Figure 4.6: Analytical Function - AdjAtr</a></span><a name="Figure_4.6:_Analytical_Function_-_AdjAtr"><br />
+
+
+      </a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<br />
+
+
+
+
+
+
+  
+    
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><small><small><span style="font-weight: bold;">Tamil</span>:<br />
+
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>கொழும்ப்&nbsp;  
+      </small></small></td>
+      <td style="vertical-align: top; text-align: left;"><small><small>இலிருந்து &nbsp;
+      <br />
+
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>விமானம்&nbsp;  <br />
+
+      </small></small></td>
+      
+      
+      
+      
+      <td style="vertical-align: top;"><small><small>மூலம் <br />
+
+      </small></small></td><td style="vertical-align: top;"><small><small>வன்னி <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>ராணுவ&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>தலைமயகத்துக்குச் <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><span style="text-decoration: underline;">சென்ற</span> <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>அவர் <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>பின்னர்&nbsp;  <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>அங்கிருந்து</small></small></td>
+      <td style="vertical-align: top;"><small><small>கார்&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>&nbsp;மூலம் <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>வவுனியாவுக்கு&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>அழைத்துச் <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>செல்லப் <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>பட்ட்டார் <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><small>.<br />
+      </small></small></small></td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><small><span style="font-weight: bold;">Tr:</span><br />
+
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>kozump<br />
+
+      </small></small></td>
+      <td style="vertical-align: top; text-align: left;"><small><small>iliruwTu <br />
+
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>vimAnamp <br />
+      </small></small></td>
+      
+      
+      
+      
+      <td style="vertical-align: top;"><small><small>mUlam&nbsp; <br />
+
+      </small></small></td><td style="vertical-align: top;"><small><small>vanni&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>rANuva<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>TalaimaiyakaTTukkuc&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>cenRa&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>avar <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>pinnar <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>angkiruwTu&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>kAr <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>mUlam&nbsp;&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>vavuniyAvukkv&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>azaiTTuc <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>cellap <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>pattAr<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><small>.<br />
+      </small></small></small></td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><small><span style="font-weight: bold;">Gloss:</span><br />
+
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>Colombo<br />
+      </small></small></td>
+      <td style="vertical-align: top; text-align: center;"><small><small>from<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>plane<br />
+      </small></small></td>
+      
+      
+      
+      
+      <td style="vertical-align: top;"><small><small>through&nbsp;&nbsp; <br />
+
+      </small></small></td><td style="vertical-align: top;"><small><small>vanni <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>military&nbsp; <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>headquarters-to<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>who went<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>he or she<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>later<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>from there<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>car <br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>through<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>to VavuniyA<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small>taken<br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><br />
+      </small></small></td>
+      <td style="vertical-align: top;"><small><small><small><br />
+      </small></small></small></td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="18" style="vertical-align: top;"><small>He/she <span style="text-decoration: underline; font-style: italic;">who went</span> to Vanni Military Headquarters by plane from Colombo, was later taken to VavuniyA from there by car. </small><br />
+
+</td></tr></tbody>
+</table>
+
+<br />
+<br />
+<h3>AuxA</h3>
+
+Tamil has two demonstrative determiners corresponding to 'this' and 'that'
+in English. At present, the question word <span style="font-style: italic;">ewTa/'which' </span>is also tagged as
+determiner. Sometimes the determiners occur as a prefix to the
+following noun or noun phrase in a contracted form. During the
+tokenization phase, these demonstrative suffixes will be separated from
+the noun or noun phrase, and will be considered as a separate token.
+The determiners are <span style="font-style: italic;">iwTa/'this', awTa /'that' and ewTa/'which'</span>, and the corresponding
+contracted determiners are i, a and e. Due to orthorgraphic rules, the
+first letter of the following noun phrase will be added to the
+contracted form. The <a href="#Figure_4.7:_Analytical_Function_-_AuxA">Figure 4.7</a> illustrates the usage of all
+determiners. 
+<br />
+<br />
+<br />
+
+
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 591px; height: 167px;" alt="An example for AuxA" title="An example for AuxA" src="images/auxa.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.7:_Analytical_Function_-_AuxA">Figure 4.7: Analytical Function - AuxA</a></span><a name="Figure_4.7:_Analytical_Function_-_AuxA"><br />
+
+
+      </a></td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+
+
+
+
+
+  
+    
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">அப்</span>  
+      </td>
+      <td style="vertical-align: top; text-align: left;">பகுதியில் <br />
+      </td>
+      <td style="vertical-align: top;">வாழ்ந்தவர்கள் &nbsp;  <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">தான்&nbsp; ... <br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">ap</span><br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">pakuTiyil<br />
+      </td>
+      <td style="vertical-align: top;">vAzwTavarkaL <br />
+</td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">TAn ...<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">that</span> <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">in the region <br />
+</td>
+      <td style="vertical-align: top;">those who have lived <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">EMPHASIS<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="4" style="vertical-align: top;">It was those who have lived in <span style="font-style: italic; text-decoration: underline;">that</span> region<br />
+</td></tr></tbody>
+</table>
+<br />
+
+
+
+
+
+
+  
+    
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">இச்</span>  <br />
+</td>
+      <td style="vertical-align: top; text-align: left;">சட்டத்தின்&nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">படி <br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">ic </span><br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">cattaTTin <br />
+      </td>
+      <td style="vertical-align: top;">pati<br />
+</td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">this&nbsp;</span> <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">law<br />
+</td>
+      <td style="vertical-align: top;">according to<br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="3" style="vertical-align: top;">according to <span style="text-decoration: underline;">this</span> law</td></tr></tbody>
+</table>
+<br />
+
+
+
+
+
+
+  
+    
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">இந்தப்</span> <br />
+</td>
+      <td style="vertical-align: top; text-align: left;">புதிய &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">சட்டம்&nbsp;  <br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">iwTap</span><br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">puTiya<br />
+      </td>
+      <td style="vertical-align: top;">cattam<br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">this <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">new <br />
+</td>
+      <td style="vertical-align: top;">law<br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="3" style="vertical-align: top;"><span style="text-decoration: underline;">this</span> new law</td></tr></tbody>
+</table>
+<br />
+
+
+
+
+
+
+  
+    
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">அந்த</span>  
+      </td>
+      <td style="vertical-align: top; text-align: left;">நிதி &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">உதவியை&nbsp;  <br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">awTa</span><br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">wiTi<br />
+      </td>
+      <td style="vertical-align: top;">uTaviyai<br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">that <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">financial <br />
+</td>
+      <td style="vertical-align: top;">help<br />
+      </td>
+      
+      
+      
+      
+      
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="3" style="vertical-align: top;"><span style="font-style: italic; text-decoration: underline;">that</span> financial help</td></tr></tbody>
+</table>
+
+<h3>AuxC</h3>
+
+In Tamil, embedding or adjoining of clauses are performed either by
+morphologically marking the clause or by using separate words. When
+separate words are used, they function similar to that of subordinating
+conjunction words in other languages such as English. These separate
+words are called complementizers in Tamil. Complementizers can be
+verbs, nouns or postpositions after nominalized clauses. There are
+three complementizing verbs - <span style="font-style: italic;">en/'say'</span>, <span style="font-style: italic;">pOl/'seem'</span> and<span style="font-style: italic;"> Aku/'become'</span>.
+They have grammatical function during embedding of clauses, otherwise
+they retain their lexical meaings. The following list provides some of
+the noun complementizers - <span style="font-style: italic;">pOTu/'time', mun/'before', piRaku/'after', utan/'immediacy', varai/'as long as'</span> and etc. The
+postpositions can also be interpreted as subordinating conjunction
+words when they were preceded by nominalized clauses. <span style="color: rgb(204, 0, 0);"><span style="color: black;">Refer [1]</span> </span>for
+detailed treatment of how complementizers work in Tamil.<br />
+
+<br />
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 369px; height: 338px;" alt="An example for AuxC" title="An example for AuxC" src="images/AuxC.png" /><br />
+
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.8:_Analytical_Function_-_AuxC">Figure 4.8: Analytical Function - AuxC</a></span><br />
+
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<br />
+
+
+
+
+
+  
+    
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+<tbody><tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">தனித்துப்&nbsp;  
+      </td>
+      <td style="vertical-align: top; text-align: left;">போட்டியிடுவது &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">தொடக்கத்தில் &nbsp;  <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">சிரமமானது  <br />
+      </td><td style="vertical-align: top;"><span style="text-decoration: underline;">என்று</span> <br />
+      </td>
+      <td style="vertical-align: top;">எனக்குத் <br />
+      </td>
+      <td style="vertical-align: top;">தெரியும் <br />
+      </td>
+      <td style="vertical-align: top;">. <br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">TaniTTup <br />
+      </td>
+      <td style="vertical-align: top; text-align: left;">pOttiyituvaTu<br />
+      </td>
+      <td style="vertical-align: top;">TotakkaTTil <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">ciramamAnaTu <br />
+      </td><td style="vertical-align: top;"><span style="text-decoration: underline;">enRu</span> <br />
+      </td>
+      <td style="vertical-align: top;">enakkuT <br />
+      </td>
+      <td style="vertical-align: top;">Teriyum <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">separately&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">competing <br />
+</td>
+      <td style="vertical-align: top;">in the beginning <br />
+      </td>
+      
+      
+      
+      
+      <td style="vertical-align: top;">difficult <br />
+      </td><td style="vertical-align: top;">that <br />
+      </td>
+      <td style="vertical-align: top;">I<br />
+      </td>
+      <td style="vertical-align: top;">know <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="8" style="vertical-align: top;">I know <span style="text-decoration: underline;">that</span> it will be difficult in the beginning to compete separately .<br />
+</td></tr></tbody>
+</table>
+<br />
+<br />
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;">
+
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 647px; height: 456px;" alt="An example for AuxC" title="An example for AuxC" src="images/AuxC1.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.9:_Analytical_Function_-_AuxC">Figure 4.9: Analytical Function - AuxC</a></span><br />
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;"><small>Tamil:
+      <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>கொழும்பு <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>திரும்பியவ் <br />
+
+      </small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><span style="text-decoration: underline;">உடன்</span>  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>புதன்கிழமை&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>மாலை&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>தமிழ் <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>&nbsp;எம்பிக்க்க்ள் <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>மற்றும்&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>தமிழர்&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>கட்சித்&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>தலைவர்கள் <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>உடன் <br />
+      </small></td>
+<td style="vertical-align: top;"><small>அவர் <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>ஆலோசனை <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>செய்வார் <br />
+
+      </small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><span style="text-decoration: underline;">என்று</span> <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>தெரிகிறது <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;"><small>Tr:
+      <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>kozumpu <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>Tirumpiyav <br />
+
+      </small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><span style="text-decoration: underline;">utan</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>puTankizamai&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>mAlai&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>Tamiz&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>empikkaL<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>maRRum&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>Tamizar&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>katciT&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>TalaivarkaL&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>utan<br />
+      </small></td>
+<td style="vertical-align: top;"><small>avar <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>AlOcanai<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>ceyvAr<br />
+
+      </small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><span style="text-decoration: underline;">enRu</span><br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>TerikiRaTu <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;"><small>Gloss:
+      <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>Colombo<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>return<br />
+
+      </small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><span style="text-decoration: underline;">as&nbsp; soon as</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>Wednesday<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>evening <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>Tamil<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>MPs<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>and <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>Tamil<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>party <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>leaders<br />
+      </small></td>
+      <td style="vertical-align: top;"><small><br />
+      </small></td>
+<td style="vertical-align: top;"><small>he/she<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>discussion<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>do<br />
+
+      </small></td>
+      <td style="vertical-align: top; font-weight: bold;"><small><span style="text-decoration: underline;">that</span> <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>seem<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+
+      </small></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;"><small>English:
+      </small></td>
+      <td colspan="18" rowspan="1" style="vertical-align: top;"><small>It seems<span style="text-decoration: underline;">
+that</span> she will discuss with Tamil MPs and Tamil party leaders as soon as she returns to Colombo .<br />
+
+      </small></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+The <a href="#Figure_4.8:_Analytical_Function_-_AuxC">Figures 4.8</a> and <a href="#Figure_4.9:_Analytical_Function_-_AuxC">Figure 4.9</a> illustrate the usage of <span style="font-style: italic;">AuxC</span>.<br />
+
+
+<br />
+
+
+<h3>AuxG</h3>The symbols other than <span style="font-style: italic;">comma</span> and <span style="font-style: italic;">sentence boundaries</span> are labeled with AuxG. The <a href="#Figure_4.10:_Analytical_Function_-_AuxG">Figure 4.10</a> shows the usage of AuxG label.<br />
+
+<br />
+<br />
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td style="vertical-align: top;"><img style="width: 576px; height: 280px;" alt="An example for AuxG" title="An example for AuxG" src="images/AuxG.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.10:_Analytical_Function_-_AuxG">Figure 4.10: Analytical
+Function - AuxG</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">ஆனால்  <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">நாங்கள் &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">(<br />
+      </td>
+      <td style="vertical-align: top;">காங்கிரஸ் <br />
+</td><td style="vertical-align: top;">)&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">மத&nbsp;  <br />
+      </td><td style="vertical-align: top;">, <br />
+      </td>
+      <td style="vertical-align: top;">ஜாதி&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">அரசியலை <br />
+      </td>
+      <td style="vertical-align: top;">கடுமையாக&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">எதிர்க்கிறோம் <br />
+      </td>
+      <td style="vertical-align: top;">. <br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">AnAl<br />
+      </td>
+      <td style="vertical-align: top;">wAngkaL <br />
+      </td>
+      <td style="vertical-align: top;">(<br />
+      </td>
+      <td style="vertical-align: top;">kAngkiraS<br />
+      </td>
+      <td style="vertical-align: top;">)<br />
+      </td>
+      <td style="vertical-align: top;">&nbsp; maTa<br />
+      </td><td style="vertical-align: top;">, <br />
+      </td>
+      <td style="vertical-align: top;">jATi <br />
+      </td>
+      <td style="vertical-align: top;">araciyalai&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">katumaiyAka&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">eTirkkiROm<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">But <br />
+      </td>
+      <td style="vertical-align: top;">we<br />
+      </td>
+      <td style="vertical-align: top;">(  <br />
+      </td>
+      <td style="vertical-align: top;">Congress<br />
+      </td>
+      <td style="vertical-align: top;">) <br />
+      </td>
+      <td style="vertical-align: top;">&nbsp;religious
+      </td><td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top;">caste</td>
+      <td style="vertical-align: top;">politics </td>
+      <td style="vertical-align: top;">vehemently&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">oppose-we<br />
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="12" style="vertical-align: top;">But we (Congress) vehemently oppose the religious and caste poltics .<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+
+<br />
+<h3>AuxK</h3><span style="font-style: italic;">AuxK</span>&nbsp; is the
+sentence terminal punctuation, usually full stop at the end of a
+sentence will receive this label. There are also other symbols such as
+(:, ?, !), will also receive <span style="font-style: italic;">AuxK</span>.<br />
+
+<h3>AuxP</h3><br />
+<span style="font-style: italic;">AuxP</span> is used to mark the
+postpositions (heads) of the postpositional phrases.&nbsp; The
+postposition will recieve the <span style="font-style: italic;">AuxP</span> label and the element attached to
+<span style="font-style: italic;">AuxP</span> will receive the afun (AAdjn , AComp, Atr, Comp) according to
+their context of occurrence. The following figures show, how <span style="font-style: italic;">AuxP</span> is labeled.<br />
+
+<br />
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td style="vertical-align: top;"><img style="width: 531px; height: 396px;" alt="An example for AuxP" title="An example for AuxP" src="images/AuxP.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.11:_Analytical_Function_-_AuxP">Figure 4.11: Analytical
+Function - AuxP</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><span style="font-weight: bold;">Tamil</span>:<br />
+
+      </small></td>
+      <td style="vertical-align: top; text-decoration: underline;"><small>2001-ம்<br />
+
+      </small></td>
+      <td style="vertical-align: top; text-align: center; text-decoration: underline;"><small>ஆண்ட்<br />
+      </small></td>
+      <td style="vertical-align: top; text-decoration: underline;"><small>இலிருந்து&nbsp;  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>ஆறு <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>ஆண்டுகளுக்கு&nbsp;&nbsp; <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>பொருளாதாரம்&nbsp; <br />
+
+      </small></td><td style="vertical-align: top;"><small>மற்றும்&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>புள்ளியியல்&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>துறை&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>சிறப்பு&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>ஆணையர்&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>ஆகப்&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>பணியாற்ல்றினார்<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>. <br />
+      </small></td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><span style="font-weight: bold;">Tr:</span><br />
+
+      </small></td>
+      <td style="vertical-align: top; text-decoration: underline;"><small>2001-m<br />
+
+      </small></td>
+      <td style="vertical-align: top; text-decoration: underline;"><small>ANt <br />
+
+      </small></td>
+      <td style="vertical-align: top; text-decoration: underline;"><small>iliruwTu<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>ARu <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>ANtukaLukku <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>poruLATAram <br />
+
+      </small></td><td style="vertical-align: top;"><small>maRRum&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>puLLiyiyal <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>TuRai <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>ciRappu&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>ANaiyar <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>Akap <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>paNiyARRinAr <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+      </small></td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><small><span style="font-weight: bold;">Gloss:</span><br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>in 2001<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>year <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>from<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>six  <br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>years<br />
+
+      </small></td>
+      <td style="vertical-align: top;"><small>economy<br />
+
+      </small></td><td style="vertical-align: top;"><small>and <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>statistics <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>department&nbsp; <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>special<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>commissioner <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>- <br />
+      </small></td>
+      <td style="vertical-align: top;"><small>worked-he<br />
+      </small></td>
+      <td style="vertical-align: top;"><small>.<br />
+      </small></td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="14" style="vertical-align: top;"><span style="text-decoration: underline;">from 2001</span>, (he) <span style="font-style: italic;">worked as</span> special comminssioner of economy and statistics depeartment for six years.<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+<tbody><tr><td style="vertical-align: top;"><img style="width: 352px; height: 277px;" alt="An example for AuxP" title="An example for AuxP" src="images/AuxP1.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><a name="Figure_4.12:_Analytical_Function_-_AuxP"><span style="font-style: italic;"><span style="font-style: italic;">Figure 4.12: Analytical
+Function - AuxP</span><span style="font-style: italic;"><br />
+      </span></span></a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<br />
+
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">வவுனியாவில்</span>  <br />
+      </td>
+      <td colspan="1" rowspan="1" style="vertical-align: top; text-align: center; text-decoration: underline;">உள்ள <br />
+</td><td style="vertical-align: top;">முகாமை</td>
+
+      
+      <td style="vertical-align: top;">அவர் <br />
+      </td>
+      <td style="vertical-align: top;">செவ்வாய்க்கிழமை <br />
+      </td>
+      <td style="vertical-align: top;">பார்வையிட்டார்&nbsp;  <br />
+      </td><td style="vertical-align: top;">. <br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">vavuniyAvil</span> <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">uLLa</span><br />
+      </td>
+      <td style="vertical-align: top;">mukAmai <br />
+      </td>
+      <td style="vertical-align: top;">avar <br />
+      </td>
+      <td style="vertical-align: top;">cevvAykkizamai <br />
+      </td>
+      <td style="vertical-align: top;">pArvaiyittAr <br />
+      </td><td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">in vavunia<br />
+</td>
+      <td style="vertical-align: top;">exist<br />
+</td>
+      <td style="vertical-align: top;">camp<br />
+</td>
+      <td style="vertical-align: top;">he/she<br />
+</td>
+      <td style="vertical-align: top;">on Tuesday <br />
+</td>
+      <td style="vertical-align: top;">visited <br />
+</td><td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="7" style="vertical-align: top;">On Tuesday, he/she visited the camp <span style="text-decoration: underline;">in the vavuniya</span> .<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+
+<br />
+<br />
+<h3>AuxS</h3><span style="font-style: italic;">AuxS</span> is used to label the technical root of a tree. In the <a href="#Figure_4.12:_Analytical_Function_-_AuxP">Figure 4.12</a>,
+the technical root (StaA) is the root of the tree structure . To this
+node, the predicate and the sentencing ending node will be attached .<br />
+<br />
+
+<h3>AuxV</h3>
+
+Auxiliary verbs are assigned the afun AuxV. In compound
+verb constructions, the auxiliary verb will be hanged under
+lexical verb.&nbsp; All auxiliary words including passive constructions will receive tha afun AuxV<br />
+
+In the <a href="#Figure_4.13:_Analytical_Function_-_AuxV">Figure 4.13,</a>
+there are two auxiliary verbs (<span style="font-style: italic;">patu</span>/'experience,' uL/'exist'). The auxiliary <span style="font-style: italic;">patu/'experience' </span>and <span style="font-style: italic;">&nbsp; uLLaTu/'be exist' </span>are labeled with<span style="font-style: italic;"> AuxV</span>. The lexical verb will receive the label <span style="font-style: italic;">Pred</span> if there is only one clause in the sentence, otherwise the label of the lexical verb will depend upon the upper clauses.<br />
+
+<br />
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td style="vertical-align: top;"><img style="width: 451px; height: 275px;" alt="An example for AuxV" title="An example for AuxV" src="images/AuxV.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.13:_Analytical_Function_-_AuxV">Figure 4.13: Analytical Function - AuxV</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">எம்பிக்களுக்கு  <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">மேலும்<br />
+      </td>
+      <td style="vertical-align: top;">ரூ.  <br />
+      </td>
+      <td style="vertical-align: top;">10&nbsp; 
+      </td>
+      <td style="vertical-align: top;">ஆயிரம் <br />
+      </td>
+      <td style="vertical-align: top;">ஊதிய&nbsp;&nbsp; <br />
+      </td><td style="vertical-align: top;">உயர்வு <br />
+      </td>
+      <td style="vertical-align: top;">அறிவிக்கப்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">பட்ட்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">உள்ளது<br />
+      </td>
+      <td style="vertical-align: top;">.</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">empikkaLukku&nbsp;&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">mElum<br />
+      </td>
+      <td style="vertical-align: top;">rU.<br />
+      </td>
+      <td style="vertical-align: top;">10<br />
+      </td>
+      <td style="vertical-align: top;">Ayiram <br />
+      </td>
+      <td style="vertical-align: top;">UTiya &nbsp; <br />
+      </td><td style="vertical-align: top;">uyarvu&nbsp;&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">aRivikkap&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">patt&nbsp;&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">uLLaTu<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">to MPs<br />
+</td>
+      <td style="vertical-align: top;">more <br />
+</td>
+      <td style="vertical-align: top;">Rs. <br />
+</td>
+      <td style="vertical-align: top;">10<br />
+</td>
+      <td style="vertical-align: top;">thousand&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">salary <br />
+</td><td style="vertical-align: top;">increment <br />
+      </td>
+      <td style="vertical-align: top;">announced <br />
+      </td>
+      <td style="vertical-align: top;">AUX-PASS&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">AUX-PERF&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="11" style="vertical-align: top;">Rs. 10000 more salary increment <span style="text-decoration: underline;">has been</span> announced.<br />
+</td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+<br />
+
+<h3>AuxX</h3>All commas except the commas acting as coordinators will receive the afun  <span style="font-style: italic;"><span style="font-style: italic;">AuxX</span>.<br />
+<br />
+
+<h3>AuxZ</h3><br /></span>The clitics <span style="font-style: italic;">um, E, TAn, mattum </span>will receive the afun<span style="font-style: italic;"> AuxZ. </span>The Figure 4.14 illustrates the labeling <span style="font-style: italic;">AuxZ</span>.<br />
+<span style="font-style: italic;"><br />
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td style="vertical-align: top;"><img style="width: 378px; height: 279px;" alt="An example for AuxZ" title="An example for AuxZ" src="images/AuxZ.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.14:_Analytial_Function_-_AuxZ">Figure 4.14: Analytical
+Function - AuxZ</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">சமீபத்தில் <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">4&nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">லட்சம் <br />
+      </td>
+      <td style="vertical-align: top;">சிமெண்ட் <br />
+      </td>
+      <td style="vertical-align: top;">மூட்டைகளைய்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">உம்</span> <br />
+      </td>
+<td style="vertical-align: top;">இந்தியா  <br />
+      </td><td style="vertical-align: top;">வழங்கியது <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">camIpaTTil&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">4 <br />
+</td>
+      <td style="vertical-align: top;">latcam&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">cimeNt <br />
+</td>
+      <td style="vertical-align: top;">mUttaikaLy<br />
+</td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">um</span><br />
+      </td>
+<td style="vertical-align: top;">&nbsp;iwTiyA <br />
+</td><td style="vertical-align: top;">vazangkiyaTu <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">recently <br />
+</td>
+      <td style="vertical-align: top;">4 <br />
+</td>
+      <td style="vertical-align: top;">lakhs<br />
+</td>
+      <td style="vertical-align: top;">cement <br />
+</td>
+      <td style="vertical-align: top;">packets<br />
+</td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">also</span>&nbsp; <br />
+      </td>
+<td style="vertical-align: top;">India<br />
+</td><td style="vertical-align: top;">provided<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="9" style="vertical-align: top;">Recently, India <span style="text-decoration: underline;">also</span> provided 4 lakhs cement packets<br />
+</td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+<br />
+
+<h3>CC</h3><br /></span>The label CC is used to mark in places where a word is part of another word.&nbsp; The CC
+label of a word would indicate that the current word is part of the
+parent word. In Tamil, a single action verb can be split into multiple
+words. But when during annotation, only one word in the compound word will qualify for
+taking arguments, the other words will be marked with CC relation,
+meaning they are part of the parent word. For ex, the <a href="#Figure_4.15:_Analytial_Function_-_CC">Figure 4.15</a> indicates that the Tamil verb (veRRipeRu/'to win') is splitted into 2 words - veRRi peRu.
+In these situations, the first word is taken as a parent and all other
+words including arguments of the verb are attached to the main part of
+the verb. It is still not clear, whether this decision is right,
+because the morphological marker of the verb will be added to the end
+part of the compound verb.<br />
+
+<span style="font-style: italic;"><br />
+<br />
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+<tbody><tr><td style="vertical-align: top;"><img style="width: 424px; height: 221px;" alt="An example for CC" title="An example for CC" src="images/CC.png" /></td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.15:_Analytial_Function_-_CC">Figure 4.15: Analytical
+Function - CC</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<br />
+
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">குஜராத் <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">உள்ளாட்சி &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">தேர்தலில் <br />
+      </td>
+      <td style="vertical-align: top;">பெரும்பானமயான <br />
+      </td>
+      <td style="vertical-align: top;">இடங்களில் <br />
+      </td>
+      <td style="vertical-align: top;">பாஜக<br />
+      </td><td style="vertical-align: top;">வெற்றி <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">பெற்றுள்ளது <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">kujarAt <br />
+      </td>
+      <td style="vertical-align: top;">uLLAtci<br />
+</td>
+      <td style="vertical-align: top;">TErTalil<br />
+</td>
+      <td style="vertical-align: top;">perumpAnmaiyAna&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">itangkaLil&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">pAjaka&nbsp; 
+      </td><td style="vertical-align: top;">veRRi <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">peRRuLLaTu <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">Gujarat<br />
+      </td>
+      <td style="vertical-align: top;">municipal<br />
+</td>
+      <td style="vertical-align: top;">in the election<br />
+</td>
+      <td style="vertical-align: top;">majority <br />
+</td>
+      <td style="vertical-align: top;">palces<br />
+</td>
+      <td style="vertical-align: top;">BJP. <br />
+      </td><td style="vertical-align: top;">victory<br />
+      </td>
+      <td style="vertical-align: top;">received <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="9" style="vertical-align: top;">In the Gujart municipal elections, BJP has won in majority of the places<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+
+<br />
+At present, multiple words (not modifiers) making up a&nbsp; single noun&nbsp; are not handled.<br />
+
+<h3>Comp</h3>Comp label is used to mark the obligatory element not attaching to verbs. For example, consider the phrase "<span style="font-style: italic;"><span style="font-weight: bold;">1200kk um</span> <span style="color: rgb(255, 102, 0);">mERpatta</span> poTumakkaL uyirizawT uLLanar/<span style="color: rgb(255, 102, 0);">more than</span> 1200 people have been died</span>", in that phrase, <span style="font-style: italic;"><span style="font-weight: bold;">1200kk</span> </span>occurs as an obligatory argument to <span style="font-style: italic;"><span style="color: rgb(255, 102, 0);">mERpatta.</span></span> So, <span style="font-style: italic;"><span style="font-weight: bold;">1200kk </span></span>will be labeled with <span style="font-style: italic;">Comp</span>. Even nouns (not modifiers) which obligatorily attach to&nbsp; other nouns are labeled with <span style="font-style: italic;">Comp</span> afun. Other occurrences of <span style="font-style: italic;">Comp</span>
+is when&nbsp; postpositional phrase (PP phrase) attaches to a noun
+phrase. The postpositional head will receive AuxP label whereas the
+head noun phrase of the PP phrase will receive <span style="font-style: italic;">Comp</span> label. The following figure will illustrate the example mentioned above. <br />
+<br />
+</span><span style="font-style: italic;"><br />
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+<tbody><tr><td style="vertical-align: top;"><img style="width: 563px; height: 338px;" alt="An example for Comp" title="An example for Comp" src="images/Comp.png" /><br />
+</td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.16:_Analytial_Function_-_Comp">Figure 4.16: Analytical
+Function - Comp</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<br />
+
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">ஆப்கனில்  <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">,<br />
+      </td>
+      <td style="vertical-align: top;">2010 <br />
+      </td>
+      <td style="vertical-align: top;">ஜனவரி <br />
+      </td>
+      <td style="vertical-align: top;">முதல்  <br />
+      </td>
+      <td style="vertical-align: top;">ஜூன்&nbsp; <br />
+      </td><td style="vertical-align: top;">மாதம்  <br />
+      </td>
+      <td style="vertical-align: top;">வரை  <br />
+      </td>
+      <td style="vertical-align: top;">மட்டும் <br />
+      </td><td style="vertical-align: top;">சுமார்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">1200க்க்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">உம்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">மேற்பட்ட&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">பொதுமக்கள்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">உயிரிழந்த்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">உள்ளனர்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">Apkanil <br />
+      </td>
+      <td style="vertical-align: top;">, <br />
+</td>
+      <td style="vertical-align: top;">2010 <br />
+</td>
+      <td style="vertical-align: top;">janavari&nbsp;  <br />
+</td>
+      <td style="vertical-align: top;">muTal&nbsp;  <br />
+</td>
+      <td style="vertical-align: top;">jUn &nbsp; 
+      </td><td style="vertical-align: top;">mATam&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">varai  <br />
+      </td>
+      <td style="vertical-align: top;">mattum&nbsp; <br />
+      </td><td style="vertical-align: top;">cumAr&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">1200kk <br />
+      </td>
+      <td style="vertical-align: top;">um <br />
+      </td>
+      <td style="vertical-align: top;">mERpatta&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">poTumakkaL&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">uyirizawT&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">uLLanar <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">In Afhgan<br />
+      </td>
+      <td style="vertical-align: top;">,&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">2010<br />
+</td>
+      <td style="vertical-align: top;">January  <br />
+</td>
+      <td style="vertical-align: top;">from <br />
+</td>
+      <td style="vertical-align: top;">June  <br />
+      </td><td style="vertical-align: top;">month<br />
+      </td>
+      <td style="vertical-align: top;">to&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">only <br />
+      </td><td style="vertical-align: top;">approximately&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">1200<br />
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top;">more than&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">people <br />
+      </td>
+      <td style="vertical-align: top;">die<br />
+      </td>
+      <td style="vertical-align: top;">AUX-PERF<br />
+      </td>
+      <td style="vertical-align: top;">.&nbsp; <br />
+      </td>
+
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="17" style="vertical-align: top;">In Afhganistan, more than <span style="text-decoration: underline;">1200</span> people have been killed from 2010 January to June alone.<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table></span><br />
+<span style="font-style: italic;">
+
+<h3>Coord</h3></span>
+
+Coordination is one of the complex phenomena in Tamil. In
+Tamil, coordination conjunction can be performed using at least 2
+difierent ways. In the first method (for and coordination), all
+conjoining elements will add the inclusive particle 'um'(also) at the
+end of the word form. Thus in this method, all conjoining elements
+possess the suffix (um) which would indicate the coordination is taking
+place. Moreover, the <span style="font-family: Courier New,Courier,monospace;">'is_member'</span>&nbsp; attribute of the conjoining elements will be set to 1. The separator (comma) between elements is
+optional. It is perfectly legitimate if there is no comma between any
+of the conjoining elements. <br />
+
+
+<br />
+
+
+Second method is similar to English and coordination. The conjunction
+word maRRum'(and) will be added between conjoining elements. If there
+are more than 2 elements,&nbsp; then maRRum will be added just before
+the last conjunct. The other elements will be separated by comma. Again, the <span style="font-family: Courier New,Courier,monospace;">'is_member'</span>&nbsp; attribute of the conjoining elements will be set to 1.<br />
+
+
+<br />
+
+
+The 'or' coordination is performed in a similar way for both the
+methods. For the first method, the suffix 'O' will be added, and for
+the second method, the conjunction word 'allaTu'(or) will be added
+between the last 2 conjoining elements. The remaining elements will be
+separated using comma.&nbsp; 
+The <a href="#Figure_4.17:_Analytical_Function_-_Coord">Figure 4.17</a> illustrates the usage of the <span style="font-style: italic;">Coord.</span><br />
+
+<span style="font-style: italic;"><br />
+<br />
+
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+<tbody><tr><td style="vertical-align: top;"><img style="width: 411px; height: 398px;" alt="An example for Coord" title="An example for Coord" src="images/Coord.png" /><br />
+</td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.17:_Analytical_Function_-_Coord">Figure 4.17: Analytical
+Function - Coord</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<br />
+
+
+
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">கடந்த  <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">சில&nbsp;&nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">மாதங்களுக்கு  <br />
+      </td>
+      <td style="vertical-align: top;">விழிப்புப்<br />
+      </td>
+      <td style="vertical-align: top;">பணி <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">மற்றும்&nbsp;  <br />
+      </td><td style="vertical-align: top;">கண்காணிப்பு&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">ஆணையர்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">ஆக&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">நியமிக்கப் <br />
+      </td>
+      <td style="vertical-align: top;">பட்டார் <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">katawTa <br />
+      </td>
+      <td style="vertical-align: top;">cila <br />
+      </td>
+      <td style="vertical-align: top;">mATangkaLukku&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">vizippup&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">paNi&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">maRRum <br />
+      </td><td style="vertical-align: top;">kaNkANipp <br />
+      </td>
+      <td style="vertical-align: top;">ANaiyar <br />
+      </td>
+      <td style="vertical-align: top;">Aka <br />
+      </td>
+      <td style="vertical-align: top;">wiyamikkap&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">pattAr<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">past <br />
+      </td>
+      <td style="vertical-align: top;">few <br />
+</td><td style="vertical-align: top;">months <br />
+</td><td style="vertical-align: top;">vigilance&nbsp; <br />
+</td><td style="vertical-align: top;">&nbsp;work<br />
+</td><td style="vertical-align: top;">&nbsp;and <br />
+</td><td style="vertical-align: top;">supervision<br />
+      </td>
+      <td style="vertical-align: top;">commissioner <br />
+      </td>
+      <td style="vertical-align: top;">as<br />
+      </td>
+      <td style="vertical-align: top;">appointed<br />
+      </td>
+      <td style="vertical-align: top;">AUX-PASS <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+</tr><tr><td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="12" style="vertical-align: top;">For the past few months, (he/she) has been appointed as vigilance work <span style="text-decoration: underline;">and</span> commissioner of supervision .<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<br />
+<h3>Obj</h3></span>
+
+Direct and indirect objects receive the afun Obj. The <a href="#Figure_4.18:_Analytical_Function_-_Obj">Figure 4.18</a> also has
+the direct object 'a new law'
+which is labeled as Obj.<br />
+
+
+<span style="font-style: italic;"><br />
+
+<br />
+
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;">
+
+
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 378px; height: 336px;" alt="An example for Obj" title="An example for Obj" src="images/Obj.png" /><br />
+      </td>
+    </tr>
+    <tr style="font-style: italic;" align="center">
+      <td style="vertical-align: top;"><a name="Figure_4.18:_Analytical_Function_-_Obj">Figure 4.18: Analytical
+Function - Obj<br />
+
+      </a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+
+
+
+  
+    
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+<tbody><tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">Tamil:
+      <br />
+      </td>
+      <td style="vertical-align: top;">அமெரிக்க <br />
+</td>
+      <td style="vertical-align: top;">அதிபர்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">ஒபாமாவின்&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">இந்தியப்&nbsp; 
+      </td>
+      <td style="vertical-align: top;">பயணம்&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">மிகுந்த&nbsp; <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">எதிர்பார்ப்பை&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">ஏற்படுத்திய் <br />
+      </td><td style="vertical-align: top;">உள்ளது <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-style: italic; font-weight: bold;">Tr: </span><br />
+      </td>
+      <td style="vertical-align: top;">amerikka&nbsp;&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">aTipar <br />
+</td>
+      <td style="vertical-align: top;">opAmAvin<br />
+</td>
+      <td style="vertical-align: top;">iwTiyap <br />
+</td>
+      <td style="vertical-align: top;">payaNam&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">mikuwTa&nbsp; <br />
+</td>
+      <td style="vertical-align: top; text-decoration: underline;">eTirpArppai <br />
+</td>
+      <td style="vertical-align: top;">ERpatuTTiy&nbsp; <br />
+</td><td style="vertical-align: top;">uLLaTu<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">Gloss:
+      <br />
+      </td>
+      <td style="vertical-align: top;">American <br />
+</td>
+      <td style="vertical-align: top;">president&nbsp;&nbsp; <br />
+</td>
+      <td style="vertical-align: top;">Obama's <br />
+</td>
+      <td style="vertical-align: top;">India <br />
+</td>
+      <td style="vertical-align: top;">visit <br />
+</td>
+      <td style="vertical-align: top;">a lot of <br />
+</td>
+      <td style="vertical-align: top;">expections <br />
+</td>
+      <td style="vertical-align: top;">created<br />
+</td><td style="vertical-align: top;">AUX-PERF<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">English:
+      <br />
+      </td>
+      <td colspan="8" rowspan="1" style="vertical-align: top;">American president Obama's India visit created a lot of <span style="text-decoration: underline;">expectations</span> .<br />
+</td><td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+</tr></tbody>
+</table>
+
+<br />
+
+<h3>Pnom</h3></span>
+Nominal predicate occurs in the copula (be) constructions
+or verbless constructions. In these constructions, the sentence will
+not have any lexical verb. Instead, the predicate will contain only
+noun phrase. The noun phrase will be the predicate, and the afun label
+Pnom will be assigned to the noun phrase. The <span style="color: black;">Figure 4.19</span> and the following example shows the usage of Pnom. <span style="font-style: italic;"><br />
+<br />
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;">
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 261px; height: 275px;" alt="An example for afun Pnom" title="An example for afun Pnom" src="images/pnom.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.19:_Analytical_Function_-_Pnom">Figure 4.19: Analytical Function - Pnom</a></span><br />
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">Tamil:
+      <br />
+      </td>
+      <td style="vertical-align: top;">இது <br />
+      </td>
+      <td style="vertical-align: top;">மரியாதை <br />
+      </td>
+      <td style="vertical-align: top;">நிமித்தம் <br />
+      </td>
+      <td style="vertical-align: top;">ஆன <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">சந்திப்பு <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">Tr:
+      <br />
+      </td>
+      <td style="vertical-align: top;">iTu<br />
+      </td>
+      <td style="vertical-align: top;">mariyATai <br />
+      </td>
+      <td style="vertical-align: top;">wimiTTam <br />
+      </td>
+      <td style="vertical-align: top;">Ana <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">cawTippu <br />
+      </td>
+      <td style="vertical-align: top;">. <br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">Gloss:
+      <br />
+      </td>
+      <td style="vertical-align: top;">This&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">courtesy <br />
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top;">call<br />
+      </td>
+      <td style="vertical-align: top;">. <br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">English:
+      <br />
+      </td>
+      <td colspan="6" rowspan="1" style="vertical-align: top;">This is
+a courtesy <span style="text-decoration: underline;">call</span> .<br />
+      </td>
+    </tr>
+  </tbody>
+</table><br /><br /><br /><br />
+<h3>Pred</h3></span>
+
+Predicate of the main clause will be given <span style="font-style: italic;">Pred</span>. Only fnite verbs in
+Tamil can be the predicate of the sentence. In Tamil, fnite verbs at
+the end of the sentences are main predicates. So they receive <span style="font-style: italic;">Pred</span>
+afun. In some cases, finite verbs will be absent at the end of the
+sentence. In that case, if there is a nominal predicate, it will
+receive Pnom afun or there won't be any Pred for that sentence.<span style="font-style: italic;"><br />
+
+<br />
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 385px; height: 222px;" alt="An example for Pred" title="An example for Pred" src="images/Pred.png" /><br />
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-style: italic;"><a name="Figure_4.20:_Analytial_Function_-_Pred">Figure 4.20: Analytial
+Function - Pred</a></span><br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tamil</span>:<br />
+      </td>
+      <td style="vertical-align: top;">பன்னாட்டு  <br />
+      </td>
+      <td style="vertical-align: top; text-align: center;">தொழில் &nbsp;
+      <br />
+      </td>
+      <td style="vertical-align: top;">நிறுவனங்களில்&nbsp;  <br />
+      </td>
+      <td style="vertical-align: top;">தொழிற்சங்க&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">உரிமைகள் <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">மறுக்கப்&nbsp;</span>  <br />
+      </td><td style="vertical-align: top;">படுகின்றன <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Tr:</span><br />
+      </td>
+      <td style="vertical-align: top;">pannAttu <br />
+      </td>
+      <td style="vertical-align: top;">Tozil <br />
+      </td>
+      <td style="vertical-align: top;">wiRuvanangkaLil <br />
+      </td>
+      <td style="vertical-align: top;">ToziRcangka&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">urimaikaL&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">maRukkap</span>&nbsp; <br />
+      </td><td style="vertical-align: top;">patukinrana <br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Gloss:</span><br />
+      </td>
+      <td style="vertical-align: top;">multinational <br />
+      </td>
+      <td style="vertical-align: top;">business&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">in industries<br />
+      </td>
+      <td style="vertical-align: top;">union<br />
+</td>
+      <td style="vertical-align: top;">rights 
+      </td>
+      <td style="vertical-align: top;">denied <br />
+      </td><td style="vertical-align: top;">AUX-PASS<br />
+      </td>
+      <td style="vertical-align: top;">.<br />
+      </td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">English:</span><br />
+      </td>
+      <td rowspan="1" colspan="8" style="vertical-align: top;">In multinational business industries, union rights are <span style="text-decoration: underline;">denied</span> .<br />
+
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+
+<br /><br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br />
+<h3>Sb</h3></span>
+
+The label Sb is assigned to the subject of the sentence. If
+there are more than one subjects in the sentence (i.e in the case of
+multiple clauses), then the label Sb will be assigned to all of them.
+The <a href="#Figure_4.21:_Analytical_Function_-_Sb">Figure 4.21</a>
+shows the example&nbsp; usage of Sb.<br />
+
+
+<span style="font-style: italic;"><br />
+
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;">
+
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 190px; height: 167px;" alt="An example for Sb" title="An example for Sb" src="images/Sb.png" /><br />
+      </td>
+    </tr>
+    <tr style="font-style: italic;" align="center">
+      <td style="vertical-align: top;"><a name="Figure_4.21:_Analytical_Function_-_Sb">Figure 4.21: Analytical
+Function - Sb<br />
+
+      </a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<table style="text-align: left; margin-left: auto; margin-right: auto;">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">Tamil:
+      <br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">தொழிலாளர்கள் <br />
+      </td>
+      <td style="vertical-align: top;">பழிவாங்கப்&nbsp; <br />
+      </td>
+      <td style="vertical-align: top;">படுகின்றனர்  <br />
+      </td>
+      <td colspan="1" rowspan="1" style="vertical-align: top;">.<br />
+</td>
+      
+      
+      
+      
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-style: italic; font-weight: bold;">Tr: </span><br />
+      </td>
+      <td style="vertical-align: top; text-decoration: underline;">TozilALarkaL<br />
+      </td>
+      <td style="vertical-align: top;">pazivAngkap <br />
+      </td>
+      <td style="vertical-align: top;">patukinRanar <br />
+      </td>
+      <td colspan="1" rowspan="1" style="vertical-align: top;">.<br />
+</td>
+      
+      
+      
+      
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">Gloss:
+      <br />
+      </td>
+      <td style="vertical-align: top;">employees<br />
+      </td>
+      <td style="vertical-align: top;">are revenged<br />
+      </td>
+      <td style="vertical-align: top;">AUX-PASS<br />
+      </td>
+      
+      
+      
+      <td style="vertical-align: top;">.<br />
+</td>
+      
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; font-style: italic;">English:
+      <br />
+      </td>
+      <td colspan="4" rowspan="1" style="vertical-align: top;"><span style="text-decoration: underline;">The employees</span> are revenged .<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+</span>
+<h3><span style="font-style: italic;"><span style="font-weight: bold;"><span style="font-weight: bold;"><a name="4.4.References">References</a></span></span></span></h3>
+<br />
+
+<table style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">1.<br />
+      </td>
+      <td style="vertical-align: top;">Thomas Lehmann, A Grammar of Modern Tamil, Pondicherry Institute of Linguistics and Culture (PILC), 1989.</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<h3><span style="font-style: italic;"><span style="font-weight: bold;"><span style="font-weight: bold;" /></span></span></h3>
+<span style="font-style: italic;"><span style="font-weight: bold;"><span style="font-weight: bold;"><br />
+
+</span></span></span></div><a name="4.4.References"><br />
+
+</a><div id="footer">
+<div style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width: 0pt;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />
+<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">TamilTB.v0.1</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ufal.mff.cuni.cz/" property="cc:attributionName" rel="cc:attributionURL">Institute of Formal and Applied Linguistics
+(UFAL)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+The webpages are maintained by <a href="mailto:ramasamy@ufal.mff.cuni.cz">Loganathan
+Ramasamy</a>. Last modified: 8th May, 2011.
+</div>
+</div>
+
+</body></html>
