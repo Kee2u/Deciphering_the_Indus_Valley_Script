@@ -1,6 +1,17 @@
 # Deciphering the Indus Valley Script
 
-In this project, Sonia Sharma and I (Keetu Jayakumar) have attempted to partially decipher the Indus Valley Script using Python, PostgreSQL, Machine learning algorithms (SVM) and Statistical Analysis.
+This project is an attempt to partially decipher the ancient Indus Valley script by comparing it with modern Tamil.
+
+Our strategy is to: <br>
+<strong> Convert Tamil script from syllabic to logosyllabic by converting morphemes to signs. Perform statistical analysis to compare the converted script with the Indus script. </strong> 
+
+Here are notes on terminology: <br>
+<strong> Tamil </strong> - A Dravidian language <br>
+<strong> Syllabic script </strong> - A writing system whose characters represent syllables. <br>
+<strong> Logosyllabic script </strong> - A writing systems whose characters represent syllables, words and morphemes. <br>
+<strong> Morpheme </strong>  - The smallest part of a word that changes its meaning. Ex- 'ing' in 'following' <br>
+
+Note that the minimum number of signs required to express a full Subject-Object-Verb construction in a logosyllabic script is 3. The mean text length of the Harappan (Indus Valley) script is 4.5 signs. This suggests that it is a logosyllabic script and is why we are converting Tamil to one.
 
 <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/Keetu_Code/Pictures/Unicorn.jpg?raw=true" width = 400>
 
@@ -29,13 +40,34 @@ From the vocabulary, it was also possible to estimate when the two populations s
 From the aforementioned archaeological and linguistic evidence it is possible to date the link between Dravidian and Elamite speaking populations as sometime between 7900BCE and 3000BCE. This corresponds to the genetic evidence that first Indians mixed with the Iranian agriculturalists between 4700 and 3000BCE. This suggests that the language of the Harappans is most likely Proto Dravidian.
 
 ## Decipherment Strategy
-We will be testing the hypothesis that Proto Dravidian is the language of the Harappans in this project by comparing it to the Harappan script.
+We will be testing the hypothesis that Proto Dravidian is the language of the Harappans in this project by comparing modern Tamil with the Harappan script. 
 
-A significant step towards decipherment has been made by Dr. Brian Wells and Dr. Andreas Fuls who have created an extensive database (corpus) of Indus texts. I have contacted Dr. Andres Fuls and received access to this database.
+A significant step towards decipherment has been made by Dr. Brian Wells and Dr. Andreas Fuls who have created an extensive database (corpus) of Indus texts. I have contacted Dr. Andreas Fuls and received access to this database. We will also be working with a tagged Part of Speech database of modern Tamil.
 
-Our strategy is to convert Tamil (The main Dravidian language) from a syllabic to a logo syllabic script by converting morphemes to signs.
+Here is our plan:
 
-However, the first step towards decipherment has been made by Dr. Brian Wells and Dr. Andreas Fuls who have created an extensive database (corpus) of Indus texts. I have contacted Dr. Andres Fuls and received access to this database for this project.
+### Use Python's pandas library on the tagged database to convert Tamil script from syllabic to logosyllabic.
+The tagged Tamil database has segmented some of the morphemes but not all of them. We completed segmenting the noun and verb morphemes using python and then assigned new signs to them.
+
+### Use PostgreSQL on an AWS RDS instance to store cleaned data. 
+We have chosen to use a cloud server so both members of our team can access the data.
+
+### Train an SVM machine learning algorithm on the morpheme segmented dataset and run it on an old Tamil dataset.
+Currently, we are performing the analysis on modern Tamil but in the future, we will also do a statistical analysis on Old Tamil (Tamil Brahmi and Sangam Tamil). This requires us to segment old Tamil morphemes as well.
+
+Based on our literature review, we have identified three ways of segmenting Tamil morphemes:
+1. Using an unsupervised approach - Ex Goldsmith's method of morpheme segmentation based on minimum descirption length (MDL) or a combination of (MDL) maximum a posterior as proposed by Creutz and Lagus in the Morfessor algorithm. 
+2. Using FSA (Finite State Automata) - This requires a thorough knowledge of grammar rules.
+3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%.
+
+We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes.
+
+### Perform statistical analysis on both the scripts
+We will perform stastical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequence and polyvalency. Some methods we will use include z-scores, multivariate segmentation method and frequency histograms.
+
+### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
+We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
+
 
 
 
