@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE text [
+<!ELEMENT text (volume (chapter ( sent (word))))>
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT chapter (#PCDATA)>
+<!ELEMENT sent (#PCDATA)>
+<!ELEMENT word (#PCDATA)>
+<!ATTLIST volume id CDATA>
+<!ATTLIST chapter id CDATA>
+<!ATTLIST sent id CDATA>
+<!ATTLIST word id CDATA>
+<!ATTLIST word pos CDATA>
+]>
+<text lang="ta">
+<volume id="1">
+<chapter id="1">
+<sent id="1">
+<word id="1" pos="postag">word1</word>
+</sent>
+</chapter>
+</volume>
+</text>
+
+

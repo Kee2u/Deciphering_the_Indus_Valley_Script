@@ -1,0 +1,25 @@
+Standard User License Agreement for AUKBC Tamil Part-of-Speech Corpus (AUKBC-TamilPOSCorpus2016v1)
+--------------------------------------------------------------------------------------------------
+Title: AUKBC Tamil Part-of-Speech Corpus (AUKBC-TamilPOSCorpus2016v1)
+
+AUKBC Tamil Part-of-Speech Corpus (AUKBC-TamilPOSCorpus2016v1) was developed by the Computational Linguistic Research Group (CLRG), AU-KBC Research Centre, MIT Campus of Anna University, Chrompet, Chennai, India. And is distributed by CLRG, AU-KBC Research Centre.
+
+“User”, is an organization or individual engaging in language education, Language Tools development, research and technology development agrees to use the data designated as AUKBC Tamil Part-of-Speech Corpus (AUKBC-TamilPOSCorpus2016v1) (the “Data”) and distributed subject to the following understandings, terms and conditions.
+
+1. Permitted and Prohibited Uses
+
+1.1. The Data may only be used for linguistic education, research and technology development, including but not limited to information retrieval, document understanding, machine translation or speech recognition.
+
+1.2. User shall not publish, retransmit, display, redistribute, reproduce or commercially exploit the Data in any form, except that User may include limited excerpts from the Data in articles, reports and other documents describing the results of User’s linguistic education, research and technology development.
+
+2. Copyright Notice and Disclaimer
+
+2.1. The Data is the property of CLRG, AU-KBC Research Centre and is protected by applicable copyright law. In no event shall User publish, retransmit, display, redistribute, or otherwise reproduce any or all of the Data in any format to anyone.
+
+2.2. USER ACKNOWLEDGES AND AGREES THAT AUKBC Tamil Part-of-Speech Corpus (AUKBC-TamilPOSCorpus2016v1) IS PROVIDED ON
+ AN “AS‐IS” BASIS AND THAT AU-KBC RESEARCH CENTRE MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR CONFORMITY WITH WHATEVER DOCUMENTATION IS PROVIDED. IN NO EVENT SHALL AU-KBC RESEARCH CENTRE BE LIABLE FOR SPECIAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE, INCIDENTAL OR OTHER DAMAGES, LOSSES, COSTS, CHARGES, CLAIMS, DEMANDS, FEES OR EXPENSES OF ANY NATURE OR KIND ARISING IN ANY WAY FROM THE FURNISHING OF, OR USER’S USE OF, AUKBC TAMIL PART-OF-SPEECH CORPUS (AUKBC-TamilPOSCorpus2016v1) 
+
+
+For CLRG, AU-KBC Research Centre:
+Dr. Sobha L ( Lalitha Devi)
+
