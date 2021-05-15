@@ -1,6 +1,6 @@
 # Deciphering the Indus Valley Script
 
-In this project, Sonia Sharma and I (Keetu Jayakumar) have attempted to partially decipher the Indus Valley Script. 
+In this project, Sonia Sharma and I (Keetu Jayakumar) have attempted to partially decipher the Indus Valley Script using Python, PostgreSQL, Machine learning algorithms (SVM) and Statistical Analysis.
 
 <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/Keetu_Code/Pictures/Unicorn.jpg?raw=true" width = 400>
 
