@@ -42,7 +42,7 @@ From the aforementioned archaeological and linguistic evidence it is possible to
 <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/Keetu_Code/Pictures/Mehrgarh.jpg?raw=true" width = 500>
 
 ## Decipherment Strategy
-Thus, we will be testing the <b>hypothesis</b> that Proto Dravidian is the language of the Harappans in this project by comparing modern Tamil with the Harappan script. 
+Thus, we will be testing the <b>hypothesis</b> that Proto Dravidian is the language of the Harappans by comparing modern Tamil with the Harappan script. 
 
 A significant step towards decipherment has been made by Dr. Brian Wells and Dr. Andreas Fuls who have created an extensive database (corpus) of Indus texts. Through Dr. Andreas Fuls, we received access to this database. We will also be working with a tagged Part of Speech database of modern Tamil.
 
