@@ -94,7 +94,7 @@ We will use Tableau’s JavaScript API to embed Tableau visualizations into a ja
 
 [11] Kumar, M. A., & Kp, S. (2015). AMRITA_CEN@FIRE-2014: Morpheme Extraction and Lemmatization for Tamil using Machine Learning. https://doi.org/10.1145/2824864.2824883
 
-Links:
+Links: <br>
 Tagged Tamil Dataset:
 https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data
 
