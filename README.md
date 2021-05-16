@@ -11,7 +11,7 @@ Here are notes on terminology: <br>
 <strong> Logosyllabic script </strong> - A writing systems whose characters represent syllables, words and morphemes. <br>
 <strong> Morpheme </strong>  - The smallest part of a word that changes its meaning. Ex- 'ing' in 'following' <br>
 
-Note that the minimum number of signs required to express a full Subject-Object-Verb construction in a logosyllabic script is 3. The mean text length of the Harappan (Indus Valley) script is 4.5 signs. This is how we know that the Indus script is logosyllabic.
+Note that the minimum number of signs required to express a full Subject-Object-Verb construction in a logosyllabic script is 3. The mean text length of the Harappan (Indus Valley) script is 4.5 signs. This is how we know that the Indus script is logosyllabic. [1]
 
 <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/Keetu_Code/Pictures/Unicorn.jpg?raw=true" width = 400>
 
@@ -21,21 +21,21 @@ The Indus Valley or Harappan civilization is India's oldest civilization spannin
  - The root language of the script is unknown.
  - The texts are short (mean = 4.5 signs).
  - There are no bilingual texts.
- - The complete corpus of the text was not widely available.
+ - The complete corpus of the text was not widely available. [1]
 
-Since 2013, however, there have been breakthroughs in the field of population genetics that have given clues about the root language of the script. Through studying mtDNA and Y chromosomes of ancient and modern populations (these get passed down through generations with a few mutations) and whole genome sequencing (which is no longer computationally expensive), it is possible to put a timeline on key population migrations into India starting from the original Out of Africa migrants. 
+Since 2013, however, there have been breakthroughs in the field of population genetics that have given clues about the root language of the script. Through studying mtDNA and Y chromosomes of ancient and modern populations (these get passed down through generations with a few mutations) and whole genome sequencing (which is no longer computationally expensive), it is possible to put a timeline on key population migrations into India starting from the original Out of Africa migrants. [2]
 
 ## Language
-One of the seminal papers that contributed to this understanding of population migrations was 'The Genomic Formation of South and Central Asia' published in March 2018 and authored by 92 scientists. 
+One of the seminal papers that contributed to this understanding of population migrations was 'The Genomic Formation of South and Central Asia' published in March 2018 and authored by 92 scientists. [3]
 
 It supported the theory that Indo-European-language speakers who called themselves Aryans migrated to India from central Asia around 4000 years ago (after the decline of the Harappan Civilization). This finding potentially rules out the possibility that the Harappan language was Indo-Europen.
 
-It also showed that Harappans were a mixture of Iranian agriculturists from the Zagros region and descendants of the 'First Indians' (Original out of Africa migrants). Genetic research showed that the admixture between the two populations took place between 4700 BCE and 3000 BCE. Archaeological evidence reinforced this. Similar quadrangular houses built with narrow bricks about sixty centimetres long, circular firepits filled with burnt pebbles and sequential slab pottery were found at both sites. 
+It also showed that Harappans were a mixture of Iranian agriculturists from the Zagros region and descendants of the 'First Indians' (Original out of Africa migrants). Genetic research showed that the admixture between the two populations took place between 4700 BCE and 3000 BCE. Archaeological evidence reinforced this. Similar quadrangular houses built with narrow bricks about sixty centimetres long, circular firepits filled with burnt pebbles and sequential slab pottery were found at both sites. [4]
 
 ### Proto Dravidian Evidence
-The 2013 paper ‘South Asia: Dravidian Linguistic History’ authored by Professor Franklin C. Southworth and Dr David W. McAlpin reconstructed Proto Dravidian (one of the two main Indian language families) vocabulary and found similarities with Proto Elamite vocabulary (the language of the Zagros region). The reconstructed Proto Dravidian vocabulary also pointed towards an agricultural lifestyle that was reinforced by archaeological evidence in the region of the admixture. This suggests that there was contact between proto dravidian and proto elamite speaking populations.
+The 2013 paper ‘South Asia: Dravidian Linguistic History’ authored by Professor Franklin C. Southworth and Dr David W. McAlpin reconstructed Proto Dravidian (one of the two main Indian language families) vocabulary and found similarities with Proto Elamite vocabulary (the language of the Zagros region). [5] The reconstructed Proto Dravidian vocabulary also pointed towards an agricultural lifestyle that was reinforced by archaeological evidence in the region of the admixture. This suggests that there was contact between proto dravidian and proto elamite speaking populations. 
 
-From the vocabulary, it was also possible to estimate when the two populations separated. The word ‘tal’ exists in both Elamite and Proto-Dravidian, but with different meanings. In Elamite, 'tal' means ‘write’ and in Proto-Dravidian, it means ‘push in’. In a paper McAlpin authored in 1981, he explains that the original meaning of ‘tal’ was to ‘push in’, but since cuneiform writing on clay tablets involved ‘pushing in’, the word came to mean ‘writing’ in Elamite after writing was invented. The means that the populations separated before cuneiform writing was invented.
+From the vocabulary, it was also possible to estimate when the two populations separated. The word ‘tal’ exists in both Elamite and Proto-Dravidian, but with different meanings. In Elamite, 'tal' means ‘write’ and in Proto-Dravidian, it means ‘push in’. In a paper McAlpin authored in 1981 [6], he explains that the original meaning of ‘tal’ was to ‘push in’, but since cuneiform writing on clay tablets involved ‘pushing in’, the word came to mean ‘writing’ in Elamite after writing was invented. The means that the populations separated before cuneiform writing was invented.
 
 From the aforementioned archaeological and linguistic evidence it is possible to date the link between Dravidian and Elamite speaking populations as sometime between 7900BCE and 3000BCE. This matches the genetic evidence that first Indians mixed with the Iranian agriculturalists between 4700 and 3000BCE. Since this population went on to become the Harappans, it shows that the language of the Harappans is most likely Proto Dravidian (with influences from Proto Elamite). It is this language that evolved into the major Dravidian languages of today (Tamil, Telugu, Kannada etc).
 
@@ -57,11 +57,11 @@ Currently, we are performing the analysis on modern Tamil but in the future, we 
 
 Based on our literature review, we have identified three ways of segmenting Tamil morphemes:
 
-1. Using an unsupervised approach - Ex. Goldsmith's method of morpheme segmentation based on minimum description length (MDL) or a combination of (MDL) maximum a posterior as proposed by Creutz and Lagus in the Morfessor algorithm. 
+1. Using an unsupervised approach - Ex. Goldsmith's method of morpheme segmentation based on minimum description length (MDL), joint Bayesian probability or a combination of (MDL) maximum a posterior as proposed by Creutz and Lagus in the Morfessor algorithm. [7] [8] [9] [10]
 
-2. Using FSA (Finite State Automata) - This requires a thorough knowledge of grammar rules.
+2. Using FSA (Finite State Automata) - This requires a thorough knowledge of grammar rules. [10]
 
-3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%.
+3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%. [12]
 
 We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes.
 
@@ -71,9 +71,33 @@ We will perform statistical analysis on both the Tamil and Indus scripts to eval
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
 
+# References
+[1] Wells, B. K. (2015). The Archaeology and Epigraphy of Indus Writing (UK ed.). Archaeopress Archaeology.
 
+[2] Joseph, T. (2018). Early Indians : The Story of Our Ancestors and Where We Came From. Juggernaut Publication.
 
+[3] Narasimhan, Vagheesh & Patterson, Nick & Moorjani, Priya & Lazaridis, Iosif & Lipson, Mark & Mallick, Subhashis & Rohland, Nadin & Bernardos, Rebecca & Kim, Alexander & Nakatsuka, Nathan & Olalde, Iñigo & Coppa, Alfredo & Mallory, James & Moiseyev, Vyacheslav & Monge, Janet & Olivieri, Luca & Adamski, Nicole & Broomandkhoshbacht, Nasreen & Candilio, Francesca & Reich, David. (2018). The Genomic Formation of South and Central Asia. https://doi.org/10.1101/292581. 
 
+[4] Jarrige, J. F., Castillo, D. S., & Wengle, L. (2013). Mehrgarh: Neolithic Period Seasons 1997–2000. Mission archéologique française en Asie centrale et en Asie moyenne.
+
+[5] Southworth, F.C. and McAlpin, D.W. (2013). 30 South Asia: Dravidian linguistic history. In The Encyclopedia of Global Human Migration, I. Ness (Ed.). https://doi.org/10.1002/9781444351071.wbeghm830
+
+[6] McAlpin, D. W. (1981). Proto-Elamo-Dravidian: The Evidence and Its Implications. Transactions of the American Philosophical Society, 71(3), 1. https://doi.org/10.2307/1006352
+
+[7] Sheshasaayee, A., & Deepa, A. (2014). A structured analysis on analysis on morpheme segmentation for agglutinative languages Dr. Ananthi Sheshasaayee1 , Angela Deepa.V.R. International Journal of Advanced Technology in Engineering and Science, 02(01).
+
+[8] Kumar, A., Padró, L., & Oliver, A. (2015). Joint Bayesian Morphology Learning for Dravidian Languages.
+
+[9] Kumar, A., Padró, L., & Oliver, A. (2015). Joint Bayesian Morphology Learning for Dravidian Languages.
+
+[10] Creutz, M., & Lagus, K. (2007). Unsupervised models for morpheme segmentation and morphology learning. ACM Transactions on Speech and Language Processing, 4(1), 1–34. https://doi.org/10.1145/1187415.1187418
+
+[11] Devi, S., Marimuthu, K., sundar, V., Ram, R., & Amudha, K. (2013). Morpheme Extraction in Tamil using Finite State Machines (FIRE-2013 - Morpheme Extraction Task).
+
+[12] Kumar, M. A., & Kp, S. (2015). AMRITA_CEN@FIRE-2014: Morpheme Extraction and Lemmatization for Tamil using Machine Learning. https://doi.org/10.1145/2824864.2824883
+
+Links:
+Tagged Tamil Dataset:
 https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data
 
 Morfessor algorithm:
