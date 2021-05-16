@@ -1,6 +1,6 @@
 # Deciphering the Indus Valley Script
 
-This project is an attempt to partially decipher the ancient Indus Valley script by comparing it with modern Tamil.
+This project is an attempt to decipher the ancient Indus Valley script by comparing it with modern Tamil.
 
 Our strategy is to: <br>
 <strong> Convert Tamil script from syllabic to logosyllabic by converting morphemes to signs. Perform statistical analysis to compare the converted script with the Indus script. </strong> 
