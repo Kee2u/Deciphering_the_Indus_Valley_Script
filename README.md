@@ -19,7 +19,7 @@ Note that the minimum number of signs required to express a full Subject-Object-
 The Indus Valley or Harappan civilization is India's oldest civilization spanning from 5500 BCE to 1300 BCE. However, their writing system is still undeciphered. The obstacles to deciphering the script have included:
  - The exact uses of the artifacts are mostly unknown.
  - The root language of the script is unknown.
- - The texts are short (mean = 5 signs).
+ - The texts are short (mean = 4.5 signs).
  - There are no bilingual texts.
  - The complete corpus of the text was not widely available.
 
@@ -30,14 +30,14 @@ One of the seminal papers that contributed to this understanding of population m
 
 It supported the theory that Indo-European-language speakers who called themselves Aryans migrated to India from central Asia around 4000 years ago (after the decline of the Harappan Civilization). This finding potentially rules out the possibility that the Harappan language was Indo-Europen.
 
-It also showed that Harappans were a mixture of Iranian agriculturists from the Zagros region and descendants of the 'First Indians' (Original out of Africa migrants). Genetic research showed that the admixture between the two populations took place between 4700 BCE and 3000 BCE. Archaeological evidence also pointed out to a connection between the Zagros region and the early farmers of Mehrgarh in Balochistan (First Indians). Similar quadrangular houses built with narrow bricks about sixty centimetres long, circular firepits filled with burnt pebbles and sequential slab pottery were found at both sites. 
+It also showed that Harappans were a mixture of Iranian agriculturists from the Zagros region and descendants of the 'First Indians' (Original out of Africa migrants). Genetic research showed that the admixture between the two populations took place between 4700 BCE and 3000 BCE. Archaeological evidence reinforced this. Similar quadrangular houses built with narrow bricks about sixty centimetres long, circular firepits filled with burnt pebbles and sequential slab pottery were found at both sites. 
 
 ### Proto Dravidian Evidence
-The 2013 paper ‘South Asia: Dravidian Linguistic History’ authored by Professor Franklin C. Southworth and Dr David W. McAlpin reconstructed Proto Dravidian (one of the two main Indian language families) vocabulary and found a link with Proto Elamite vocabulary (the language of the Zagros region). This suggests that the first Indians that mixed with the Iranian agriculturalists were speaking Proto Dravidian. The reconstructed Proto Dravidian vocabulary also pointed towards an agricultural lifestyle that was reinforced by archaeological evidence in the region of the admixture. 
+The 2013 paper ‘South Asia: Dravidian Linguistic History’ authored by Professor Franklin C. Southworth and Dr David W. McAlpin reconstructed Proto Dravidian (one of the two main Indian language families) vocabulary and found similarities with Proto Elamite vocabulary (the language of the Zagros region). The reconstructed Proto Dravidian vocabulary also pointed towards an agricultural lifestyle that was reinforced by archaeological evidence in the region of the admixture. This suggests that there was contact between proto dravidian and proto elamite speaking populations.
 
 From the vocabulary, it was also possible to estimate when the two populations separated. The word ‘tal’ exists in both Elamite and Proto-Dravidian, but with different meanings. In Elamite, 'tal' means ‘write’ and in Proto-Dravidian, it means ‘push in’. In a paper McAlpin authored in 1981, he explains that the original meaning of ‘tal’ was to ‘push in’, but since cuneiform writing on clay tablets involved ‘pushing in’, the word came to mean ‘writing’ in Elamite after writing was invented. The means that the populations separated before cuneiform writing was invented.
 
-From the aforementioned archaeological and linguistic evidence it is possible to date the link between Dravidian and Elamite speaking populations as sometime between 7900BCE and 3000BCE. This matches the genetic evidence that first Indians mixed with the Iranian agriculturalists between 4700 and 3000BCE and shows that the language of the Harappans is most likely Proto Dravidian.
+From the aforementioned archaeological and linguistic evidence it is possible to date the link between Dravidian and Elamite speaking populations as sometime between 7900BCE and 3000BCE. This matches the genetic evidence that first Indians mixed with the Iranian agriculturalists between 4700 and 3000BCE. Since this population went on to become the Harappans, it shows that the language of the Harappans is most likely Proto Dravidian (with influences from Proto Elamite). It is this language that evolved into the major Dravidian languages of today (Tamil, Telugu, Kannada etc).
 
 ## Decipherment Strategy
 Thus, we will be testing the <b>hypothesis</b> that Proto Dravidian is the language of the Harappans in this project by comparing modern Tamil with the Harappan script. 
