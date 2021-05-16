@@ -39,6 +39,8 @@ From the vocabulary, it was also possible to estimate when the two populations s
 
 From the aforementioned archaeological and linguistic evidence it is possible to date the link between Dravidian and Elamite speaking populations as sometime between 7900BCE and 3000BCE. This matches the genetic evidence that first Indians mixed with the Iranian agriculturalists between 4700 and 3000BCE. Since this population went on to become the Harappans, it shows that the language of the Harappans is most likely Proto Dravidian (with influences from Proto Elamite). It is this language that evolved into the major Dravidian languages of today (Tamil, Telugu, Kannada etc).
 
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/Keetu_Code/Pictures/Mehrgarh.jpg?raw=true" width = 500>
+
 ## Decipherment Strategy
 Thus, we will be testing the <b>hypothesis</b> that Proto Dravidian is the language of the Harappans in this project by comparing modern Tamil with the Harappan script. 
 
