@@ -63,7 +63,7 @@ Based on our literature review, we have identified three ways of segmenting Tami
 
 3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%.
 
-In conclusion, we will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes.
+We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes.
 
 ### Perform statistical analysis on both the scripts
 We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Some methods we will use include z-scores, multivariate segmentation method and frequency histograms.
