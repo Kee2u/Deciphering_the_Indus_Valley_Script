@@ -11,7 +11,7 @@ Here are notes on terminology: <br>
 <strong> Logosyllabic script </strong> - A writing systems whose characters represent syllables, words and morphemes. <br>
 <strong> Morpheme </strong>  - The smallest part of a word that changes its meaning. Ex- 'ing' in 'following' <br>
 
-Note that the minimum number of signs required to express a full Subject-Object-Verb construction in a logosyllabic script is 3. The mean text length of the Harappan (Indus Valley) script is 4.5 signs. This suggests that it is a logosyllabic script and is why we are converting Tamil to one.
+Note that the minimum number of signs required to express a full Subject-Object-Verb construction in a logosyllabic script is 3. The mean text length of the Harappan (Indus Valley) script is 4.5 signs. This is how we know that the Indus script is logosyllabic.
 
 <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/Keetu_Code/Pictures/Unicorn.jpg?raw=true" width = 400>
 
