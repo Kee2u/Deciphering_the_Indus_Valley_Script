@@ -37,7 +37,7 @@ The 2013 paper ‘South Asia: Dravidian Linguistic History’ authored by Profes
 
 From the vocabulary, it was also possible to estimate when the two populations separated. The word ‘tal’ exists in both Elamite and Proto-Dravidian, but with different meanings. In Elamite, 'tal' means ‘write’ and in Proto-Dravidian, it means ‘push in’. In a paper McAlpin authored in 1981, he explains that the original meaning of ‘tal’ was to ‘push in’, but since cuneiform writing on clay tablets involved ‘pushing in’, the word came to mean ‘writing’ in Elamite after writing was invented. The means that the populations separated before cuneiform writing was invented.
 
-From the aforementioned archaeological and linguistic evidence it is possible to date the link between Dravidian and Elamite speaking populations as sometime between 7900BCE and 3000BCE. This corresponds to the genetic evidence that first Indians mixed with the Iranian agriculturalists between 4700 and 3000BCE. This suggests that the language of the Harappans is most likely Proto Dravidian.
+From the aforementioned archaeological and linguistic evidence it is possible to date the link between Dravidian and Elamite speaking populations as sometime between 7900BCE and 3000BCE. This matches the genetic evidence that first Indians mixed with the Iranian agriculturalists between 4700 and 3000BCE and shows that the language of the Harappans is most likely Proto Dravidian.
 
 ## Decipherment Strategy
 Thus, we will be testing the <b>hypothesis</b> that Proto Dravidian is the language of the Harappans in this project by comparing modern Tamil with the Harappan script. 
