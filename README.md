@@ -54,7 +54,7 @@ The first tagged Tamil database has segmented some of the morphemes but not all 
 ### Use PostgreSQL on an AWS RDS instance to store cleaned data. 
 We have chosen to use a cloud server so both members of our team can access the data.
 
-### Train an SVM machine learning algorithm on the morpheme segmented dataset and run it on an old Tamil dataset.
+### Train an SVM machine learning algorithm (from SciKitLearn library) on the morpheme segmented dataset and run it on an old Tamil dataset.
 Currently, we are performing the analysis on modern Tamil but in the future, we will also do a statistical analysis on Old Tamil (Tamil Brahmi and Sangam Tamil). This requires us to segment old Tamil morphemes as well.
 
 Based on our literature review, we have identified three ways of segmenting Tamil morphemes:
@@ -65,13 +65,32 @@ Based on our literature review, we have identified three ways of segmenting Tami
 
 3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%. [14]
 
-We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
+A Support Vector machine is a good choice since this is a binary classification problem and it can provide a high accuracy with less computational power. It calculates the ideal hyperplane to separate the data by maximizing the margin distance at feature boundaries. We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
 
 ### Perform statistical analysis on both the scripts
 We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Some methods we will use include z-scores, multivariate segmentation method and frequency histograms. 
 
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
+
+### Communication Protocol
+We are using Agile Project Management tools on Jira Software to keep track of our progress and deadlines.
+Here is a link to our Jira Roadmap:
+https://deciphering-the-indus-script.atlassian.net/jira/software/projects/DIS001/boards/1/roadmap?atlOrigin=eyJpIjoiODVkNzBlMTUwNWRjNDQ2YWI5NDI4MGY5NzJlOTQxNWUiLCJwIjoiaiJ9&shared=
+
+![img](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Pictures/Roadmap.PNG)
+
+# First Segment Project Deliverable Submission
+Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
+
+### Triangle Role
+Refer to <b>Machine_Learning_Preprocessing.ipynb</b> for simple Machine Learning model and <b>README.md</b> file for details on Machine Learning algorithm to be used in project
+### X Role
+Refer to <b>README.md</b> file for list of technologies used for project
+### Circle Role
+Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For Database Cleaning Pandas SQL code refer to <b>Tamil_Morpheme_List.ipynb</b> 
+### Square Role
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code
 
 # References
 [1] Wells, B. K. (2015). The Archaeology and Epigraphy of Indus Writing (UK ed.). Archaeopress Archaeology.
@@ -113,5 +132,4 @@ https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data
 Morfessor algorithm:
 https://github.com/aalto-speech/morfessor/blob/5314d3ebc1bea60b2145e96e0efaf8b21211af71/morfessor/baseline.py#L463
 
-Jira Roadmap:
-https://deciphering-the-indus-script.atlassian.net/jira/software/projects/DIS001/boards/1/roadmap?shared=&atlOrigin=eyJpIjoiOTJjNmYwYmE5NzliNDQ5ZDkwZTJlMDkyYWY0M2M0NDYiLCJwIjoiaiJ9 
+
