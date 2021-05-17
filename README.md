@@ -73,6 +73,10 @@ We will perform statistical analysis on both the Tamil and Indus scripts to eval
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
 
+### Communication Protocol
+We are using Agile Project Management tools on Jira Software to keep track of our progress and deadlines.
+Here is a link to our Jira Roadmap:
+https://deciphering-the-indus-script.atlassian.net/jira/software/projects/DIS001/boards/1/roadmap?atlOrigin=eyJpIjoiODVkNzBlMTUwNWRjNDQ2YWI5NDI4MGY5NzJlOTQxNWUiLCJwIjoiaiJ9&shared=
 
 # First Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
@@ -126,5 +130,4 @@ https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data
 Morfessor algorithm:
 https://github.com/aalto-speech/morfessor/blob/5314d3ebc1bea60b2145e96e0efaf8b21211af71/morfessor/baseline.py#L463
 
-Jira Roadmap:
-https://deciphering-the-indus-script.atlassian.net/jira/software/projects/DIS001/boards/1/roadmap?shared=&atlOrigin=eyJpIjoiOTJjNmYwYmE5NzliNDQ5ZDkwZTJlMDkyYWY0M2M0NDYiLCJwIjoiaiJ9 
+
