@@ -44,12 +44,12 @@ From the aforementioned archaeological and linguistic evidence it is possible to
 ## Decipherment Strategy
 Thus, we will be testing the <b>hypothesis</b> that Proto Dravidian is the language of the Harappans by comparing modern Tamil with the Harappan script. 
 
-A significant step towards decipherment has been made by Dr. Brian Wells and Dr. Andreas Fuls who have created an extensive database (corpus) of Indus texts. Through Dr. Andreas Fuls, we received access to this database. We will also be working with a tagged Part of Speech database of modern Tamil.
+A significant step towards decipherment has been made by Dr. Brian Wells and Dr. Andreas Fuls who have created an extensive database (corpus) of Indus texts. Through Dr. Andreas Fuls, we received access to this database. We will also be working with two tagged Part of Speech databases of modern Tamil. [7] [8] [9]
 
 ### Our plan:
 
 ### Use Python's pandas library on the tagged database to convert Tamil script from syllabic to logosyllabic.
-The tagged Tamil database has segmented some of the morphemes but not all of them. We completed segmenting the noun and verb morphemes using python and then assigned new signs to them.
+The first tagged Tamil database has segmented some of the morphemes but not all of them. We completed segmenting the noun and verb morphemes using python and then assigned new signs to them.
 
 ### Use PostgreSQL on an AWS RDS instance to store cleaned data. 
 We have chosen to use a cloud server so both members of our team can access the data.
@@ -59,16 +59,16 @@ Currently, we are performing the analysis on modern Tamil but in the future, we 
 
 Based on our literature review, we have identified three ways of segmenting Tamil morphemes:
 
-1. Using an unsupervised approach - Ex. Goldsmith's method of morpheme segmentation based on minimum description length (MDL), joint Bayesian probability or a combination of (MDL) maximum a posterior as proposed by Creutz and Lagus in the Morfessor algorithm. [7] [8] [9] 
+1. Using an unsupervised approach - Ex. Goldsmith's method of morpheme segmentation based on minimum description length (MDL), joint Bayesian probability or a combination of (MDL) maximum a posterior as proposed by Creutz and Lagus in the Morfessor algorithm. [10] [11] [12] 
 
-2. Using FSA (Finite State Automata) - This requires a thorough knowledge of grammar rules. [10]
+2. Using FSA (Finite State Automata) - This requires a thorough knowledge of grammar rules. [13]
 
-3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%. [11]
+3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%. [14]
 
-We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes.
+We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
 
 ### Perform statistical analysis on both the scripts
-We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Some methods we will use include z-scores, multivariate segmentation method and frequency histograms. [12]
+We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Some methods we will use include z-scores, multivariate segmentation method and frequency histograms. 
 
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
@@ -86,15 +86,25 @@ We will use Tableau’s JavaScript API to embed Tableau visualizations into a ja
 
 [6] McAlpin, D. W. (1981). Proto-Elamo-Dravidian: The Evidence and Its Implications. Transactions of the American Philosophical Society, 71(3), 1. https://doi.org/10.2307/1006352
 
-[7] Sheshasaayee, A., & Deepa, A. (2014). A structured analysis on analysis on morpheme segmentation for agglutinative languages Dr. Ananthi Sheshasaayee1 , Angela Deepa.V.R. International Journal of Advanced Technology in Engineering and Science, 02(01).
+[7]Wells, B. K., & Fuls, A. (2006). ICIT Database of Indus Writing [Dataset]. https://www.indus.epigraphica.de/
 
-[8] Kumar, A., Padró, L., & Oliver, A. (2015). Joint Bayesian Morphology Learning for Dravidian Languages.
+[8] Ramasamy, L., & Abokrtsk, Z. (2011). Tamil dependency parsing: results using rule based and corpus based approaches [Dataset]. Springer-Verlag. http://portal.acm.org/citation.cfm?id=1964799.1964808
+License: http://creativecommons.org/licenses/by-nc-sa/3.0/                   
+http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
 
-[9] Creutz, M., & Lagus, K. (2007). Unsupervised models for morpheme segmentation and morphology learning. ACM Transactions on Speech and Language Processing, 4(1), 1–34. https://doi.org/10.1145/1187415.1187418
+[9] Sobha Lalitha Devi, Pattabhi RK Rao, Vijay Sundar Ram R and Malarkodi C.S. (2016).
+"AUKBC Tamil Part-of-Speech Tagger (AUKBC-TamilPOSTagger2016v1)".Web Download.
+Computational Linguistics Research Group, AU-KBC Research Centre, Chennai, India, May 2016. 
 
-[10] Devi, S., Marimuthu, K., sundar, V., Ram, R., & Amudha, K. (2013). Morpheme Extraction in Tamil using Finite State Machines (FIRE-2013 - Morpheme Extraction Task).
+[10] Sheshasaayee, A., & Deepa, A. (2014). A structured analysis on analysis on morpheme segmentation for agglutinative languages Dr. Ananthi Sheshasaayee1 , Angela Deepa.V.R. International Journal of Advanced Technology in Engineering and Science, 02(01).
 
-[11] Kumar, M. A., & Kp, S. (2015). AMRITA_CEN@FIRE-2014: Morpheme Extraction and Lemmatization for Tamil using Machine Learning. https://doi.org/10.1145/2824864.2824883
+[11] Kumar, A., Padró, L., & Oliver, A. (2015). Joint Bayesian Morphology Learning for Dravidian Languages.
+
+[12] Creutz, M., & Lagus, K. (2007). Unsupervised models for morpheme segmentation and morphology learning. ACM Transactions on Speech and Language Processing, 4(1), 1–34. https://doi.org/10.1145/1187415.1187418
+
+[13] Devi, S., Marimuthu, K., sundar, V., Ram, R., & Amudha, K. (2013). Morpheme Extraction in Tamil using Finite State Machines (FIRE-2013 - Morpheme Extraction Task).
+
+[14] Kumar, M. A., & Kp, S. (2015). AMRITA_CEN@FIRE-2014: Morpheme Extraction and Lemmatization for Tamil using Machine Learning. https://doi.org/10.1145/2824864.2824883
 
 Links: <br>
 Tagged Tamil Dataset:
