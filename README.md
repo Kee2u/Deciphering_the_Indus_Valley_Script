@@ -73,6 +73,19 @@ We will perform statistical analysis on both the Tamil and Indus scripts to eval
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
 
+
+# First Segment Project Deliverable Submission
+Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
+
+### Triangle Role
+Refer to <b>Machine_Learning_Preprocessing.ipynb</b> for simple Machine Learning model and <b>README.md</b> file for details on Machine Learning algorithm to be used in project
+### X Role
+Refer to <b>README.md</b> file for list of technologies used for project
+### Circle Role
+Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For Database Cleaning Pandas SQL code refer to <b>Tamil_Morpheme_List.ipynb</b> 
+### Square Role
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code
+
 # References
 [1] Wells, B. K. (2015). The Archaeology and Epigraphy of Indus Writing (UK ed.). Archaeopress Archaeology.
 
