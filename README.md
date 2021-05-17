@@ -54,7 +54,7 @@ The first tagged Tamil database has segmented some of the morphemes but not all 
 ### Use PostgreSQL on an AWS RDS instance to store cleaned data. 
 We have chosen to use a cloud server so both members of our team can access the data.
 
-### Train an SVM machine learning algorithm on the morpheme segmented dataset and run it on an old Tamil dataset.
+### Train an SVM machine learning algorithm (from SciKitLearn library) on the morpheme segmented dataset and run it on an old Tamil dataset.
 Currently, we are performing the analysis on modern Tamil but in the future, we will also do a statistical analysis on Old Tamil (Tamil Brahmi and Sangam Tamil). This requires us to segment old Tamil morphemes as well.
 
 Based on our literature review, we have identified three ways of segmenting Tamil morphemes:
@@ -65,7 +65,7 @@ Based on our literature review, we have identified three ways of segmenting Tami
 
 3. Using a supervised machine learning approach - The paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' uses SVM to segment Tamil morphemes and has a promising F score of 90%. [14]
 
-We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
+A Support Vector machine is a good choice since this is a binary classification problem and it can provide a high accuracy with less computational power. It calculates the ideal hyperplane to separate the data by maximizing the margin distance at feature boundaries. We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
 
 ### Perform statistical analysis on both the scripts
 We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Some methods we will use include z-scores, multivariate segmentation method and frequency histograms. 
