@@ -75,8 +75,8 @@ We will use Tableau’s JavaScript API to embed Tableau visualizations into a ja
 
 ### Communication Protocol
 We are using Agile Project Management tools on Jira Software to keep track of our progress and deadlines.
-Here is a link to our Jira Roadmap:
-https://deciphering-the-indus-script.atlassian.net/jira/software/projects/DIS001/boards/1/roadmap?atlOrigin=eyJpIjoiODVkNzBlMTUwNWRjNDQ2YWI5NDI4MGY5NzJlOTQxNWUiLCJwIjoiaiJ9&shared=
+
+![img](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Pictures/Roadmap.PNG)
 
 # First Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
