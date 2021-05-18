@@ -28,7 +28,7 @@ Since 2013, however, there have been breakthroughs in the field of population ge
 ## Language
 One of the seminal papers that contributed to this understanding of population migrations was 'The Genomic Formation of South and Central Asia' published in March 2018 and authored by 92 scientists. [3]
 
-It supported the theory that Indo-European-language speakers who called themselves Aryans migrated to India from central Asia around 4000 years ago (after the decline of the Harappan Civilization). This finding potentially rules out the possibility that the Harappan language was Indo-Europen.
+It supported the theory that Indo-European-language speakers who called themselves Aryans migrated to India from central Asia around 4000 years ago (after the decline of the Harappan Civilization). This finding potentially rules out the possibility that the Harappan language was Indo-European.
 
 It also showed that Harappans were a mixture of Iranian agriculturists from the Zagros region and descendants of the 'First Indians' (Original out of Africa migrants). Genetic research showed that the admixture between the two populations took place between 4700 BCE and 3000 BCE. Archaeological evidence reinforced this. Similar quadrangular houses built with narrow bricks about sixty centimetres long, circular firepits filled with burnt pebbles and sequential slab pottery were found at both sites. [4]
 
