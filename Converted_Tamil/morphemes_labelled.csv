@@ -1,0 +1,108 @@
+﻿,MorphemeSeparated,Morpheme,Type,Tense,PNG,Case,id
+0,ை,ை,,,,Accusative,'000
+1,"{க,ு}",கு,,,,Dative,'001
+2,"{க,்,க,ு}",க்கு,,,,Dative,'001
+3,"{க,்,க,்}",க்க்,,,,Dative,'001
+4,"{ா,ல,்}",ால்,"Verb- lexical, conditional",,,,'005
+5,"{ா,ல,்}",ால்,,,,Instrumental,'005
+6,"{ா,ல,்}",ால்,"Verb- lexical, conditional",,,,'005
+7,"{த,ு}",து,Verb- verbal particle,,,,'006
+8,"{த,ு}",து,Verb- verbal particle,,,,'006
+9,"{த,்,த,ு}",த்து,Verb- verbal particle,,,,'006
+10,"{த,ு}",து,Verb,Past,Third person singular Neutral,,'006
+11,"{த,ு}",து,Verb,Present,Third person singular Neutral,,'006
+12,"{த,்,த,ு}",த்து,Verb- verbal particle,,,,'006
+13,"{த,ு}",து,,,,Genitive,'006
+14,"{த,ு}",து,Verb,Tenseless,Third person singular Neutral,,'006
+15,"{ி,ன}",ின,Verb,,Third person singular Honorific,,'007
+16,"{ி,ன,்}",ின்,,,,Genitive,'007
+17,"{ி,ல,்}",ில்,,,,Locative,'008
+18,"{ி,ட,ம,்}",ிடம்,,,,Locative,'009
+19,"{ோ,ட,ு}",ோடு,,,,Sociative,'010
+20,"{ு,ட,ன,்}",ுடன்,,,,Sociative,'011
+21,"{க,ள}",கள,Noun - Participial,,,,'012
+22,"{க,ள}",கள,Noun,,plural,,'012
+23,"{க,ள,்}",கள்,Noun,,plural,,'012
+24,"{க,ள,ு}",களு,,,,Dative,'012
+25,"{ே,ன,்}",ேன்,Verb,,First person Singular,,'013
+26,"{க,ி,ற}",கிற,Verb,,Third person singular Honorific,,'014
+27,"{க,ி,ற}",கிற,Verb,,First person plural,,'014
+28,"{க,ி,ற}",கிற,Verb,,First person Singular,,'014
+29,"{க,ி,ற}",கிற,Verb,Present,Third person plural Honorific,,'014
+30,"{க,்,க,ி,ற}",க்கிற,Verb,,Second person plural,,'014
+31,"{க,்,க,ி,ற}",க்கிற,Verb,,First person plural,,'014
+32,"{க,ி,ற}",கிற,Verb,,Second person plural,,'014
+33,"{க,்,க,ி,ற}",க்கிற,Verb,,First person Singular,,'014
+34,"{க,்,க,ி,ற}",க்கிற,Verb,Present,Third person plural Honorific,,'014
+35,"{க,்,க,ி,ற}",க்கிற,Verb,,Third person singular Honorific,,'014
+36,"{க,ி,ற}",க்கிற,Verb,Present,Third person singular Neutral,,'014
+37,"{க,ி,ற}",கிற,Verb,Present,Third person singular Neutral,,'014
+38,"{ண,ட}",ணட,Verb,,First person Singular,,'015
+39,"{ண,ட}",ணட,Verb,,Third person singular Honorific,,'015
+40,"{ண,ட}",ணட,Verb,Past,Third person singular Neutral,,'015
+41,{ன},ன,Verb,Present,Third person plural Neutral,,'017
+42,{ன},ன,Verb,Past,Third person singular Neutral,,'017
+43,{ன},ன,Verb,,First person Singular,,'017
+44,{ன},ன,Verb,Past,Third person plural Honorific,,'017
+45,{ன},ன,Verb,Past,Third person plural Neutral,,'017
+46,"{ீ,ர,்,க,ள,்}",ீர்கள்,Verb,,Second person singular,,'018
+47,"{ீ,ர,்,க,ள,்}",ீர்கள்,Verb,,Second person plural,,'018
+48,"{ந,்,த,்}",ந்த்,Verb- verbal particle,,,,'019
+49,"{ந,்,த,்}",ந்த்,Verb- verbal particle,,,,'019
+50,"{ந,்,த}",ந்த,Verb,,First person plural,,'019
+51,"{ந,்,த}",ந்த,Verb,Past,Third person plural Neutral,,'019
+52,"{ந,்,த}",ந்த,Verb,Past,Third person singular Neutral,,'019
+53,"{ந,்,த}",ந்த,Verb,,Third person singular Honorific,,'019
+54,"{ி,ய}",ிய,Verb,Past,Third person singular Neutral,,'020
+55,{த},த,Verb,,Third person singular Honorific,,'021
+56,"{த,்,த,்}",த்த்,Verb- verbal particle,,,,'021
+57,"{த,்}",த்,Verb- verbal particle,,,,'021
+58,"{த,்,த,்}",த்த்,Verb- verbal particle,,,,'021
+59,"{த,்}",த்,Verb- verbal particle,,,,'021
+60,"{த,்,த}",த்த,Verb,Past,Third person singular Neutral,,'021
+61,{த},த,Noun - Participial,,,,'021
+62,"{த,்,த}",த்த,Verb,Past,Third person plural Neutral,,'021
+63,"{த,்,த}",த்த,Verb,,Third person singular Honorific,,'021
+64,{த},த,Verb,Past,Third person singular Neutral,,'021
+65,"{ட,்,ட,்}",ட்ட்,Verb- verbal particle,,,,'022
+66,"{்,ட}",்ட,Verb,,Third person singular Honorific,,'022
+67,"{ட,்,ட,்}",ட்ட்,Verb- verbal particle,,,,'022
+68,"{்,ட}",்ட,Verb,Past,Third person singular Neutral,,'022
+69,"{ட,்}",ட்,Verb- verbal particle,,,,'022
+70,"{ட,்,ட}",ட்ட,Verb,Past,Third person singular Neutral,,'022
+71,"{ட,்,ட}",ட்ட,Verb,,Third person singular Honorific,,'022
+72,"{்,ட}",்ட,Verb,Past,Third person plural Neutral,,'022
+73,"{ட,்}",ட்,Verb- verbal particle,,,,'022
+74,{க},க,Verb,Past,Third person singular Neutral,,'025
+75,"{க,்}",க்,,,,Dative,'025
+76,"{க,்,க}",க்க,Verb,Past,Third person singular Neutral,,'025
+77,"{ு,ம,்}",ும்,Verb,Past,Third person singular Neutral,,'027
+78,{ா},ா,Verb,,,,'028
+79,"{ா,ர,்}",ார்,Verb,,Third person singular Honorific,,'029
+80,{வ},வ,Verb,,Third person singular Honorific,,'031
+81,{வ},வ,Verb,,First person plural,,'031
+82,{வ},வ,Verb,Past,Third person plural Honorific,,'031
+83,"{ோ,ம,்}",ோம்,Verb,,First person plural,,'032
+84,{ப},ப,Noun - Participial,,,,'033
+85,"{ப,்,ப}",ப்ப,Verb,,First person plural,,'033
+86,"{ர,்}",ர்,Verb,Present,Third person plural Honorific,,'034
+87,"{ர,்}",ர்,Verb,Past,Third person plural Honorific,,'034
+88,"{ர,்}",ர்,Verb,Past,Third person plural Honorific,,'034
+89,"{க,்,க,ி,ன,்,ற}",க்கின்ற,Verb,Present,Third person plural Neutral,,'035
+90,"{க,்,க,ி,ன,்,ற}",க்கின்ற,Verb,Present,Third person plural Honorific,,'035
+91,"{க,ி,ன,்,ற}",கின்ற,Verb,Present,Third person plural Neutral,,'035
+92,"{ா,ர,்,க,ள,்}",ார்கள்,Verb,Present,Third person plural Honorific,,'036
+93,"{ா,ர,்,க,ள,்}",ார்கள்,Verb,Past,Third person plural Honorific,,'036
+94,"{ா,ர,்,க,ள,்}",ார்கள்,Verb,Tenseless,Third person plural Honorific,,'036
+95,{ி},ி,Verb,Past,Third person plural Neutral,,'037
+96,"{ட,ு}",டு,Verb- verbal particle,,,,'039
+97,"{ட,ு}",டு,Verb- verbal particle,,,,'039
+98,"{ந,்,த,ு}",ந்து,Verb- verbal particle,,,,'040
+99,"{ந,்,த,ு}",ந்து,Verb- verbal particle,,,,'040
+100,"{ட,்,ட,ு}",ட்டு,Verb- verbal particle,,,,'044
+101,"{ட,்,ட,ு}",ட்டு,Verb- verbal particle,,,,'044
+102,"{ண,ட,ு}",ணடு,Verb- verbal particle,,,,'045
+103,"{ண,ட,ு}",ணடு,Verb- verbal particle,,,,'045
+104,"{ண,ட,்}",ணட்,Verb- verbal particle,,,,'046
+105,"{ண,ட,்}",ணட்,Verb- verbal particle,,,,'046
+106,"{வ,ர}",வர,Noun - Participial,,,,'050
