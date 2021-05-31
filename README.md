@@ -101,7 +101,7 @@ Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For D
 Refer to <b>Indus Valley Girls.pptx</b> file for details on Visualization and overall presentation.
 
 ### Circle Role - Analysis
-Refer to <b> </b> for details on statistical analysis.
+Refer to <b>README.md</b> for details on statistical analysis.
 
 ### Square Role - Machine Learning
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code. 
