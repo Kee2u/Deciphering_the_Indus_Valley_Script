@@ -68,7 +68,7 @@ Based on our literature review, we have identified three ways of segmenting Tami
 A Support Vector machine is a good choice since this is a binary classification problem and it can provide a high accuracy with less computational power. It calculates the ideal hyperplane to separate the data by maximizing the margin distance at feature boundaries. We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
 
 ### Perform statistical analysis on both the scripts
-We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Some methods we will use include z-scores, multivariate segmentation method and frequency histograms. 
+We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Refer
 
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
@@ -83,10 +83,13 @@ Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 
 ### Triangle Role
 Refer to <b>Machine_Learning_Preprocessing.ipynb</b> for simple Machine Learning model.
+
 ### X Role
 Refer to <b>README.md</b> file for list of technologies used for project
+
 ### Circle Role
-Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For Database Cleaning Pandas SQL code refer to <b>Tamil_Morpheme_List.ipynb</b> 
+Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. Refer to <b>Union.sql</b> for a union query to join to tables in PostgreSQL. For Database Cleaning Pandas SQL code refer to the file <b>Converted_Tamil/Data_preprocessing.docx</b>. It will explain the following files <b>Tamil_Morpheme_List.ipynb</b> <b>Convert_morphemes.ipynb</b> <b>Convert_lemmas.ipynb</b> <b>Convert_clitics.ipynb</b> <b>Convert_logosyllabic_words_to_sentences.ipynb</b> 
+
 ### Square Role
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code
 
@@ -95,20 +98,17 @@ Git branches created for each team member. Sonia Sharma - Sonia_Code and Keertha
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 
 ### Triangle Role - Database
-Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For Database Cleaning Pandas SQL code refer to <b>Tamil_Morpheme_List.ipynb</b> 
+Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. Refer to <b>Union.sql</b> for a union query to join to tables in PostgreSQL. For Database Cleaning Pandas SQL code refer to the file <b>Converted_Tamil/Data_preprocessing.docx</b>. It will explain the following files <b>Tamil_Morpheme_List.ipynb</b> <b>Convert_morphemes.ipynb</b> <b>Convert_lemmas.ipynb</b> <b>Convert_clitics.ipynb</b> <b>Convert_logosyllabic_words_to_sentences.ipynb</b> 
 
 ### X Role - Visualization/Presentation
 Refer to <b>Indus Valley Girls.pptx</b> file for details on Visualization and overall presentation.
 
 ### Circle Role - Analysis
-Refer to <b>README.md</b> for details on statistical analysis.
+Refer to <b>Indus Valley Girls.pptx</b> for a summary of the statistical analysis and <b>Multivariate_Segmentation.ipynb</b> for initial statistical analysis cleaning.
 
 ### Square Role - Machine Learning
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code. 
 Refer to <b>Machine_Learning_Preprocessing_Data.ipynb</b> and <b>TestSVM.ipynb</b> for supervised Machine Learning model, see <b>Machine Learning Algorithm.docx</b> for details on Machine Learning algorithm to be used in project, and <b>Indus Valley Girls.pptx</b> file for a brief summary of the Machine Learning algorithm to be used in project.
-
-
-
 
 
 # References
