@@ -82,13 +82,27 @@ We are using Agile Project Management tools on Jira Software to keep track of ou
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 
 ### Triangle Role
-Refer to <b>Machine_Learning_Preprocessing.ipynb</b> for simple Machine Learning model and <b>README.md</b> file for details on Machine Learning algorithm to be used in project
+Refer to <b>Machine_Learning_Preprocessing_Data.ipynb</b> and <b>TestSVM.ipynb</b> for supervised Machine Learning model and <b>IndusValley</b> file for details on Machine Learning algorithm to be used in project
 ### X Role
 Refer to <b>README.md</b> file for list of technologies used for project
 ### Circle Role
 Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For Database Cleaning Pandas SQL code refer to <b>Tamil_Morpheme_List.ipynb</b> 
 ### Square Role
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code
+
+
+# Second Segment Project Deliverable Submission
+Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
+
+### Triangle Role
+Refer to <b>Machine_Learning_Preprocessing.ipynb</b> for simple Machine Learning model and <b>Indus Valley Girls.pptx</b> file for details on Machine Learning algorithm to be used in project
+### X Role
+Refer to <b>Indus Valley Girls.pptx</b> file for details on Visualization
+### Circle Role
+Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For Database Cleaning Pandas SQL code refer to <b>Tamil_Morpheme_List.ipynb</b> 
+### Square Role
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code. For presentation, see <b>Indus Valley Girls.pptx</b> 
+
 
 # References
 [1] Wells, B. K. (2015). The Archaeology and Epigraphy of Indus Writing (UK ed.). Archaeopress Archaeology.
