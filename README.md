@@ -82,7 +82,7 @@ We are using Agile Project Management tools on Jira Software to keep track of ou
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 
 ### Triangle Role
-Refer to <b>Machine_Learning_Preprocessing_Data.ipynb</b> and <b>TestSVM.ipynb</b> for supervised Machine Learning model and <b>IndusValley</b> file for details on Machine Learning algorithm to be used in project
+Refer to <b>Machine_Learning_Preprocessing.ipynb</b> for simple Machine Learning model.
 ### X Role
 Refer to <b>README.md</b> file for list of technologies used for project
 ### Circle Role
@@ -94,14 +94,21 @@ Git branches created for each team member. Sonia Sharma - Sonia_Code and Keertha
 # Second Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 
-### Triangle Role
-Refer to <b>Machine_Learning_Preprocessing.ipynb</b> for simple Machine Learning model and <b>Indus Valley Girls.pptx</b> file for details on Machine Learning algorithm to be used in project
-### X Role
-Refer to <b>Indus Valley Girls.pptx</b> file for details on Visualization
-### Circle Role
+### Triangle Role - Database
 Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. For Database Cleaning Pandas SQL code refer to <b>Tamil_Morpheme_List.ipynb</b> 
-### Square Role
-Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code. For presentation, see <b>Indus Valley Girls.pptx</b> 
+
+### X Role - Visualization/Presentation
+Refer to <b>Indus Valley Girls.pptx</b> file for details on Visualization and overall presentation.
+
+### Circle Role - Analysis
+Refer to <b> </b> for details on statistical analysis.
+
+### Square Role - Machine Learning
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code. 
+Refer to <b>Machine_Learning_Preprocessing_Data.ipynb</b> and <b>TestSVM.ipynb</b> for supervised Machine Learning model, see <b>Machine Learning Algorithm.docx</b> for details on Machine Learning algorithm to be used in project, and <b>Indus Valley Girls.pptx</b> file for a brief summary of the Machine Learning algorithm to be used in project.
+
+
+
 
 
 # References
