@@ -76,7 +76,7 @@ We will use Tableau’s JavaScript API to embed Tableau visualizations into a ja
 ### Communication Protocol
 We are using Agile Project Management tools on Jira Software to keep track of our progress and deadlines.
 
-![img](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Pictures/deciphering_the_indus_script_2021-05-30_11.28pm.png?raw=true)
+![img](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Pictures/deciphering_the_indus_script_2021-05-30_11.33pm.png?raw=true)
 
 # First Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
@@ -96,19 +96,24 @@ Git branches created for each team member. Sonia Sharma - Sonia_Code and Keertha
 
 # Second Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
 
 ### Triangle Role - Database
-Refer to <b>ERD.sql</b> and <b>ERD.png</b> for database schema submission. Refer to <b>Union.sql</b> for a union query to join to tables in PostgreSQL. For Database Cleaning Pandas SQL code refer to the file <b>Converted_Tamil/Data_preprocessing.docx</b>. It will explain the following files <b>Tamil_Morpheme_List.ipynb</b> <b>Convert_morphemes.ipynb</b> <b>Convert_lemmas.ipynb</b> <b>Convert_clitics.ipynb</b> <b>Convert_logosyllabic_words_to_sentences.ipynb</b> 
+Refer to <b>[ERD.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/ERD.sql)</b> and <b>[ERD.png](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/ERD.PNG)</b> for database schema submission. Refer to <b>[Union.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Union.sql)</b> for a union query to join to tables in PostgreSQL. For Database Cleaning Pandas SQL code refer to the file <b>[Converted_Tamil/Data_preprocessing.docx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Converted_Tamil/Data_Preprocessing.docx)</b>. It will explain the following files:
+- <b>[Tamil_Morpheme_List.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Tamil_Morpheme_List.ipynb)</b>
+- <b>[Convert_morphemes.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Convert_morphemes.ipynb)</b>
+- <b>[Convert_lemma.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Convert_lemma.ipynb)</b>
+- <b>[Convert_clitics.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Convert_clitics.ipynb)</b>
+- <b>[Convert_logosyllabic_words_to_sentences.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Converting_logosyllabic_words_to_sentences.ipynb)</b> 
 
 ### X Role - Visualization/Presentation
-Refer to <b>Indus Valley Girls.pptx</b> file for details on Visualization and overall presentation.
+Refer to <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> file for details on Visualization and overall presentation.
 
 ### Circle Role - Analysis
-Refer to <b>Indus Valley Girls.pptx</b> for a summary of the statistical analysis and <b>Multivariate_Segmentation.ipynb</b> for initial statistical analysis cleaning.
+Refer to <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> for a summary of the statistical analysis and <b>[Multivariate_Segmentation.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Multivariate_Segmentation.ipynb)</b> for initial statistical analysis cleaning.
 
-### Square Role - Machine Learning
-Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code. 
-Refer to <b>Machine_Learning_Preprocessing_Data.ipynb</b> and <b>TestSVM.ipynb</b> for supervised Machine Learning model, see <b>Machine Learning Algorithm.docx</b> for details on Machine Learning algorithm to be used in project, and <b>Indus Valley Girls.pptx</b> file for a brief summary of the Machine Learning algorithm to be used in project.
+### Square Role - Machine Learning 
+Refer to <b>[Machine_Learning_Preprocessing_Data.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning_Preprocessing_Data.ipynb)</b> and <b>[TestSVM.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/TestSVM.ipynb)</b> for supervised Machine Learning model, see <b>[Machine Learning Algorithm.docx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine%20Learning%20Algorithm.docx)</b> for details on Machine Learning algorithm used in project, and <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> file for a brief summary of the Machine Learning algorithm.
 
 
 # References
