@@ -73,10 +73,6 @@ We will perform statistical analysis on both the Tamil and Indus scripts to eval
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
 
-### Communication Protocol
-We are using Agile Project Management tools on Jira Software to keep track of our progress and deadlines.
-
-![img](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Pictures/deciphering_the_indus_script_2021-05-30_11.33pm.png?raw=true)
 
 # First Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
