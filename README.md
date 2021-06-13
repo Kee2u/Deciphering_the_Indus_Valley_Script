@@ -133,7 +133,7 @@ Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
 
 ### Database
-Refer to ERD.sql and ERD.png for database schema submission. Refer to Union.sql for a union query to join to tables in PostgreSQL. 
+Refer to [ERD.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.sql) and [ERD.png] (https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.PNG) for database schema submission. Refer to [Union.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/Union.sql) for a union query to join to tables in PostgreSQL. 
 
 ### Visualization
 Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard. Deployed to Heroku, can access here: https://deciphering-indus-valley.herokuapp.com/
