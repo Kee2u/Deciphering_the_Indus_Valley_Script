@@ -128,6 +128,22 @@ Refer to <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_I
 Refer to <b>[Machine_Learning_Preprocessing_Data.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Machine_Learning_Preprocessing_Data.ipynb)</b> and <b>[TestSVM.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/TestSVM.ipynb)</b> for supervised Machine Learning model, see <b>[Machine Learning Algorithm.docx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Machine%20Learning%20Algorithm.docx)</b> for details on Machine Learning algorithm used in project, and <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> file for a brief summary of the Machine Learning algorithm.
 
 
+# Fourth Segment Project Deliverable Submission
+Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
+
+### Visualization
+Refer to <b>[Visualization Outline](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/VisualizationOutline.pptx)</b> file for details on the Visualization Dashboard.
+
+### Presentation
+Refer to <b>[Indus Valley presentation](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> for details on the presentation.
+
+### Analysis
+Refer to <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> for a summary of the statistical analysis and <b>[Multivariate_Segmentation.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Multivariate_Segmentation.ipynb)</b> for initial statistical analysis cleaning.
+
+### Machine Learning 
+Refer to <b>[Machine_Learning_Preprocessing_Data.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Machine_Learning_Preprocessing_Data.ipynb)</b> and <b>[TestSVM.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/TestSVM.ipynb)</b> for supervised Machine Learning model, see <b>[Machine Learning README](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/tree/main/Machine_Learning)</b> for details on Machine Learning algorithm used in project, and <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> file for a brief summary of the Machine Learning algorithm.
+
 
 # References
 [1] Wells, B. K. (2015). The Archaeology and Epigraphy of Indus Writing (UK ed.). Archaeopress Archaeology.
