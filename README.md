@@ -73,10 +73,6 @@ We will perform statistical analysis on both the Tamil and Indus scripts to eval
 ### Create visualizations using Tableau and present the data on a javascript dashboard using D3.js 
 We will use Tableau’s JavaScript API to embed Tableau visualizations into a javascript dashboard and present our findings.
 
-### Communication Protocol
-We are using Agile Project Management tools on Jira Software to keep track of our progress and deadlines.
-
-![img](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Pictures/deciphering_the_indus_script_2021-05-30_11.33pm.png?raw=true)
 
 # First Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
@@ -114,6 +110,39 @@ Refer to <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_I
 
 ### Square Role - Machine Learning 
 Refer to <b>[Machine_Learning_Preprocessing_Data.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning_Preprocessing_Data.ipynb)</b> and <b>[TestSVM.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/TestSVM.ipynb)</b> for supervised Machine Learning model, see <b>[Machine Learning Algorithm.docx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine%20Learning%20Algorithm.docx)</b> for details on Machine Learning algorithm used in project, and <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> file for a brief summary of the Machine Learning algorithm.
+
+# Third Segment Project Deliverable Submission
+Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
+
+### Visualization
+Refer to <b>[Visualization Outline](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/VisualizationOutline.pptx)</b> file for details on the Visualization Dashboard.
+
+### Presentation
+Refer to <b>[Indus Valley presentation](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> for details on the presentation.
+
+### Analysis
+Refer to <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> for a summary of the statistical analysis and <b>[Multivariate_Segmentation.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Multivariate_Segmentation.ipynb)</b> for initial statistical analysis cleaning.
+
+### Machine Learning 
+Refer to <b>[Machine_Learning_Preprocessing_Data.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Machine_Learning_Preprocessing_Data.ipynb)</b> and <b>[TestSVM.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/TestSVM.ipynb)</b> for supervised Machine Learning model, see <b>[Machine Learning Algorithm.docx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Machine%20Learning%20Algorithm.docx)</b> for details on Machine Learning algorithm used in project, and <b>[Indus Valley Girls.pptx](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Indus%20Valley%20Girls.pptx)</b> file for a brief summary of the Machine Learning algorithm.
+
+
+# Fourth Segment Project Deliverable Submission
+Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
+Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
+
+### Visualization
+Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard.
+
+### Presentation
+Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for details on the presentation. The script for the presentation can be seen here <b>[Indus Valley Girls Script.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls%20Script.pdf)</b>.
+
+### Analysis
+Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for a summary of the statistical analysis and <b>[Multivariate_Segmentation.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Multivariate_Segmentation.ipynb)</b> for initial statistical analysis cleaning.
+
+### Machine Learning 
+Refer to <b>[Machine_Learning_Preprocessing_Data.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Machine_Learning_Preprocessing_Data.ipynb)</b> and <b>[TestSVM.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/TestSVM.ipynb)</b> for supervised Machine Learning model, see <b>[Machine Learning README](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/tree/main/Machine_Learning)</b> for details on Machine Learning algorithm used in project, and <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> file for a brief summary of the Machine Learning algorithm.
 
 
 # References
