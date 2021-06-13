@@ -1,5 +1,9 @@
 # Statistical Analysis
 
+The file <strong>"Histograms"</strong> contains all the Histograms for each sign in the Tamil Script </br>
+The file <strong>Histograms.ipynb</strong> calculates the Histograms for each sign in the Tamil Script </br>
+The file <strong>Multivariate_Segmentation.ipynb</strong> calculates the connectivities between sign pairs in the Tamil Script </br>
+
 The Statistical Analysis in this project follows the equations outlined by Dr. Andres Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of two parts:
  
 ## Creating positional Histograms
