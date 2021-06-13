@@ -2,9 +2,9 @@
 
 ## Converting Tamil from a Syllabic to a logosyllabic script
 
-This folder consists of two files.
-Converted_Tamil_With_Logographic_Names - has names whose lemmas have been replaced with their own sign identifier. 
-Converted_Tamil_With_Syllabic_Names  - has names whose letters have been replaced with their own identifiers.
+This folder consists of two files:</br>
+<strong>Converted_Tamil_With_Logographic_Names</strong> - has names whose lemmas have been replaced with their own sign identifier. </br>
+<strong>Converted_Tamil_With_Syllabic_Names</strong>  - has names whose letters have been replaced with their own identifiers. </br>
 
 -	I used the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) available here: https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data [1]
 -	The dataset consists of Tamil news articles tagged by part of speech. Some of the morphemes including clitics and postpositions have been separated already. However, the dataset does not separate noun and verb morphemes. Note that Tamil word morphology is exclusive to nouns and verbs.
@@ -19,6 +19,8 @@ Converted_Tamil_With_Syllabic_Names  - has names whose letters have been replace
 
 Despite the differences, modern Tamil still demonstrates a morphological continuity from old Tamil, for example – both have similar noun cases. [2]
 See the image below for the conll file provided by the database. Each word was tagged by their part of speech (POS)
+
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Preprocessing/Pictures/Tamil_data.png?raw=true">
 
 1.	Tamil_Morpheme_List.ipynb  
 I considered using unsupervised algorithms such as the Morfessor algorithm (combination of minimum description length and maximum a posterior algorithm) or a Nested Pitman-Yor based algorithm for morpheme segmentation to segment the noun and verb morphemes.  However, the literature review revealed that using these algorithms for Tamil had an F score of around 50%. Reasons they failed included morphophonemic changes at morpheme boundaries and failing to identify character combinations that needed to be considered as a single character. [4][5] This is why I filtered the dataset for each noun and verb part of speech using regular expressions and manually created a morpheme list. 
