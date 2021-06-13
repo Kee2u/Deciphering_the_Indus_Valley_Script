@@ -13,6 +13,9 @@ Before implementing the model, Label Encoding was used on the letters column and
   After experimenting, we opted to utilize the default 75% training and 25% testing data split. We ran the model using a linear kernel and received an accuracy of 50%. We then tried a polynomial kernel which resulted in an increased accuracy of 70%. Ultimately, we selected a rbf kernel with a gamma of 0.8 to achieve an accuracy of 76%. 
 We opted to use a supervised machine learning approach after referencing the paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' which used SVM to segment Tamil morphemes with a promising F score of 90%. [1]
 
+The Accuracy score, classification report, and confusion matrix can be seen below: 
+![img](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Pictures/results.PNG)
+
   A Support Vector machine is a good choice since this is a binary classification problem and it can provide a high accuracy with less computational power. It calculates the ideal hyperplane to separate the data by maximizing the margin distance at feature boundaries. We plan to utilize this model on a bigger dataset. In the future, we also plan to use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accommodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
 
 Pros of SVM:
