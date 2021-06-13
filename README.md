@@ -133,10 +133,10 @@ Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
 
 ### Database
-Refer to [ERD.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.sql) and [ERD.png] (https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.PNG) for database schema submission. Refer to [Union.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/Union.sql) for a union query to join to tables in PostgreSQL. 
+Refer to <b>[ERD.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.sql)</b> and <b>[ERD.png](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.PNG)</b> for database schema submission. Refer to <b>[Union.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/Union.sql)</b> for a union query to join to tables in PostgreSQL. 
 
 ### Visualization
-Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard. Deployed to Heroku, can access here: https://deciphering-indus-valley.herokuapp.com/
+Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard. Deployed to Heroku, can access here: <b>https://deciphering-indus-valley.herokuapp.com/</b>
 
 ### Presentation
 Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for details on the presentation. The script for the presentation can be seen here <b>[Indus Valley Girls Script.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls%20Script.pdf)</b>.
