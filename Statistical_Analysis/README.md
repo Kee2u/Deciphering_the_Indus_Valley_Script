@@ -1,10 +1,10 @@
-# Statistical Anaylsis
+# Statistical Analysis
 
 The Statistical Analysis in this project follows the equations outlined by Dr. Andres Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of two parts:
  
 ## Creating positional Histograms
    The normalized weighted sign position for each sign was calculated. A sign sequence length of 10 was used. 
-   The equations used to calculate the relative sign positiona were:
+   The equations used to calculate the relative sign positions were:
     
   >MINP = (SP-1) x NL/L
   
@@ -21,7 +21,7 @@ The Statistical Analysis in this project follows the equations outlined by Dr. A
    - It caused the minimum position to be greater than the maximum position in some cases
    - Upon deriving the formula for minimum position, the +1 term was absent
     
-## Multivarite Segmentation Analysis
+## Multivariate Segmentation Analysis
    Used to calculate connectivity between signs and determine morpheme boundaries. The connectivity between each sign pair in a sentence is given by the formula:
 
    > Connectivity = 1.5 - NPI x KI -NPT x KT - NPPI x KITP - NPPT x KITP + NPP x KP +- NIT x KIT
@@ -33,12 +33,12 @@ The Statistical Analysis in this project follows the equations outlined by Dr. A
    KITP = 1.0
    KIT - 1.0
    
-   In this dataset, I used words boundaries instead of sentence boundaries (done for the Indus script)to calculate initial and terminal signs. This is because Tamil word boundaries are known while Indus word boundaries are not.
+   In this dataset, I used words boundaries instead of sentence boundaries (done for the Indus script) to calculate initial and terminal signs. This is because Tamil word boundaries are known while Indus word boundaries are not.
    
    ### Initial Sign
-   If the initial frequency of a sign is larger than its terminal frquency, the connectivity to the previous sign is decreased by NPI(i)
+   If the initial frequency of a sign is larger than its terminal frequency, the connectivity to the previous sign is decreased by NPI(i)
    
-   > NPI(i) = log(initial frequeny of sign i)/log(total frequency of sign i)
+   > NPI(i) = log(initial frequency of sign i)/log(total frequency of sign i)
    
    ### Terminal Sign
    If the initial frequency of a sign i smaller than the terminal frequency of a sign, the connectivity to the following sign is decreased by NPT(i)
@@ -60,7 +60,7 @@ The Statistical Analysis in this project follows the equations outlined by Dr. A
    > NPPT(i, j) = log(pair frequency+1)/log(frequency of sign i)/log(frequency of sign j)
    
    ### Ratio of Initial to Terminal Sign Frequency
-   If the intitial frequency of the first sign (i) is greater than its terminal frequency, and the terminal frequency of the second sign (j) is greater than the initial frequency, then the strength of the sign pair increases by:
+   If the initial frequency of the first sign (i) is greater than its terminal frequency, and the terminal frequency of the second sign (j) is greater than the initial frequency, then the strength of the sign pair increases by:
    
    > NIT = log(initial frequency of sign j)/log(frequency of sign j) * log(terminal frequency of sign i)/log(frequency of sign i)
    
