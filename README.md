@@ -133,7 +133,7 @@ Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
 
 ### Visualization
-Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard.
+Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard. Deployed to Heroku, can access here: https://deciphering-indus-valley.herokuapp.com/
 
 ### Presentation
 Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for details on the presentation. The script for the presentation can be seen here <b>[Indus Valley Girls Script.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls%20Script.pdf)</b>.
