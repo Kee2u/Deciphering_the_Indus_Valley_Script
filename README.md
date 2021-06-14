@@ -133,7 +133,7 @@ Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
 Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
 
 ### Database
-Refer to <b>[ERD.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.sql)</b> and <b>[ERD.png](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.PNG)</b> for database schema submission. Refer to <b>[Union.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/Union.sql)</b> for a union query to join to tables in PostgreSQL. 
+Refer to <b>[ERD.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.sql)</b> and <b>[ERD.png](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.PNG)</b> for database schema submission. Refer to <b>[Union.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/Union.sql)</b> for a union query to join to tables in PostgreSQL. Refer to <b>[Preprocessing](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/tree/main/Preprocessing)</b> for information and files on preprocessing.
 
 ### Visualization
 Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard. Deployed to Heroku, can access here: <b>https://deciphering-indus-valley.herokuapp.com/</b>. For code, reference here: <b>https://github.com/Soniaprogram/Deciphering_Indus_Valley_Script</b>
