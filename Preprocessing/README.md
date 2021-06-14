@@ -42,7 +42,8 @@ For Convert_morphemes - I gave unidentified morphemes as well as letters appeari
 
 For Convert_morphemes_with_proper_nouns - I created a version of the script converting the names into their own signs. This is in the folder Converted_Tamil_With_Logographic_Names. I gave the same identifiers to morphemes that were spelled differently but still had the same phonetic and grammatical function.
 
-## Convert_logosyllabic_words_to_sentences.ipynb/Convert_logosyllabic_words_to_sentences_with_names.ipynb I converted the logosyllabic words to sentences using punctuation labels.
+## Convert_logosyllabic_words_to_sentences.ipynb/Convert_logosyllabic_words_to_sentences_with_names.ipynb 
+I converted the logosyllabic words to sentences using punctuation labels.
 
 #REFERENCES
 [1] Ramasamy, L., & Abokrtsk, Z. (2011). Tamil dependency parsing: results using rule based and corpus based approaches [Dataset]. Springer-Verlag. http://portal.acm.org/citation.cfm?id=1964799.1964808 License: http://creativecommons.org/licenses/by-nc-sa/3.0/ http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
