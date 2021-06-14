@@ -33,10 +33,14 @@ I considered using unsupervised algorithms such as the Morfessor algorithm (comb
 I identified other parts of speech that were already separated such as postpositions and quantifiers and added them to the clitics list. Then, I gave them each a unique numeric identifier and replaced them in the complete dataframe.
 
 ## Convert_lemmas.ipynb/Convert_lemma_with_proper_nouns.ipynb For Convert_lemmas 
-I identified root words, gave them each a unique numeric identifier and replaced them in the complete dataframe. I converted root words prior to converting morphemes because I did not want to replace morphemes occurring in the root words. I omitted replacing the lemma in proper nouns and instead replaced each letter with their own identifier. For Convert_lemma_with_proper_nouns - I did the same as above except I replaced the lemma in proper nouns with unique identifiers.
+For Convert_lemmas -  I identified root words, gave them each a unique numeric identifier and replaced them in the complete dataframe. I converted root words prior to converting morphemes because I did not want to replace morphemes occurring in the root words. I omitted replacing the lemma in proper nouns and instead replaced each letter with their own identifier.
+
+For Convert_lemma_with_proper_nouns - I did the same as above except I replaced the lemma in proper nouns with unique identifiers.
 
 ## Convert_morphemes.ipynb/Convert_morphemes_with_proper_nouns For Convert_morphemes 
-I gave unidentified morphemes as well as letters appearing in proper nouns identifiers. I assumed that proper nouns are spelled syllabically in a logosyllabic language. I added this version of the script to the folder Converted_Tamil_With_Syllabic_Names. For Convert_morphemes_with_proper_nouns - I created a version of the script converting the names into their own signs. This is in the folder Converted_Tamil_With_Logographic_Names. I gave the same identifiers to morphemes that were spelled differently but still had the same phonetic and grammatical function.
+For Convert_morphemes - I gave unidentified morphemes as well as letters appearing in proper nouns identifiers. I assumed that proper nouns are spelled syllabically in a logosyllabic language. I added this version of the script to the folder Converted_Tamil_With_Syllabic_Names.
+
+For Convert_morphemes_with_proper_nouns - I created a version of the script converting the names into their own signs. This is in the folder Converted_Tamil_With_Logographic_Names. I gave the same identifiers to morphemes that were spelled differently but still had the same phonetic and grammatical function.
 
 ## Convert_logosyllabic_words_to_sentences.ipynb/Convert_logosyllabic_words_to_sentences_with_names.ipynb I converted the logosyllabic words to sentences using punctuation labels.
 
