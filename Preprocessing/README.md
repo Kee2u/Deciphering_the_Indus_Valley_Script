@@ -5,6 +5,7 @@ The Converted Tamil Folder consists of two files:
 <strong>Converted_Tamil_With_Logographic_Names</strong> - has names whose lemmas have been replaced with their own sign identifier.
 <strong>Converted_Tamil_With_Syllabic_Names</strong> - has names whose letters have been replaced with their own identifiers.
 
+Notes:
 I used the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) available here: https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data [1]
 
 The dataset consists of Tamil news articles tagged by part of speech. Some of the morphemes including clitics and postpositions have been separated already. However, the dataset does not separate noun and verb morphemes. Note that Tamil word morphology is exclusive to nouns and verbs.
@@ -17,7 +18,9 @@ Also Note that Modern Tamil has clearer rules for morphology than Old Tamil. The
  - Absence of Sanskrit loan words
  - Changes in negative construction
  - A greater frequency of appellative verbs [2] [3]
- - Despite the differences, modern Tamil still demonstrates a morphological continuity from old Tamil, for example – both have similar noun cases. [2] See the image below for the conll file provided by the database. Each word was tagged by their part of speech (POS)
+ - Despite the differences, modern Tamil still demonstrates a morphological continuity from old Tamil, for example – both have similar noun cases. [2]
+ 
+  See the image below for the conll file provided by the database. Each word was tagged by their part of speech (POS)
 
 <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Preprocessing/Pictures/Tamil_data.png?raw=true">
 
