@@ -5,7 +5,8 @@ The Converted Tamil Folder consists of two files:
 <strong>Converted_Tamil_With_Logographic_Names</strong> - has names whose lemmas have been replaced with their own sign identifier.
 <strong>Converted_Tamil_With_Syllabic_Names</strong> - has names whose letters have been replaced with their own identifiers.
 
-Notes:
+### Notes:
+
 I used the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) available here: https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data [1]
 
 The dataset consists of Tamil news articles tagged by part of speech. Some of the morphemes including clitics and postpositions have been separated already. However, the dataset does not separate noun and verb morphemes. Note that Tamil word morphology is exclusive to nouns and verbs.
