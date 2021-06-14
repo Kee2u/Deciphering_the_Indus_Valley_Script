@@ -45,7 +45,7 @@ For Convert_morphemes_with_proper_nouns - I created a version of the script conv
 ## Convert_logosyllabic_words_to_sentences.ipynb/Convert_logosyllabic_words_to_sentences_with_names.ipynb 
 I converted the logosyllabic words to sentences using punctuation labels.
 
-#REFERENCES
+# REFERENCES
 [1] Ramasamy, L., & Abokrtsk, Z. (2011). Tamil dependency parsing: results using rule based and corpus based approaches [Dataset]. Springer-Verlag. http://portal.acm.org/citation.cfm?id=1964799.1964808 License: http://creativecommons.org/licenses/by-nc-sa/3.0/ http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
 
 [2] Thomas Lehmann. 18 Dec 1997, Old Tamil from: The Dravidian Languages Routledge
