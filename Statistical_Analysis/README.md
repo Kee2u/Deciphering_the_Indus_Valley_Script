@@ -73,3 +73,5 @@ The Statistical Analysis in this project follows the equations outlined by Dr. A
    If the terminal frequency of the first sign (i) is greater than its initial frequency, and the initial frequency of the second sign (j) is greater than the terminal frequency, then the strength of the sign pair decreases by:
    
    > NIT = log(terminal frequency of sign j)/log(frequency of sign j) * log(initial frequency of sign i)/log(frequency of sign i)
+
+Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for preliminary results. There is more to come.
