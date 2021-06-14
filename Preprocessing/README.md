@@ -2,6 +2,7 @@
 ## Converting Tamil from a Syllabic to a logosyllabic script
 
 The Converted Tamil Folder consists of two files:
+
 <strong>Converted_Tamil_With_Logographic_Names</strong> - has names whose lemmas have been replaced with their own sign identifier.
 <strong>Converted_Tamil_With_Syllabic_Names</strong> - has names whose letters have been replaced with their own identifiers.
 
