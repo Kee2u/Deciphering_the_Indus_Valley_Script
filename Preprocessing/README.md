@@ -1,10 +1,15 @@
 # Data Preprocessing
 ## Converting Tamil from a Syllabic to a logosyllabic script
 
-The Converted Tamil Folder consists of two files:
+The Converted Tamil Folder consists of the following files:
 
-<strong>Converted_Tamil_With_Logographic_Names</strong> - has names whose lemmas have been replaced with their own sign identifier.
-<strong>Converted_Tamil_With_Syllabic_Names</strong> - has names whose letters have been replaced with their own identifiers.
+<strong>morphemes_labelled</strong> - each noun and verb morpheme has been given its own identifier.
+<strong>letters_labelled</strong> - Letters remaining after converted syllables to CV and VC are in this file.
+<strong>VC_syllables_labelled</strong> - has vowel-consonant syllables that have been given their own identifiers.
+<strong>CV_syllables_labelled</strong> - has consonant-vowel syllables that have been given their own identifiers.
+<strong>clitics_and_postpositions_labelled</strong> - has clitics, postpositions, determiners etc and their identifiers.
+<strong>logo_syllabic_tamil_sentences</strong> - Logosyllabic Tamil Sentences
+<strong>lemmas_labelled</strong> - Lemmas of Verbs, Adjectives, Numerals, Adverbs, Nouns and Pronouns and their identifiers. Proper nouns were left as syllables instead of converted into logograms.
 
 ### Notes:
 
