@@ -3,13 +3,20 @@
 
 The Converted Tamil Folder consists of the following files:
 
-<strong>morphemes_labelled</strong> - each noun and verb morpheme has been given its own identifier. </break></break>
-<strong>letters_labelled</strong> - Letters remaining after converted syllables to CV and VC are in this file.
-<strong>VC_syllables_labelled</strong> - has vowel-consonant syllables that have been given their own identifiers.
-<strong>CV_syllables_labelled</strong> - has consonant-vowel syllables that have been given their own identifiers.
-<strong>clitics_and_postpositions_labelled</strong> - has clitics, postpositions, determiners etc and their identifiers.
-<strong>logo_syllabic_tamil_sentences</strong> - Logosyllabic Tamil Sentences
-<strong>lemmas_labelled</strong> - Lemmas of Verbs, Adjectives, Numerals, Adverbs, Nouns and Pronouns and their identifiers. Proper nouns were left as syllables instead of converted into logograms.
+### morphemes_labelled
+Each noun and verb morpheme has been given its own identifier. </break></break>
+### letters_labelled
+Letters remaining after converted syllables to CV and VC are in this file.</break>
+### VC_syllables_labelled
+Has vowel-consonant syllables that have been given their own identifiers.
+### CV_syllables_labelled
+Has consonant-vowel syllables that have been given their own identifiers.
+### clitics_and_postpositions_labelled
+Has clitics, postpositions, determiners etc and their identifiers.
+### logo_syllabic_tamil_sentences
+Logosyllabic Tamil Sentences
+### lemmas_labelled
+Lemmas of Verbs, Adjectives, Numerals, Adverbs, Nouns and Pronouns and their identifiers. Proper nouns were left as syllables instead of converted into logograms.
 
 ### Notes:
 
