@@ -6,7 +6,7 @@ The Statistical Analysis in this project follows the equations outlined by Dr. A
    Zipf's law is an empirical law which states that given a large sample of words used, the frequency of any word is inversely proportional to its rank in the frequency table.  This means that the most frequent word will occur about twice as often as the second most frequent word, three times as often as the third most frequent word, etc. After testing Zipf's law with signs, we can see that the distribution does not follow Zipf's law exactly but follows a modified power law instead:
    > w(r) = B*r^G
 
-where:
+where:<br/>
 <strong>w(r)</strong> = number of signs with the same frequency <br/>
 <strong>r</strong> = rank (Performed by sorting w(r) in descending order <br/>
 <strong>B</strong> = constant <br/>
