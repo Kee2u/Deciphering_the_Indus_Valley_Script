@@ -101,9 +101,26 @@ The result had a poor precision and recall score for predicting syllables. This 
 
  1. The sentences in the database are long and consist of multiple nouns followed by a verb. (Tamil has a subject-object-verb syntax). This results in some noun lemmas and clitics having a uniform sign distribution similar to what is expected for syllables. The Indus artifacts have shorter sentences (suggests fewer nouns) so this problem may not exist when evaluating the Indus script. </br>
 Fix : </br>
-Perform the analysis on shorter sentences (simple Subject-object-Verb construction) and see if the machine learning preicision/recall score increases. 
+Perform the analysis on shorter sentences (simple Subject-object-Verb construction) and see if the machine learning precision/recall score increases. 
  2. Positional distribution alone is insufficient and there are missing variables.
  Fix: Include sign connectivities into the features table (for example- number of signs grouped with the sign in question) and see if that increases the score.
+ 
+ ## Possible Plural Marker
+ The most frequent sign in the Tamil script is the plural marker ‘கள்’ (kal) or sign ‘4012’. On analysing the most frequent Indus signs, one sign had a very similar positional distribution: sign '220'.
+ 
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/4012_.PNG?raw=true">
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/220.PNG?raw=true">
+
+ Sign 220 is a fish sign. Fish Signs are often associated with numerals. This is why they were classified as units of measurement (ex- kg) (Bonta 1995). They also mostly occur in the medial context.
+It can be found in the initial, medial as well as terminal positions.
+
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Capture1.PNG?raw=true" width = 600>
+
+This behaviour was previously attributed to polyvalence but there is a possibility that the range is due to its function as plural marker. An analysis of sign groupings also shows that sign 220 occurs with multiple other signs (not just numerals). This further strengthens the case that it is the plural marker.
+
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Capture.PNG?raw=true" width = 600>
+
+
 
 The file <strong>Calculating_Modified_Power_Law.ipynb</strong> classifies the converted Tamil script to logosyllabic by calculating modified power law.
 The file <strong>Histograms.ipynb</strong> calculates the Histograms for each sign in the Tamil Script </br>
