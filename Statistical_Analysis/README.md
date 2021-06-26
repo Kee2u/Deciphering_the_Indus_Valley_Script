@@ -1,11 +1,24 @@
 # Statistical Analysis
 
-The file <strong>"Histograms"</strong> contains all the Histograms for each sign in the Tamil Script </br>
-The file <strong>Histograms.ipynb</strong> calculates the Histograms for each sign in the Tamil Script </br>
-The file <strong>Multivariate_Segmentation.ipynb</strong> calculates the connectivities between sign pairs in the Tamil Script </br>
+The Statistical Analysis in this project follows the equations outlined by Dr. Andres Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of the following parts:
 
-The Statistical Analysis in this project follows the equations outlined by Dr. Andres Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of two parts:
- 
+## Calculating Modified Power Law
+   Zipf's law is an empirical law which states that given a large sample of words used, the frequency of any word is inversely proportional to its rank in the frequency table.  This means that the most frequent word will occur about twice as often as the second most frequent word, three times as often as the third most frequent word, etc. After testing Zipf's law with signs, we can see that the distribution does not follow Zipf's law exactly but follows a modified power law instead:
+   > w(r) = B*r^G
+
+where:<br/>
+<strong>w(r)</strong> = number of signs with the same frequency <br/>
+<strong>r</strong> = rank (Performed by sorting w(r) in descending order <br/>
+<strong>B</strong> = constant <br/>
+<strong>G</strong> = exponent. <br/>
+
+When plotting log w(r) vs log r, the slope equals the exponent G.
+The value of G varies for different writing systems. For pure syllabic systems, G = -0.6, pure logographic systems have a G = -2 and logosyllabic scripts have a G between -1.4 and -1.1. The Indus script has a G = -1.35 which classifies it as logosyllabic.
+
+On calculating modified power law for my converted Tamil script, the value was G = -1.13 (similar to Old_Assyrian cuneiform). This classifies the script as logosyllabic.
+
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Modified_Power_Law.PNG?raw=true" width = 400>
+
 ## Creating positional Histograms
    The normalized weighted sign position for each sign was calculated. A sign sequence length of 10 was used. 
    The equations used to calculate the relative sign positions were:
@@ -74,4 +87,8 @@ The Statistical Analysis in this project follows the equations outlined by Dr. A
    
    > NIT = log(terminal frequency of sign j)/log(frequency of sign j) * log(initial frequency of sign i)/log(frequency of sign i)
 
-Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for preliminary results. There is more to come.
+The file <strong>Calculating_Modified_Power_Law.ipynb</strong> classifies the converted Tamil script to logosyllabic by calculating modified power law.
+The file <strong>Histograms.ipynb</strong> calculates the Histograms for each sign in the Tamil Script </br>
+The file <strong>"Histograms2"</strong> contains all the Histograms for each sign in the Tamil Script </br>
+The file <strong>Multivariate_Segmentation.ipynb</strong> calculates the connectivities between sign pairs in the Tamil Script </br>
+The file <strong>Histogram_Probability_Distribution.ipynb</strong> converts each histogram to a probability distribution and runs a deep neural network on it to see if syllables can be predicted based on probability distribution alone.
