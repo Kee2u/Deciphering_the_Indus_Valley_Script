@@ -13,9 +13,10 @@
                     {
                        "name":"mister_a",
                        "colname":"level4"
-                    },
+                    }
                 ],
-             },
+                "colname":"level3"
+             }
           ],
           "colname":"level2"
        },
