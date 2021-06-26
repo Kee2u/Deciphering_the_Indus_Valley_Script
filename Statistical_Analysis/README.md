@@ -96,7 +96,7 @@ This was done to see if it is possible to predict if a sign is a syllable based 
 
 <img src ="https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Classification_Report.PNG?raw=true">
 
-The result had a poor precision and recall score for predicting syllables. This shows that positional distribution along is insufficient to predict syllables. This can be attributed to two reasons:
+The result had a poor precision and recall score for predicting syllables. This shows that positional distribution alone is insufficient to predict syllables. This can be attributed to two reasons:
 
  1. The sentences in the database are long and consist of multiple nouns followed by a verb. (Tamil has a subject-object-verb syntax). This results in some noun lemmas and clitics having a uniform sign distribution similar to what is expected for syllables. The Indus artifacts have shorter sentences (suggests fewer nouns) so this problem may not exist when evaluating the Indus script. </br>
 Fix : </br>
