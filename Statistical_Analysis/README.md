@@ -37,7 +37,7 @@ On calculating modified power law for my converted Tamil script, the value was G
   The equation from the book for MINP included a +1 term but I omitted it because:
    - It caused the minimum position to be greater than the maximum position in some cases
    - Upon deriving the formula for minimum position, the +1 term was absent
-    
+ <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Histograms2/4012.png?raw=true">
 ## Multivariate Segmentation Analysis
    Used to calculate connectivity between signs and determine morpheme boundaries. The connectivity between each sign pair in a sentence is given by the formula:
 
