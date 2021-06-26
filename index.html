@@ -11,8 +11,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -207,10 +205,12 @@
 								<div class="eight box">Histogram for Tamil sign number <strong>4012</strong>
 									<img src="images/histograms/4012.jpg" />									
 								</div>
+								
+								<div id="my_dataviz"></div>
+								
 								<div style="text-align: center;">
 									<a href="#stat" class="to-top">Back to top</a>
 								</div>
-
 							</article>
 
 
@@ -267,11 +267,15 @@
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+			<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+			<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/function.js"></script>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="assets/js/dendogram.js"></script>
 	</body>
 </html>
