@@ -87,6 +87,23 @@ On calculating modified power law for my converted Tamil script, the value was G
    
    > NIT = log(terminal frequency of sign j)/log(frequency of sign j) * log(initial frequency of sign i)/log(frequency of sign i)
 
+## Deep Neural Network to predict Syllables
+I calculated the probability distribution of the normalized sign positions and used them as features in a deep neural network. 
+
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Probability_Distribution.PNG?raw=true">
+
+This was done to see if it is possible to predict if a sign is a syllable based on the positional distribution alone. It was previously hypothesized that a uniform frequency for all positions is a good indicator of a syllabic sign, since syllables are used everywhere in texts without syntactic restriction. I used SMOTEEN and random oversampling to accomodate for class imbalance (many more non syllables than syllables which can skew the results). Then I used kerastuner to automatically find the best hyperparameters for a deep neural network while maximizing the F score (combined precision and recall). Maximizing accuracy alone was insufficient since a high accuracy can be achieved by just predicted non-syllables for all the signs.
+
+<img src ="https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Classification_Report.PNG?raw=true">
+
+The result had a poor precision and recall score for predicting syllables. This shows that positional distribution along is insufficient to predict syllables. This can be attributed to two reasons:
+
+ 1. The sentences in the database are long and consist of multiple nouns followed by a verb. (Tamil has a subject-object-verb syntax). This results in some noun lemmas and clitics having a uniform sign distribution similar to what is expected for syllables. The Indus artifacts have shorter sentences (suggests fewer nouns) so this problem may not exist when evaluating the Indus script. </br>
+Fix : </br>
+Perform the analysis on shorter sentences (simple Subject-object-Verb construction) and see if the machine learning preicision/recall score increases. 
+ 2. Positional distribution alone is insufficient and there are missing variables.
+ Fix: Include sign connectivities into the features table (for example- number of signs grouped with the sign in question) and see if that increases the score.
+
 The file <strong>Calculating_Modified_Power_Law.ipynb</strong> classifies the converted Tamil script to logosyllabic by calculating modified power law.
 The file <strong>Histograms.ipynb</strong> calculates the Histograms for each sign in the Tamil Script </br>
 The file <strong>"Histograms2"</strong> contains all the Histograms for each sign in the Tamil Script </br>
