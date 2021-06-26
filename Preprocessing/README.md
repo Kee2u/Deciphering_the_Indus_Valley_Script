@@ -1,24 +1,9 @@
 # Data Preprocessing
 ## Converting Tamil from a Syllabic to a logosyllabic script
-
-The Converted Tamil Folder consists of the following files:
-
-### morphemes_labelled
-Each noun and verb morpheme has been given its own identifier. </break></break>
-### letters_labelled
-Letters remaining after converted syllables to CV and VC are in this file.</break>
-### VC_syllables_labelled
-Has vowel-consonant syllables that have been given their own identifiers.
-### CV_syllables_labelled
-Has consonant-vowel syllables that have been given their own identifiers.
-### clitics_and_postpositions_labelled
-Has clitics, postpositions, determiners etc and their identifiers.
-### logo_syllabic_tamil_sentences
-Logosyllabic Tamil Sentences
-### lemmas_labelled
-Lemmas of Verbs, Adjectives, Numerals, Adverbs, Nouns and Pronouns and their identifiers. Proper nouns were left as syllables instead of converted into logograms.
-
-### Notes:
+The first step to compare the Indus script with Tamil is to convert Tamil from a syllabic to a logosyllabic script. (Similar to the Indus script)
+I modelled the structure of the syllables after cuneiform and created syllables of the forms CV, VC, V and C. (Where 'C' is consonant and 'V' is vowel)
+I converted lemmas and morphemes (including noun and verb morphemes as well as clitics, determiners etc) into logograms by giving each of them their unique sign identifier. 
+The only exception was proper nouns for which I created syllabic spellings.
 
 I used the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) available here: https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data [1]
 
@@ -38,23 +23,38 @@ Also Note that Modern Tamil has clearer rules for morphology than Old Tamil. The
 
 <img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Preprocessing/Pictures/Tamil_data.png?raw=true">
 
+The Converted Tamil Folder consists of the following files. They include a reference of signs and their identifiers, the original script and the converted script:
+
+### morphemes_labelled
+Each noun and verb morpheme has been given its own identifier. </break></break>
+### letters_labelled
+Letters remaining after converted syllables to CV and VC are in this file.</break>
+### VC_syllables_labelled
+Has vowel-consonant syllables that have been given their own identifiers.
+### CV_syllables_labelled
+Has consonant-vowel syllables that have been given their own identifiers.
+### clitics_and_postpositions_labelled
+Has clitics, postpositions, determiners etc and their identifiers.
+### logo_syllabic_tamil_sentences
+Logosyllabic Tamil Sentences
+### lemmas_labelled
+Lemmas of Verbs, Adjectives, Numerals, Adverbs, Nouns and Pronouns and their identifiers. Proper nouns were left as syllables instead of converted into logograms.
+
+Here is a brief description of each of the programming files:
+
 ## Tamil_Morpheme_List.ipynb
 I considered using unsupervised algorithms such as the Morfessor algorithm (combination of minimum description length and maximum a posterior algorithm) or a Nested Pitman-Yor based algorithm for morpheme segmentation to segment the noun and verb morphemes. However, the literature review revealed that using these algorithms for Tamil had an F score of around 50%. Reasons they failed included morphophonemic changes at morpheme boundaries and failing to identify character combinations that needed to be considered as a single character. [4][5] This is why I filtered the dataset for each noun and verb part of speech using regular expressions and manually created a morpheme list.
 
 ## Convert_clitics.ipynb 
 I identified other parts of speech that were already separated such as postpositions and quantifiers and added them to the clitics list. Then, I gave them each a unique numeric identifier and replaced them in the complete dataframe.
 
-## Convert_lemmas.ipynb/Convert_lemma_with_proper_nouns.ipynb For Convert_lemmas 
-For Convert_lemmas -  I identified root words, gave them each a unique numeric identifier and replaced them in the complete dataframe. I converted root words prior to converting morphemes because I did not want to replace morphemes occurring in the root words. I omitted replacing the lemma in proper nouns and instead replaced each letter with their own identifier.
+## Convert_lemmas.ipynb
+For Convert_lemmas -  I identified root words, gave them each a unique numeric identifier and replaced them in the complete dataframe. I converted root words prior to converting morphemes because I did not want to replace morphemes occurring in the root words. I omitted replacing the lemma in proper nouns.
 
-For Convert_lemma_with_proper_nouns - I did the same as above except I replaced the lemma in proper nouns with unique identifiers.
+## Convert_morphemes.ipynb
+For Convert_morphemes - I gave morphemes, syllables as well as letters their own identifiers. I assumed that proper nouns are spelled syllabically in a logosyllabic language.
 
-## Convert_morphemes.ipynb/Convert_morphemes_with_proper_nouns For Convert_morphemes 
-For Convert_morphemes - I gave unidentified morphemes as well as letters appearing in proper nouns identifiers. I assumed that proper nouns are spelled syllabically in a logosyllabic language. I added this version of the script to the folder Converted_Tamil_With_Syllabic_Names.
-
-For Convert_morphemes_with_proper_nouns - I created a version of the script converting the names into their own signs. This is in the folder Converted_Tamil_With_Logographic_Names. I gave the same identifiers to morphemes that were spelled differently but still had the same phonetic and grammatical function.
-
-## Convert_logosyllabic_words_to_sentences.ipynb/Convert_logosyllabic_words_to_sentences_with_names.ipynb 
+## Convert_logosyllabic_words_to_sentences.ipynb
 I converted the logosyllabic words to sentences using punctuation labels.
 
 # REFERENCES
