@@ -108,8 +108,8 @@ Perform the analysis on shorter sentences (simple Subject-object-Verb constructi
  ## Possible Plural Marker
  The most frequent sign in the Tamil script is the plural marker ‘கள்’ (kal) or sign ‘4012’. On analysing the most frequent Indus signs, one sign had a very similar positional distribution: sign '220'.
  
-<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/4012_.PNG?raw=true">
-<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/220.PNG?raw=true">
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/4012_.PNG?raw=true" width = 400>
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/220.PNG?raw=true" width = 400>
 
  Sign 220 is a fish sign. Fish Signs are often associated with numerals. This is why they were classified as units of measurement (ex- kg) (Bonta 1995). They also mostly occur in the medial context.
 It can be found in the initial, medial as well as terminal positions.
