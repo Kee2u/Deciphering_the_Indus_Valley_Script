@@ -114,11 +114,11 @@ Perform the analysis on shorter sentences (simple Subject-object-Verb constructi
  Sign 220 is a fish sign. Fish Signs are often associated with numerals. This is why they were classified as units of measurement (ex- kg) (Bonta 1995). They also mostly occur in the medial context.
 It can be found in the initial, medial as well as terminal positions.
 
-<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Capture1.PNG?raw=true" width = 600>
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Capture1.PNG?raw=true" width = 400>
 
 This behaviour was previously attributed to polyvalence but there is a possibility that the range is due to its function as plural marker. An analysis of sign groupings also shows that sign 220 occurs with multiple other signs (not just numerals). This further strengthens the case that it is the plural marker.
 
-<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Capture.PNG?raw=true" width = 600>
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Pictures/Capture.PNG?raw=true" width = 400>
 
 
 
