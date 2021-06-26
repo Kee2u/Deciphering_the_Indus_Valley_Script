@@ -71,7 +71,7 @@ A Support Vector machine is a good choice since this is a binary classification 
 We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Refer
 
 ### Create visualizations  
-We will use Heroku to deploy our visualizations. 
+We will use Heroku to deploy our visualizations. Access visualization here: <b>https://deciphering-indus-script.herokuapp.com/</b>
 
 # Fourth Segment Project Deliverable Submission
 Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
