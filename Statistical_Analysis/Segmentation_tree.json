@@ -12,7 +12,15 @@
                 "children":[
                     {
                        "name":"mister_a",
-                       "colname":"level4"
+                       "children":[
+                        {
+                           "name":"mister_a",
+                           
+                           "colname":"level4"
+                        }
+                    ],
+                       
+                        "colname":"level4"
                     }
                 ],
                 "colname":"level3"
