@@ -12,16 +12,13 @@
                 "children":[
                     {
                        "name":"mister_a",
-                       "children":[
-                        {
-                           "name":"mister_a",
-                           
-                           "colname":"level4"
-                        }
-                    ],
-                       
+                       "colname":"level4"
+                    },
+                    {
+                        "name":"mister_b",
                         "colname":"level4"
-                    }
+                     },
+
                 ],
                 "colname":"level3"
              }
