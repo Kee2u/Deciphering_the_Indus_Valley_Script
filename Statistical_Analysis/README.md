@@ -7,10 +7,10 @@ The Statistical Analysis in this project follows the equations outlined by Dr. A
    > w(r) = B*r^G
 
 where:
-w(r) = number of signs with the same frequency
-r = rank (Performed by sorting w(r) in descending order
-B = constant
-G = exponent.
+<strong>w(r)</strong> = number of signs with the same frequency <br/>
+<strong>r</strong> = rank (Performed by sorting w(r) in descending order <br/>
+<strong>B</strong> = constant <br/>
+<strong>G</strong> = exponent. <br/>
 
 When plotting log w(r) vs log r, the slope equals the exponent G.
 The value of G varies for different writing systems. For pure syllabic systems, G = -0.6, pure logographic systems have a G = -2 and logosyllabic scripts have a G between -1.4 and -1.1. The Indus script has a G = -1.35 which classifies it as logosyllabic.
