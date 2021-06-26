@@ -1,11 +1,5 @@
 # Statistical Analysis
 
-The file <strong>Calculating_Modified_Power_Law.ipynb</strong> classifies the converted Tamil script to logosyllabic by calculating modified power law.
-The file <strong>Histograms.ipynb</strong> calculates the Histograms for each sign in the Tamil Script </br>
-The file <strong>"Histograms2"</strong> contains all the Histograms for each sign in the Tamil Script </br>
-The file <strong>Multivariate_Segmentation.ipynb</strong> calculates the connectivities between sign pairs in the Tamil Script </br>
-The file <strong>Histogram_Prbability_Distribution.ipynb</strong> converts each histogram to a probability distribution and runs a deep neural network on it to see if syllables can be predicted based on probability distribution alone.
-
 The Statistical Analysis in this project follows the equations outlined by Dr. Andres Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of the following parts:
 
 ## Calculating Modified Power Law
@@ -92,4 +86,8 @@ On calculating modified power law for my converted Tamil script, the value was G
    
    > NIT = log(terminal frequency of sign j)/log(frequency of sign j) * log(initial frequency of sign i)/log(frequency of sign i)
 
-Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for preliminary results. There is more to come.
+The file <strong>Calculating_Modified_Power_Law.ipynb</strong> classifies the converted Tamil script to logosyllabic by calculating modified power law.
+The file <strong>Histograms.ipynb</strong> calculates the Histograms for each sign in the Tamil Script </br>
+The file <strong>"Histograms2"</strong> contains all the Histograms for each sign in the Tamil Script </br>
+The file <strong>Multivariate_Segmentation.ipynb</strong> calculates the connectivities between sign pairs in the Tamil Script </br>
+The file <strong>Histogram_Probability_Distribution.ipynb</strong> converts each histogram to a probability distribution and runs a deep neural network on it to see if syllables can be predicted based on probability distribution alone.
