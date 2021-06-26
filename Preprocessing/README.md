@@ -7,7 +7,7 @@ The only exception was proper nouns for which I created syllabic spellings.
 
 See the image below for examples of cuneiform syllables:
 
-<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Preprocessing/Pictures/Capture.PNG?raw=true">
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Preprocessing/Pictures/Cuneiform.png?raw=true">
  
 I used the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) available here: https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data [1]
 
