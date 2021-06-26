@@ -5,6 +5,10 @@ I modelled the structure of the syllables after cuneiform and created syllables 
 I converted lemmas and morphemes (including noun and verb morphemes as well as clitics, determiners etc) into logograms by giving each of them their unique sign identifier. 
 The only exception was proper nouns for which I created syllabic spellings.
 
+See the image below for examples of cuneiform syllables:
+
+<img src = "https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Preprocessing/Pictures/Capture.PNG?raw=true">
+ 
 I used the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) available here: https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data [1]
 
 The dataset consists of Tamil news articles tagged by part of speech. Some of the morphemes including clitics and postpositions have been separated already. However, the dataset does not separate noun and verb morphemes. Note that Tamil word morphology is exclusive to nouns and verbs.
