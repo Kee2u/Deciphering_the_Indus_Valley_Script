@@ -4,11 +4,6 @@
           "tname":"1.448",
           "children":[
              {
-                "name":"SIGN 001",
-                "colname":"level3",
-                "image" : "http://www.clker.com/cliparts/1/4/5/a/1331068897296558865Sitting%20Racoon.svg"
-             },
-             {
                 "tname":"1.988",
                 "children":[
                     {
@@ -22,6 +17,11 @@
 
                 ],
                 "colname":"level3"
+             },
+             {
+                "name":"SIGN 001",
+                "colname":"level3",
+                "image" : "https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/001.svg"
              }
           ],
           "colname":"level2"
