@@ -1,21 +1,21 @@
 {
     "children":[
        {
-          "name":"boss1",
+          "tname":"1.448",
           "children":[
              {
-                "name":"mister_a",
+                "name":"Sign 001",
                 "colname":"level3"
              },
              {
-                "name":"mister_b",
+                "tname":"1.988",
                 "children":[
                     {
-                       "name":"mister_a",
+                       "name":"Sign 250",
                        "colname":"level4"
                     },
                     {
-                        "name":"mister_b",
+                        "name":"Sign 031",
                         "colname":"level4"
                     }
 
@@ -26,24 +26,24 @@
           "colname":"level2"
        },
        {
-        "name":"boss1",
+        "tname":"1.905",
         "children":[
            {
-              "name":"mister_a",
+              "name":"Sign 518",
               "colname":"level3"
            },
            {
-              "name":"mister_b",
+              "tname":"2.362",
               "children":[
                   {
-                     "name":"mister_a",
+                     "tname":"2.695",
                      "children":[
                         {
-                           "name":"mister_a",
+                           "name":"Sign 892",
                            "colname":"level5"
                         },
                         {
-                            "name":"mister_b",
+                            "name":"Sign 400",
                             "colname":"level5"
                         }
       
@@ -51,7 +51,7 @@
                      "colname":"level4"
                   },
                   {
-                      "name":"mister_b",
+                      "name":"Sign 081",
                       "colname":"level4"
                   }
 
@@ -62,6 +62,6 @@
         "colname":"level2"
        }
     ],
-    "name":"CEO"
+    "name":"0.978"
  }
  
