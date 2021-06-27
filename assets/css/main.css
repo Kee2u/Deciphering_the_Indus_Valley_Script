@@ -114,6 +114,14 @@ input, select, textarea {
 	border: 1px solid #000;
   }
 
+/* Indus histogram */
+.box1 {
+	padding: 20px;
+	display: none;
+	margin-top: 20px;
+	border: 1px solid rgb(255, 255, 255);
+  }
+
 /* Basic */
 
 	@-ms-viewport {
