@@ -4,32 +4,18 @@
           "name":"boss1",
           "children":[
              {
+                "name":"mister_a",
+                "colname":"level3"
+             },
+             {
                 "name":"mister_b",
                 "children":[
                     {
+                       "name":"mister_a",
+                       "colname":"level4"
+                    },
+                    {
                         "name":"mister_b",
-                        "children":[
-                            {
-                               "name":"mister_a",
-                               "colname":"level5"
-                            },
-                            {
-                                "name":"mister_b",
-                                "children":[
-                                    {
-                                       "name":"mister_a",
-                                       "colname":"level6"
-                                    },
-                                    {
-                                        "name":"mister_b",
-                                        "colname":"level6"
-                                    }
-                
-                                ],
-                                "colname":"level5"
-                            }
-        
-                        ],
                         "colname":"level4"
                     }
 
