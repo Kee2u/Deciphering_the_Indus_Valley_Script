@@ -7,10 +7,6 @@
                 "name":"mister_b",
                 "children":[
                     {
-                       "name":"mister_a",
-                       "colname":"level4"
-                    },
-                    {
                         "name":"mister_b",
                         "children":[
                             {
@@ -19,6 +15,17 @@
                             },
                             {
                                 "name":"mister_b",
+                                "children":[
+                                    {
+                                       "name":"mister_a",
+                                       "colname":"level6"
+                                    },
+                                    {
+                                        "name":"mister_b",
+                                        "colname":"level6"
+                                    }
+                
+                                ],
                                 "colname":"level5"
                             }
         
