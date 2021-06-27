@@ -5,7 +5,8 @@
           "children":[
              {
                 "name":"SIGN 001",
-                "colname":"level3"
+                "colname":"level3",
+                "image" : "http://www.clker.com/cliparts/1/4/5/a/1331068897296558865Sitting%20Racoon.svg"
              },
              {
                 "tname":"1.988",
@@ -51,7 +52,7 @@
                      "colname":"level4"
                   },
                   {
-                      "name":"Sign 081",
+                      "name":"SIGN 081",
                       "colname":"level4"
                   }
 
