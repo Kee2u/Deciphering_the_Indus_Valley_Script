@@ -33,9 +33,9 @@
 							<ul>
 								<li><a href="#about">About Us</a></li>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#preprocessing">Preprocessing</a></li>
+								<li><a href="#preprocessing">Data</a></li>
 								<li><a href="#stat">Statistical Analysis</a></li>
-								<li><a href="#ml">Machine Learning</a></li>					
+								<li><a href="#ml">Next Steps</a></li>					
 							</ul>
 						</nav>
 						<div>
@@ -61,7 +61,7 @@
 								<h3>Keerthana Jayakumar</h3>
 								<span class="image main" style="float: right; width: 230px; padding: 5px;"><img src="images/keet.jpg" alt="" /></span>
 								I studied Mechatronics Engineering at University of Toronto. I recently completed the University of Toronto Data Analytics Bootcamp.
-								My interests include painting. For this project, I preprocessed the data and stored the data into a PostgreSQL database in various
+								My interests include painting and hiking. For this project, I preprocessed the data and stored the data into a PostgreSQL database in various
 								tables. I conducted the statistical analysis to identify similar distributions between Tamil and Indus Valley sign pairs and outputted
 								their respective histograms and segmentation trees.
 								
@@ -76,7 +76,7 @@
 								I studied Electrical Engineering at McMaster University. I am aspiring to go into the Data Science field. 
 								I recently completed the University of Toronto Data Analytics Bootcamp. My interests include dancing, singing, and watching movies.
 								For this project, I created the SVM Machine Learning algorithm to segment the morphemes used within the statistical analysis. I also
-								created the interactive visualization showcasing our project and results using HTML, CSS, and Javascript. 
+								worked on the Front-End design, creating the interactive visualizations showcasing our project and results using HTML, CSS, and Javascript. 
 								<br>
 								<a href="https://github.com/Soniaprogram" class="icon brands fa-github"><span class="label">Github</span> <b>Click to Visit my Github!</b></a>
 								<br><i class="fa fa-envelope"></i><a href="mailto:soniashar95@gmail.com"><b> Email me at soniashar95@gmail.com</b></a>
@@ -97,7 +97,7 @@
 									</a>
 								</div>
 								<span class="image main"><img src="images/indus.jpg" alt="" /></span>
-								<p>This project is an attempt to decipher the ancient Indus Valley script by comparing it with modern Tamil (a Dravidian language). By the way, check out our <a href="#work">awesome work</a>.
+								<p>This project is an attempt to decipher the ancient Indus Valley script by comparing it with modern Tamil (a Dravidian language).
 									<b>Our strategy is to:</b>
 									Convert Tamil script from <b>syllabic</b> to <b>logosyllabic</b> by converting <b>morphemes</b> to signs.
 									Perform a statistical analysis to compare the converted script with the Indus script.
@@ -136,16 +136,29 @@
 									</a>
 								</div>
 								<span class="image main"><img src="images/dataprocess.PNG" alt="" /></span>
-								<p>Using the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) <a href = "https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data">See Tagged Dataset</a>.
-									The dataset consists of Tamil news articles tagged by part of speech. Some of the morphemes including clitics and postpositions were alreedy separated. However, the dataset does not separate noun and verb morphemes. Tamil word morphology is exclusive to nouns and verbs. We split the database into morphemes, clitics, and lemmas and formulated tables stored in our PostgresSQL server.
+								<p>
+									The first step to compare the Indus script with Tamil is to convert Tamil from a <b>syllabic</b> to a <b>logosyllabic script</b>.
+									Similar to the Indus script, we modelled the structure of the syllables after <b>cuneiform</b> and created syllables of the forms <b>CV</b>, <b>VC</b>, <b>V</b> and <b>C</b> (Where 'C' is consonant and 'V' is vowel).
+								<div>
+									<img src="images/cuneiform.gif" alt="" style="height: 300px;"/>
+									<img src="images/cuneiform.jpg" alt="" style="width: 50%; height: 300px;"/>
+								</div>			
+									<br>
+									We used the labelled Tamil database provided by the Institute of Formal and Applied Linguistics (UFAL) <a href = "https://ufal.mff.cuni.cz/~ramasamy/tamiltb/0.1/introduction.html#1.2.Data">See Tagged Dataset</a>.
+									The dataset consists of Tamil news articles tagged by part of speech (POS). 
+									<span class="image main"><img src="images/conllfile.png" alt="" /></span>
+									
+									Some of the morphemes including clitics and postpositions were already separated. However, the dataset does not separate noun and verb morphemes. 
+									Tamil word morphology is exclusive to nouns and verbs. We split the database into morphemes, clitics, and lemmas and formulated tables stored in our PostgresSQL server. 
+									<span class="image main"><img src="images/morphemelabelled.PNG" alt="" /></span>
+									
+									We converted the lemmas and morphemes (including noun and verb morphemes as well as clitics, determiners, etc) into <b>logograms</b> (sign represents a word or morpheme) 
+									by giving each of them their unique sign identifier.
+									<span class="image main"><img src="images/logosyllabic.gif" alt="" /></span>
+									<span class="image main"><img src="images/logosentences.PNG" alt="" /></span>
 								</p>
-								<span class="image main"><img src="images/conllfile.png" alt="" /></span>
-								<span class="image main"><img src="images/arrow.gif" alt="" /></span>
-								<span class="image main"><img src="images/morphemelabelled.PNG" alt="" /></span>
-								<span class="image main"><img src="images/arrow.gif" alt="" /></span>
-								<span class="image main"><img src="images/logosyllabic.gif" alt="" /></span>
-								<span class="image main"><img src="images/arrow.gif" alt="" /></span>
-								<span class="image main"><img src="images/logosentences.PNG" alt="" /></span>
+								<br>								
+								
 								<div style="text-align: center;">
 									<a href="#preprocessing" class="to-top">Back to top</a>
 								</div>
@@ -159,105 +172,131 @@
 										<b>Click here to read more about the Statistical Analysis and Results!</b>
 									</a>
 								</div>
-								<p>We are performing a statistical analysis in Python on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Some methods we will use include multivariate segmentation method and frequency histograms.		
-									We are using positional histograms to find possible initial, medial, and terminal signs on our converted Tamil dataset. We have identified key sign pairs and have calculated their connectivities. Using this, we create our segmentation trees. The higher the segmentation tree, the higher the connectivity between the sign pair. We can then compare this to Indus sign groups. The goal is to identify morphemes with similar distributions in both scripts.
-								
-								</p>
-								
-								<span class="image main"><img src="images/histogram.PNG" alt="" /></span>
-								<span class="image main"><img src="images/segmentation.PNG" alt="" /></span>
+								<br><br>
+								<h2>RESULTS</h2>
+								<p>
+									<b>1) Disproved that Uniform frequency is a good indicator of a syllabic sign</b>
+									
+									We converted histograms to probability distributions which were used alongside a Deep Neural Network to predict syllables. When creating histograms, sentences are normalized to a length of 10. Since Tamil sentences are longer than Indus valley script (Average 4.5 signs long), this results in different distributions between both scripts. Thus, it can be seen that there is also a uniform distribution with nouns. This is why the neural network had a low accuracy as the nouns were not identified as syllables. This shows us that a uniform frequency is not only seen with syllables.
 
-								<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-								<div>
-								  <select>
-									<option style="display: none;">Choose Tamil Sign Histogram</option>
-									<option value="Oone">4000</option>
-									<option value="Otwo">4001</option>
-									<option value="Othree">4005</option>
-									<option value="Ofour">4006</option>
-									<option value="Ofive">4007</option>
-									<option value="Osix">4008</option>
-									<option value="Oseven">4009</option>
-									<option value="Oeight">4012</option>
-								  </select>
-								</div>
-								<div class="red box">Histogram for Tamil sign number <strong>4000</strong>
-									<img src="images/histograms/4000.jpg" />
-								</div>
-								<div class="green box">Histogram for Tamil sign number <strong>4001</strong>
-									<img src="images/histograms/4001.jpg" />
-								</div>
-								<div class="blue box">Histogram for Tamil sign number <strong>4005</strong>
-								  <img src="images/histograms/4005.jpg" />
-								</div>
-								<div class="four box">Histogram for Tamil sign number <strong>4006</strong>
-									<img src="images/histograms/4006.jpg" />
-								</div>
-								<div class="five box">Histogram for Tamil sign number <strong>4007</strong>
-									<img src="images/histograms/4007.jpg" />
-								</div>
-								<div class="six box">Histogram for Tamil sign number <strong>4008</strong>
-									<img src="images/histograms/4008.jpg" />
-								</div>
-								<div class="seven box">Histogram for Tamil sign number <strong>4009</strong>
-									<img src="images/histograms/4009.jpg" />
-								</div>
-								<div class="eight box">Histogram for Tamil sign number <strong>4012</strong>
-									<img src="images/histograms/4012.jpg" />									
-								</div>
-								<br>
-								<div>
-									<select>
-									  <option style="display: none;">Choose Indus Sign Histogram</option>
-									  <option value="1one">415</option>
-									  <option value="1two">455</option>
-									  <option value="1three">520</option>
-									  <option value="1four">575</option>
-									  <option value="1five">705</option>
-									  <option value="1six">741</option>
-									  <option value="1seven">760</option>
-									  <option value="1eight">803</option>
-									</select>
-								</div>
-								<div class="1red box">Histogram for Indus sign number <strong>415</strong>
-									<img src="images/indushistograms/415.PNG" />
-								</div>
-								<div class="1green box">Histogram for Indus sign number <strong>455</strong>
-									<img src="images/indushistograms/455.PNG" />
-								</div>
-								<div class="1blue box">Histogram for Indus sign number <strong>520</strong>
-									<img src="images/indushistograms/520.PNG" />
-								</div>
-								<div class="1four box">Histogram for Indus sign number <strong>575</strong>
-									<img src="images/indushistograms/575.PNG" />
-								</div>
-								<div class="1five box">Histogram for Indus sign number <strong>705</strong>
-									<img src="images/indushistograms/705.PNG" />
-								</div>
-								<div class="1six box">Histogram for Indus sign number <strong>741</strong>
-									<img src="images/indushistograms/741.PNG" />
-								</div>
-								<div class="1seven box">Histogram for Indus sign number <strong>760</strong>
-									<img src="images/indushistograms/760.PNG" />
-								</div>
-								<div class="1eight box">Histogram for Indus sign number <strong>803</strong>
-									<img src="images/indushistograms/803.PNG" />									
-								</div>
-								<div class="1nine box">Histogram for Indus sign number <strong>832</strong>
-									<img src="images/indushistograms/832.PNG" />									
-								</div>
-								<div class="1ten box">Histogram for Indus sign number <strong>838</strong>
-									<img src="images/indushistograms/838.PNG" />									
-								</div>
-								<div class="1eleven box">Histogram for Indus sign number <strong>840</strong>
-									<img src="images/indushistograms/840.PNG" />									
-								</div>
-								<div class="1twelve box">Histogram for Indus sign number <strong>940</strong>
-									<img src="images/indushistograms/940.PNG" />									
-								</div>
-								<br>
-								<iframe width="100%" height="894px" src="https://public.tableau.com/views/Indus_16247447741790/Sheet1?:showVizHome=no&:embed=true">
-								</iframe>
+									<b>2) Missing features - adding connectivities in Future Steps</b>
+
+									Need to incorporate segmentation tree sign pair connectivities into the analysis to further increase the accuracy
+
+									<b>3) Identified Potential Plural Marker</b>
+
+									The most frequent sign in the Tamil script is the plural marker ‘கள்’ (kal) or sign ‘4012’. On analysing the most frequent Indus signs, one sign had a very similar positional distribution: sign '220'. Further analysis of the positional placement of Sign '220' in words and occurrence with multiple other signs, further strengthens that it represents a plural marker.
+									<span class="image main"><img src="images/compare.jpg" alt="" /></span>
+								</p>
+
+								<h2>Prior Analysis</h2>
+								
+								<p>
+									We initially used the Modified Power Law to test if the script is logosyllabic. On calculating the modified power law for the converted Tamil script, the resulting value was G = -1.13 similar to Old Assyrian Cuneiform. This classifies the script as <b>logosyllabic</b>.
+									
+									<iframe width="100%" height="894px" src="https://public.tableau.com/views/Indus_16247447741790/Sheet1?:showVizHome=no&:embed=true">
+									</iframe>
+									
+									We then calculated <b>positional histograms</b> to identify positional frequencies for each Tamil sign. Each bar represents where in a word, the sign is more frequently seen. 
+									Keep in mind Tamil reads from left to right and Indus script reads from right to left. To see these some examples, see the dropdowns below showcasing Tamil and Indus script histograms. These histograms can be used to compare which Tamil and Indus valley signs have similar position frequency distributions.
+									<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+									<div>
+									  <select>
+										<option style="display: none;">Choose Tamil Sign Histogram</option>
+										<option value="Oone">4000</option>
+										<option value="Otwo">4001</option>
+										<option value="Othree">4005</option>
+										<option value="Ofour">4006</option>
+										<option value="Ofive">4007</option>
+										<option value="Osix">4008</option>
+										<option value="Oseven">4009</option>
+										<option value="Oeight">4012</option>
+									  </select>
+									</div>
+									<div>
+										<div class="red box">Histogram for Tamil sign number <strong>4000</strong>
+											<img src="images/histograms/4000.jpg" />
+										</div>
+										<div class="green box">Histogram for Tamil sign number <strong>4001</strong>
+											<img src="images/histograms/4001.jpg" />
+										</div>
+										<div class="blue box">Histogram for Tamil sign number <strong>4005</strong>
+										<img src="images/histograms/4005.jpg" />
+										</div>
+										<div class="four box">Histogram for Tamil sign number <strong>4006</strong>
+											<img src="images/histograms/4006.jpg" />
+										</div>
+										<div class="five box">Histogram for Tamil sign number <strong>4007</strong>
+											<img src="images/histograms/4007.jpg" />
+										</div>
+										<div class="six box">Histogram for Tamil sign number <strong>4008</strong>
+											<img src="images/histograms/4008.jpg" />
+										</div>
+										<div class="seven box">Histogram for Tamil sign number <strong>4009</strong>
+											<img src="images/histograms/4009.jpg" />
+										</div>
+										<div class="eight box">Histogram for Tamil sign number <strong>4012</strong>
+											<img src="images/histograms/4012.jpg" />									
+										</div>
+									</div>
+									<br>
+									<div>
+									  <select>
+										<option style="display: none;">Choose Indus Sign Histogram</option>
+										<option value="1one">415</option>
+										<option value="1two">455</option>
+										<option value="1three">520</option>
+										<option value="1four">575</option>
+										<option value="1five">705</option>
+										<option value="1six">741</option>
+										<option value="1seven">760</option>
+										<option value="1eight">803</option>
+									  </select>
+									</div>
+									<div>
+										<div class="1red box1">Histogram for Indus sign number <strong>415</strong>
+											<img src="images/indushistograms/415.PNG" />
+										</div>
+										<div class="1green box1">Histogram for Indus sign number <strong>455</strong>
+											<img src="images/indushistograms/455.PNG" />
+										</div>
+										<div class="1blue box1">Histogram for Indus sign number <strong>520</strong>
+											<img src="images/indushistograms/520.PNG" />
+										</div>
+										<div class="1four box1">Histogram for Indus sign number <strong>575</strong>
+											<img src="images/indushistograms/575.PNG" />
+										</div>
+										<div class="1five box1">Histogram for Indus sign number <strong>705</strong>
+											<img src="images/indushistograms/705.PNG" />
+										</div>
+										<div class="1six box1">Histogram for Indus sign number <strong>741</strong>
+											<img src="images/indushistograms/741.PNG" />
+										</div>
+										<div class="1seven box1">Histogram for Indus sign number <strong>760</strong>
+											<img src="images/indushistograms/760.PNG" />
+										</div>
+										<div class="1eight box1">Histogram for Indus sign number <strong>803</strong>
+											<img src="images/indushistograms/803.PNG" />									
+										</div>
+										<div class="1nine box1">Histogram for Indus sign number <strong>832</strong>
+											<img src="images/indushistograms/832.PNG" />									
+										</div>
+										<div class="1ten box1">Histogram for Indus sign number <strong>838</strong>
+											<img src="images/indushistograms/838.PNG" />									
+										</div>
+										<div class="1eleven box1">Histogram for Indus sign number <strong>840</strong>
+											<img src="images/indushistograms/840.PNG" />									
+										</div>
+										<div class="1twelve box1">Histogram for Indus sign number <strong>940</strong>
+											<img src="images/indushistograms/940.PNG" />									
+										</div>
+									</div>
+									<br>
+									Another analysis tool we used were <b>segmentation trees</b>. We identified key sign pairs and calculated their connectivities. Using this, we created our segmentation trees. The higher 
+									the segmentation tree, the higher the connectivity between the sign pair. We can then compare this to Indus sign groups. The goal is to identify morphemes with similar distributions in both scripts.
+
+									<span class="image main"><img src="images/segmentation.PNG" alt="" /></span>
+								</p>
 
 								<div style="text-align: center;">
 									<a href="#stat" class="to-top">Back to top</a>
@@ -267,38 +306,39 @@
 
 						<!-- machine learning -->
 							<article id="ml">
-								<h2 class="major">Machine Learning</h2>
-								<div class="logo">
-									<a href="https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/README.md" class="icon brands fa-github">
-										<b>Click here to read more about the Machine Learning Algorithm!</b>
-									</a>
-								</div>
-								<span class="image main"><img src="images/accscore.PNG" alt="" /></span>
-								<span class="image main"><img src="images/classificationreport.PNG" alt="" /></span>
-								<span class="image main"><img src="images/confusionmatrix.PNG" alt="" /></span>
-								
+								<h2 class="major">Next Steps</h2>
+								<ul>
+									<li>Found probability distributions of Tamil signs. Plan to automate comparing positional frequencies of Tamil and Indus scripts and find signs with matching distributions.</li>
+									<li>Use connectivities to identify morphemes in Indus script.</li>
+									<li>Use the Machine Learning model (outlined below) on a bigger modern Tamil dataset and on an old Tamil dataset to perform morpheme segmentation to use extracted morphemes in statistical analyses.</li>
+								</ul>
+
+									<h2>Machine Learning</h2>
+									<div class="logo">
+										<a href="https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/README.md" class="icon brands fa-github">
+											<b>Click here to read more about the Machine Learning Algorithm used in Next Steps!</b>
+										</a>
+									</div>
 								<p>
 									We programmed a SVM algorithm to automatically perform morpheme extraction on Tamil. We referenced the paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' which used SVM to perform Tamil morpheme segmentation resulting in a high F score. Morpheme extraction is an essential part of morphological analysis. 
 
-									After preprocessing, the words in our dataset and SQL tables were used for our SVM. We obtained the form, lemma, part of speech identifier, and identified the morphemes within 
-									each word. After consulting the paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning’, we identified the current letter of the word, prefix, vowel/consonant,
-									 noun, and verb as vital features for the algorithm.
+									After preprocessing, the words in our dataset and SQL tables were used for our SVM. We obtained the form, lemma, part of speech identifier, and identified the morphemes within each word. After consulting the paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning’, we identified the current letter of the word, prefix, vowel/consonant, noun, and verb as vital features for the algorithm.
 
 									We programmed to manually fill the features_df with the appropriate features:
-									- Identified if the current letter of the word was a vowel (1) or consonant (0)
-									- Noted if the word was a noun indicated by a 1 and a verb represented by a 1 in their columns
-									- We extracted the letters before the current letter to fill the prefix column 
-									- Added programming to identify the morpheme boundaries in each word as our output label for the model
-
-									Before implementing the model, Label Encoding was used on the letters column and prefix columns to allow for numerical values only. Features 
-									selected were the <b>index</b>, <b>vowel/consonant</b>, <b>noun</b>, <b>verb</b>, <b>letter_label_encoded</b>, and <b>prefix_label_encoded</b>. A Standard Scaler was applied to avoid 
-									numerical overflow while running the model. The output label for our model was defined as <b>morpheme boundary</b>.
+									<ul>
+										<li>Identified if the current letter of the word was a vowel (1) or consonant (0)</li>
+										<li>Noted if the word was a noun indicated by a 1 and a verb represented by a 1 in their columns</li>
+										<li>Extracted the letters before the current letter to fill the prefix column</li>
+										<li>Added programming to identify the morpheme boundaries in each word as our output label for the model</li>
+									</ul>
+									
+									Before implementing the model, Label Encoding was used on the letters column and prefix columns to allow for numerical values only. Features selected were the <b>index</b>, <b>vowel/consonant</b>, <b>noun</b>, <b>verb</b>, <b>letter_label_encoded</b>, and <b>prefix_label_encoded</b>. A Standard Scaler was applied to avoid numerical overflow while running the model. The output label for our model was defined as <b>morpheme boundary</b>.
 									
 									<span class="image main"><img src="images/segmentmorpheme.gif" alt="" /></span>
 									
 									We used a 75% training and 25% testing data split with a rbf kernel with a gamma of 0.8 to achieve an <b>accuracy of 76%</b>. 
 
-									<b>Next Steps</b>: Use the ML model on a bigger modern Tamil dataset and on an old Tamil dataset to perform morpheme segmentation to use extracted morphemes in statistical analyses.						
+									<span class="image main"><img src="images/accscore.PNG" alt="" /></span>
 								</p>
 
 								<div style="text-align: center;">
