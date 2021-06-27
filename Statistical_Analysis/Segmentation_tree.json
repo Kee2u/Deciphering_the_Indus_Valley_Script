@@ -8,32 +8,26 @@
                 "children":[
                     {
                        "name":"SIGN 250",
-                       "colname":"level4",
                        "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/250.svg"
                     },
                     {
                         "name":"SIGN 031",
-                        "colname":"level4",
                         "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/031.svg"
                     }
 
-                ],
-                "colname":"level3"
+                ]
              },
              {
                 "name":"SIGN 001",
-                "colname":"level3",
                 "image" : "https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/001.svg"
              }
-          ],
-          "colname":"level2"
+          ]
        },
        {
         "tname":"1.905",
         "children":[
            {
               "name":"SIGN 518",
-              "colname":"level3",
               "image": "https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/518.svg"
            },
            {
@@ -41,7 +35,6 @@
               "children":[
                   {
                       "name":"SIGN 081",
-                      "colname":"level4",
                       "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/081.svg"
                   },
                   {
@@ -49,24 +42,19 @@
                     "children":[
                        {
                           "name":"SIGN 892",
-                          "colname":"level5",
                           "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/892.svg"
                        },
                        {
                            "name":"SIGN 400",
-                           "colname":"level5",
                            "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/400.svg"
                        }
      
-                   ],
-                    "colname":"level4"
+                   ]
                  }
 
-              ],
-              "colname":"level3"
+              ]
            }
-        ],
-        "colname":"level2"
+        ]
        }
     ],
     "tname":"0.978"
