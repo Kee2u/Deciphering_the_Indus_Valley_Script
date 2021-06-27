@@ -26,26 +26,40 @@
           "colname":"level2"
        },
        {
-          "name":"boss2",
-          "children":[
-             {
-                "name":"mister_e",
-                "colname":"level3"
-             },
-             {
-                "name":"mister_f",
-                "colname":"level3"
-             },
-             {
-                "name":"mister_g",
-                "colname":"level3"
-             },
-             {
-                "name":"mister_h",
-                "colname":"level3"
-             }
-          ],
-          "colname":"level2"
+        "name":"boss1",
+        "children":[
+           {
+              "name":"mister_a",
+              "colname":"level3"
+           },
+           {
+              "name":"mister_b",
+              "children":[
+                  {
+                     "name":"mister_a",
+                     "children":[
+                        {
+                           "name":"mister_a",
+                           "colname":"level5"
+                        },
+                        {
+                            "name":"mister_b",
+                            "colname":"level5"
+                        }
+      
+                    ],
+                     "colname":"level4"
+                  },
+                  {
+                      "name":"mister_b",
+                      "colname":"level4"
+                  }
+
+              ],
+              "colname":"level3"
+           }
+        ],
+        "colname":"level2"
        }
     ],
     "name":"CEO"
