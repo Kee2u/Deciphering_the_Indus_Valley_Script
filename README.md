@@ -68,29 +68,10 @@ Based on our literature review, we have identified three ways of segmenting Tami
 A Support Vector machine is a good choice since this is a binary classification problem and it can provide a high accuracy with less computational power. It calculates the ideal hyperplane to separate the data by maximizing the margin distance at feature boundaries. We will use our tagged dataset to train and run an SVM on Old Tamil to segment morphemes. There will be a loss in accuracy due to changes in grammar rules but the hope is to either use FSA or an unsupervised approach to accomodate these changes. Our second Tamil database will be used as training data to refine the SVM before running it on an old Tamil dataset.
 
 ### Perform statistical analysis on both the scripts
-We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. Refer
+We will perform statistical analysis on both the Tamil and Indus scripts to evaluate metrics such as sign connectivity, positional frequency and polyvalency. 
 
 ### Create visualizations  
 We will use Heroku to deploy our visualizations. Access visualization here: <b>https://deciphering-indus-script.herokuapp.com/</b>
-
-# Fourth Segment Project Deliverable Submission
-Referring to main branch of Deciphering_the_Indus_Valley_Script repository:
-Git branches created for each team member. Sonia Sharma - Sonia_Code and Keerthana Jayakumar - Keetu_Code.
-
-### Database
-Refer to <b>[ERD.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.sql)</b> and <b>[ERD.png](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/ERD.PNG)</b> for database schema submission. Refer to <b>[Union.sql](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Database/Union.sql)</b> for a union query to join to tables in PostgreSQL. Refer to <b>[Preprocessing](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/tree/main/Preprocessing)</b> for information and files on preprocessing.
-
-### Visualization
-Refer to <b>[Visualization Outline.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/VisualizationOutline.pdf)</b> file for details on the Visualization Dashboard. Deployed to Heroku, can access here: <b>https://deciphering-indus-valley.herokuapp.com/</b>. For code, reference here: <b>https://github.com/Soniaprogram/Deciphering_Indus_Valley_Script</b>
-
-### Presentation
-Refer to <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> for details on the presentation. The script for the presentation can be seen here <b>[Indus Valley Girls Script.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls%20Script.pdf)</b>.
-
-### Analysis
-Refer to <b>[Statistical Analysis README](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/README.md)</b> for a summary of the statistical analysis, <b>[Histograms.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Statistical_Analysis/Histograms.ipynb)</b> and <b>[Multivariate_Segmentation.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Multivariate_Segmentation.ipynb)</b> for statistical analysis programming, and <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> file for a brief summary of the Statistical Analysis.
-
-### Machine Learning 
-Refer to <b>[Machine_Learning_Preprocessing_Data.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/Machine_Learning_Preprocessing_Data.ipynb)</b> and <b>[TestSVM.ipynb](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Machine_Learning/TestSVM.ipynb)</b> for supervised Machine Learning model, see <b>[Machine Learning README](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/tree/main/Machine_Learning)</b> for details on Machine Learning algorithm used in project, and <b>[Indus Valley Girls.pdf](https://github.com/Kee2u/Deciphering_the_Indus_Valley_Script/blob/main/Presentation/Indus%20Valley%20Girls.pdf)</b> file for a brief summary of the Machine Learning algorithm.
 
 
 # References
