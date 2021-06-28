@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Deciphering the Indus Valley Script</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -60,10 +60,7 @@
 							<p>
 								<h3>Keerthana Jayakumar</h3>
 								<span class="image main" style="float: right; width: 230px; padding: 5px;"><img src="images/keet.jpg" alt="" /></span>
-								I studied Mechatronics Engineering at University of Toronto. I recently completed the University of Toronto Data Analytics Bootcamp.
-								My interests include painting and hiking. For this project, I preprocessed the data and stored the data into a PostgreSQL database in various
-								tables. I conducted the statistical analysis to identify similar distributions between Tamil and Indus Valley sign pairs and outputted
-								their respective histograms and segmentation trees.
+								I studied Mechatronics Engineering at the University of Toronto and graduated with Honors. I recently completed the University of Toronto Data Analytics Bootcamp and am an aspiring Data Scientist. My interests include painting and hiking. For this project, I completed all the background research and created an algorithm strategy. I completed the conversion of Tamil from Syllabic to Logosyllabic on Pandas and stored the data into a PostgreSQL database hosted on an Amazon AWS cloud server. I also conducted the entire statistical analysis to identify similar distributions between Tamil and Indus Valley signs. This included calculating modified power law, creating positional histograms, segmentation trees and creating a deep neural network algorithm using Python’s Sklearn library.
 								
 								<br>
 								<a href="https://github.com/Kee2u" class="icon brands fa-github"><span class="label">Github</span> <b> Click to Visit my Github!</b></a>
@@ -301,9 +298,8 @@
 									<br>
 									Another analysis tool we used were <b>segmentation trees</b>. We identified key sign pairs and calculated their connectivities. Using this, we created our segmentation trees. The higher 
 									the segmentation tree, the higher the connectivity between the sign pair. We can then compare this to Indus sign groups. The goal is to identify morphemes with similar distributions in both scripts.
-
-									<span class="image main"><img src="images/segmentation.PNG" alt="" /></span>
 								</p>
+								<div id="my_dataviz"></div>
 
 								<div style="text-align: center;">
 									<a href="#stat" class="to-top">Back to top</a>
@@ -317,7 +313,7 @@
 								<ul>
 									<li>Found probability distributions of Tamil signs. Plan to automate comparing positional frequencies of Tamil and Indus scripts and find signs with matching distributions.</li>
 									<li>Use connectivities to identify morphemes in Indus script.</li>
-									<li>Use the Machine Learning model (outlined below) on a bigger modern Tamil dataset and on an old Tamil dataset to perform morpheme segmentation to use extracted morphemes in statistical analyses.</li>
+									<li>Use the Machine Learning model (outlined below) on a modern Tamil dataset with shorter sentences and on an old Tamil dataset to perform morpheme segmentation to use extracted morphemes in statistical analyses.</li>
 								</ul>
 
 									<h2>Machine Learning</h2>
@@ -327,6 +323,8 @@
 										</a>
 									</div>
 								<p>
+									For this project, we had to manually identify and segment the morphemes. Going forward, we can automate this process. Automating it requires a tagged dataset which we did not have at the beginning of the project, hence the manual extraction.
+									
 									We programmed a SVM algorithm to automatically perform morpheme extraction on Tamil. We referenced the paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning' which used SVM to perform Tamil morpheme segmentation resulting in a high F score. Morpheme extraction is an essential part of morphological analysis. 
 
 									After preprocessing, the words in our dataset and SQL tables were used for our SVM. We obtained the form, lemma, part of speech identifier, and identified the morphemes within each word. After consulting the paper 'Morpheme Extraction and Lemmatization for Tamil using Machine Learning’, we identified the current letter of the word, prefix, vowel/consonant, noun, and verb as vital features for the algorithm.
@@ -344,8 +342,6 @@
 									<span class="image main"><img src="images/segmentmorpheme.gif" alt="" /></span>
 									
 									We used a 75% training and 25% testing data split with a rbf kernel with a gamma of 0.8 to achieve an <b>accuracy of 76%</b>. 
-
-									<span class="image main"><img src="images/accscore.PNG" alt="" /></span>
 								</p>
 
 								<div style="text-align: center;">
@@ -374,9 +370,10 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/function.js"></script>
 			<script src="assets/js/function1.js"></script>
-			<script src="https://d3js.org/d3.v4.js"></script>
-			<script src="assets/js/dendogram.js"></script>
+			<script async src="//jsfiddle.net/kee2u/59uv1hg3/104/embed/"></script>
+			<script src="assets/js/dendo.js"></script>
 			<script src="assets/js/tableau.js"></script>
 			<script src='http://mysite.myserver.com/javascripts/api/viz_v1.js'></script>
+			<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	</body>
 </html>
