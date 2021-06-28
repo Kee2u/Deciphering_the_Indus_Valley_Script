@@ -1,9 +1,13 @@
-<svg width="16.000000pt" height="52.000000pt" viewBox="0 0 16.000000 52.000000" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(0.000000,52.000000) scale(0.100000,-0.100000)" fill="#fafafa" stroke="none">
-    <path d="M0 260 l0 -260 80 0 80 0 0 260 0 260 -80 0 -80 0 0 -260z m67 -107
-c-1 -65 -3 -14 -3 112 0 127 2 180 3 118 2 -62 2 -165 0 -230z" />
-  </g>
-  <g transform="translate(0.000000,52.000000) scale(0.100000,-0.100000)" fill="#dddddd" stroke="none">
-    <path d="M52 263 l3 -236 13 -5 12 -4 0 241 0 241 -15 0 -15 0 2 -237z" />
-  </g>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="16.000000pt" height="52.000000pt" viewBox="0 0 16.000000 52.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,52.000000) scale(0.100000,-0.100000)"
+fill="#dddddd" stroke="none">
+<path d="M54 487 c-9 -25 1 -462 11 -462 6 0 11 88 13 238 1 160 -1 237 -8
+237 -6 0 -13 -6 -16 -13z"/>
+</g>
 </svg>
