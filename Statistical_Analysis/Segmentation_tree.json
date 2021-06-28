@@ -1,67 +1,62 @@
 {
     "children":[
        {
-          "name":"boss1",
+          "tname":"1.448",
           "children":[
              {
-                "name":"mister_a",
-                "colname":"level3"
-             },
-             {
-                "name":"mister_b",
+                "tname":"1.988",
                 "children":[
                     {
-                       "name":"mister_a",
-                       "colname":"level4"
+                       "name":"SIGN 250",
+                       "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/250.svg"
                     },
                     {
-                        "name":"mister_b",
-                        "colname":"level4"
+                        "name":"SIGN 031",
+                        "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/031.svg"
                     }
 
-                ],
-                "colname":"level3"
+                ]
+             },
+             {
+                "name":"SIGN 001",
+                "image" : "https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/001.svg"
              }
-          ],
-          "colname":"level2"
+          ]
        },
        {
-        "name":"boss1",
+        "tname":"1.905",
         "children":[
            {
-              "name":"mister_a",
-              "colname":"level3"
+              "name":"SIGN 518",
+              "image": "https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/518.svg"
            },
            {
-              "name":"mister_b",
+              "tname":"2.362",
               "children":[
                   {
-                     "name":"mister_a",
-                     "children":[
-                        {
-                           "name":"mister_a",
-                           "colname":"level5"
-                        },
-                        {
-                            "name":"mister_b",
-                            "colname":"level5"
-                        }
-      
-                    ],
-                     "colname":"level4"
+                      "name":"SIGN 081",
+                      "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/081.svg"
                   },
                   {
-                      "name":"mister_b",
-                      "colname":"level4"
-                  }
+                    "tname":"2.695",
+                    "children":[
+                       {
+                          "name":"SIGN 892",
+                          "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/892.svg"
+                       },
+                       {
+                           "name":"SIGN 400",
+                           "image":"https://raw.githubusercontent.com/Kee2u/Deciphering_the_Indus_Valley_Script/main/Statistical_Analysis/Signs_for_dendogram/400.svg"
+                       }
+     
+                   ]
+                 }
 
-              ],
-              "colname":"level3"
+              ]
            }
-        ],
-        "colname":"level2"
+        ]
        }
     ],
-    "name":"CEO"
+    "tname":"0.978"
  }
  
