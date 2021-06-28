@@ -6,7 +6,7 @@
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,51.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="#dddddd" stroke="none">
 <path d="M80 441 c0 -48 3 -61 15 -61 13 0 15 11 13 57 -4 81 -28 85 -28 4z"/>
 </g>
 </svg>
