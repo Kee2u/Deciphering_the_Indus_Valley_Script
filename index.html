@@ -55,12 +55,17 @@
 
 						<!-- About Me -->
 						<article id="about">
+							<span class="image main" style="float: right; width: 230px; padding: 5px;"><img src="images/question-language.jpg" alt="" /></span>
 							<h2 class="major">About Us</h2>
-							<p>We are the Indus Valley Girls! We have been avidly working on this project. See below to learn a little more about us.</p>
+							
+							<p>
+								We are the Indus Valley Girls! We have been avidly working on this project. See below to learn a little more about us.
+							</p>
 							<p>
 								<h3>Keerthana Jayakumar</h3>
 								<span class="image main" style="float: right; width: 230px; padding: 5px;"><img src="images/keet.jpg" alt="" /></span>
-								I studied Mechatronics Engineering at the University of Toronto and graduated with Honors. I recently completed the University of Toronto Data Analytics Bootcamp and am an aspiring Data Scientist. My interests include painting and hiking. For this project, I completed all the background research and created an algorithm strategy. I completed the conversion of Tamil from Syllabic to Logosyllabic on Pandas and stored the data into a PostgreSQL database hosted on an Amazon AWS cloud server. I also conducted the entire statistical analysis to identify similar distributions between Tamil and Indus Valley signs. This included calculating modified power law, creating positional histograms, segmentation trees and creating a deep neural network algorithm using Python’s Sklearn library.
+								<i>Lead Researcher and Data Analyst</i>
+								<br>I studied Mechatronics Engineering at the University of Toronto and graduated with Honors. I recently completed the University of Toronto Data Analytics Bootcamp and am an aspiring Data Scientist. My interests include painting and hiking. For this project, I completed all the background research and created an algorithm strategy. I completed the conversion of Tamil from Syllabic to Logosyllabic on Pandas and stored the data into a PostgreSQL database hosted on an Amazon AWS cloud server. I also conducted the entire statistical analysis to identify similar distributions between Tamil and Indus Valley signs. This included calculating modified power law, creating positional histograms, segmentation trees and creating a deep neural network algorithm using Python’s Sklearn library.
 								
 								<br>
 								<a href="https://github.com/Kee2u" class="icon brands fa-github"><span class="label">Github</span> <b> Click to Visit my Github!</b></a>
@@ -70,16 +75,14 @@
 							<p>
 							<h3>Sonia Sharma</h3>
 								<span class="image main" style="float: right; width: 232px; padding: 5px;"><img src="images/cropped.jpg" alt="" /></span>
-								I studied Electrical Engineering at McMaster University. I am aspiring to go into the Data Science field. 
-								I recently completed the University of Toronto Data Analytics Bootcamp. My interests include dancing, singing, and watching movies.
-								For this project, I created the SVM Machine Learning algorithm to segment the morphemes used within the statistical analysis. I also
-								worked on the Front-End design, creating the interactive visualizations showcasing our project and results using HTML, CSS, and Javascript. 
+								<i>Data Visualization Lead</i>
+								<br>I studied Electrical Engineering at McMaster University and am aspiring to go into the Data Science field. I recently completed the University of Toronto Data Analytics Bootcamp. My interests include dancing, singing, and watching movies. For this project, I created the Support Vector Machine Supervised Machine Learning algorithm to segment the morphemes used within the statistical analysis. I used Python Pandas library to extract the features and output label used for the model, along with the Sklearn and imblearn libraries for the model. I also created the Front-End design, integrating the interactive visualizations showcasing our project and results using HTML, CSS, and Javascript (D3.js, Three.js). 
 								<br>
 								<a href="https://github.com/Soniaprogram" class="icon brands fa-github"><span class="label">Github</span> <b>Click to Visit my Github!</b></a>
 								<br><i class="fa fa-envelope"></i><a href="mailto:soniashar95@gmail.com"><b> Email me at soniashar95@gmail.com</b></a>
 								<br><a href="https://www.linkedin.com/in/soniassharma" class="icon brands fa-linkedin"><b> Click here to connect with me on LinkedIn</b></a>
 							</p>
-							
+
 							<div style="text-align: center;">
 								<a href="#about" class="to-top">Back to top</a>
 							</div>						
@@ -119,6 +122,7 @@
 									Through their archeological and linguistic research, they were able to conclude that the Harappan language is most likely <b>Proto Dravidian</b> (with influences from Proto Elamite). Furthermore, it was concluded that this language has evolved into the major modern Dravidian languages (Tamil, Telugu, Kannada, etc). We are testing the <b>hypothesis</b> that Proto Dravidian is the language of the Harappans by comparing <b>modern Tamil</b> with the <b>Harappan script</b>.
 									<span class="image main"><img src="images/migrate.gif" alt="" /></span>
 								</p>
+
 								<div style="text-align: center;">
 									<a href="#intro" class="to-top">Back to top</a>
 								</div>						
@@ -147,12 +151,10 @@
 									
 									Some of the morphemes including clitics and postpositions were already separated. However, the dataset does not separate noun and verb morphemes. 
 									Tamil word morphology is exclusive to nouns and verbs. We split the database into morphemes, clitics, and lemmas and formulated tables stored in our PostgresSQL server. 
-									<span class="image main"><img src="images/morphemelabelled.PNG" alt="" /></span>
 									
 									We converted the lemmas and morphemes (including noun and verb morphemes as well as clitics, determiners, etc) into <b>logograms</b> (sign represents a word or morpheme) 
 									by giving each of them their unique sign identifier.
 									<span class="image main"><img src="images/logosyllabic.gif" alt="" /></span>
-									<span class="image main"><img src="images/logosentences.PNG" alt="" /></span>
 								</p>
 								<br>								
 								
@@ -176,10 +178,8 @@
 									
 									We converted histograms to probability distributions which were used alongside a Deep Neural Network to predict syllables. When creating histograms, sentences are normalized to a length of 10. Since Tamil sentences are longer than Indus valley script (Average 4.5 signs long), this results in different distributions between both scripts. Thus, it can be seen that there is also a uniform distribution with nouns. This is why the neural network had a low accuracy as the nouns were not identified as syllables. This shows us that a uniform frequency is not only seen with syllables.
 									<div>
-										<h3>Nouns</h3>
-										<span class="image main"><img src="images/noun.jpg" alt="" /></span>
-										<h3>Syllables</h3>
-										<span class="image main"><img src="images/syllable.jpg" alt="" /></span>
+										<iframe width="100%" height="894px" src="https://public.tableau.com/views/2031_16248144016380/Dashboard1?:showVizHome=no&:embed=true">
+										</iframe>
 									</div>
 								</p>
 								<p>
@@ -190,7 +190,10 @@
 									<b>3) Identified Potential Plural Marker</b>
 
 									The most frequent sign in the Tamil script is the plural marker ‘கள்’ (kal) or sign ‘4012’. On analysing the most frequent Indus signs, one sign had a very similar positional distribution: sign '220'. Further analysis of the positional placement of Sign '220' in words and occurrence with multiple other signs, further strengthens that it represents a plural marker.
-									<span class="image main"><img src="images/compare.jpg" alt="" /></span>
+									<div>
+										<iframe width="100%" height="894px" src="https://public.tableau.com/views/PluralMarker/Dashboard1?:showVizHome=no&:embed=true">
+										</iframe>
+									</div>
 								</p>
 
 								<h2>Prior Analysis</h2>
@@ -300,6 +303,7 @@
 									the segmentation tree, the higher the connectivity between the sign pair. We can then compare this to Indus sign groups. The goal is to identify morphemes with similar distributions in both scripts.
 								</p>
 								<div id="my_dataviz"></div>
+							
 
 								<div style="text-align: center;">
 									<a href="#stat" class="to-top">Back to top</a>
@@ -371,9 +375,9 @@
 			<script src="assets/js/function.js"></script>
 			<script src="assets/js/function1.js"></script>
 			<script async src="//jsfiddle.net/kee2u/59uv1hg3/104/embed/"></script>
+			<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 			<script src="assets/js/dendo.js"></script>
 			<script src="assets/js/tableau.js"></script>
 			<script src='http://mysite.myserver.com/javascripts/api/viz_v1.js'></script>
-			<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	</body>
 </html>
