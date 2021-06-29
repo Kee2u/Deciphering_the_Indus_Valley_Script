@@ -43,7 +43,7 @@ var canvas = d3.select("#my_dataviz").append("svg")
     	.attr("xlink:href",  function(d) { return d.image;})
       .attr("width", 20)
       .attr("height", 20)
-      .attr("x", 85)
+      .attr("x", 95)
       .attr("y",-10);
     
     var diagonal = d3.svg.diagonal()

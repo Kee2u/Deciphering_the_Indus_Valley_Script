@@ -171,41 +171,61 @@
 										<b>Click here to read more about the Statistical Analysis and Results!</b>
 									</a>
 								</div>
-								<br><br>
-								<h2>RESULTS</h2>
 								<p>
-									<b>1) Disproved that Uniform frequency is a good indicator of a syllabic sign</b>
+									<h2>Possible Plural Marker</h2>
+									The most frequent sign in the Tamil script is the plural marker <b>‘கள்’ (kal)</b> or <b>sign 4012</b>. On analyzing the most frequent Indus signs, one sign had a very similar positional distribution: <b>sign 220</b>.
+								</p>	
+								<div>
+									<iframe width="100%" height="894px" src="https://public.tableau.com/views/PluralMarker/Dashboard1?:showVizHome=no&:embed=true">
+									</iframe>
+								</div>
+								<p>
+									<b>Sign 220</b> is a fish sign. Fish Signs are often associated with numerals. They also mostly occur in the medial context. It can be found in the initial, medial as well as terminal positions.
+									<span class="image main"><img src="images/terminal.png" alt="" /></span>
+									This behaviour was previously attributed to polyvalence but there is a possibility that the range is due to its function as plural marker. An analysis of sign groupings also shows that <b>sign 220</b> occurs with multiple other signs (not just numerals). This further strengthens the case that it is the plural marker.
+									<span class="image main"><img src="images/pluraltable.jpg" alt="" /></span>
+								</p>
+								<h2>Deep Neural Network to Predict Syllables</h2>
+								<p>
+									We calculated the probability distribution of the normalized sign positions and used them as features in a deep neural network.
 									
-									We converted histograms to probability distributions which were used alongside a Deep Neural Network to predict syllables. When creating histograms, sentences are normalized to a length of 10. Since Tamil sentences are longer than Indus valley script (Average 4.5 signs long), this results in different distributions between both scripts. Thus, it can be seen that there is also a uniform distribution with nouns. This is why the neural network had a low accuracy as the nouns were not identified as syllables. This shows us that a uniform frequency is not only seen with syllables.
-									<div>
-										<iframe width="100%" height="894px" src="https://public.tableau.com/views/2031_16248144016380/Dashboard1?:showVizHome=no&:embed=true">
-										</iframe>
-									</div>
+									This was done to see if it is possible to predict if a sign is a syllable based on the positional distribution alone. It was previously hypothesized that a uniform frequency for all positions is a good indicator of a syllabic sign, since syllables are used everywhere in texts without syntactic restriction.
+									
+									The result had a poor F1 score of 42% for predicting syllables. This shows that positional distribution alone is insufficient to predict syllables. This can be attributed to two reasons:
+									<ol>
+										<li>Sentences in the database are long and consist of multiple nouns followed by a verb. Tamil has a subject-object-verb syntax. This results in some noun lemmas and clitics having a uniform sign distribution similar to what is expected for syllables. The Indus artifacts have shorter sentences (suggests fewer nouns) so this problem may not exist when evaluating the Indus script.
+										</li>
+										<b>FIX</b>:
+										<br>Perform the analysis on shorter sentences (simple Subject-object-Verb construction) and see if the machine learning precision/recall score increases.
+										<br>
+										<br>
+										<div>
+											<iframe width="100%" height="894px" src="https://public.tableau.com/views/2031_16248144016380/Dashboard1?:showVizHome=no&:embed=true">
+											</iframe>
+										</div>
+										<br>
+										<li>Positional distribution alone is insufficient and there are missing variables. 
+										</li>
+										<b>FIX</b>:
+										<br>Include sign connectivities into the features table (E.g. include number of signs grouped with the sign in question) and see if that increases the score.
+									</ol>
 								</p>
 								<p>
-									<b>2) Missing features - adding connectivities in Future Steps</b>
-
-									Need to incorporate segmentation tree sign pair connectivities into the analysis to further increase the accuracy
-
-									<b>3) Identified Potential Plural Marker</b>
-
-									The most frequent sign in the Tamil script is the plural marker ‘கள்’ (kal) or sign ‘4012’. On analysing the most frequent Indus signs, one sign had a very similar positional distribution: sign '220'. Further analysis of the positional placement of Sign '220' in words and occurrence with multiple other signs, further strengthens that it represents a plural marker.
-									<div>
-										<iframe width="100%" height="894px" src="https://public.tableau.com/views/PluralMarker/Dashboard1?:showVizHome=no&:embed=true">
-										</iframe>
-									</div>
-								</p>
-
-								<h2>Prior Analysis</h2>
-								
-								<p>
+									<h2>Statistical Tools:</h2>
+									<h3>Modified Power Law</h3>
 									We initially used the Modified Power Law to test if the script is logosyllabic. On calculating the modified power law for the converted Tamil script, the resulting value was G = -1.13 similar to Old Assyrian Cuneiform. This classifies the script as <b>logosyllabic</b>.
-									
+								</p>	
+								<div>
 									<iframe width="100%" height="894px" src="https://public.tableau.com/views/Indus_16247447741790/Sheet1?:showVizHome=no&:embed=true">
 									</iframe>
-									
+								</div>
+								<p>
+									<h3>Histograms</h3>
 									We then calculated <b>positional histograms</b> to identify positional frequencies for each Tamil sign. Each bar represents where in a word, the sign is more frequently seen. 
 									Keep in mind Tamil reads from left to right and Indus script reads from right to left. To see these some examples, see the dropdowns below showcasing Tamil and Indus script histograms. These histograms can be used to compare which Tamil and Indus valley signs have similar position frequency distributions.
+									<span class="image main"><img src="images/compare.JPG" alt="" /></span>
+								</p>
+								<div>
 									<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 									<div>
 									  <select>
@@ -298,13 +318,14 @@
 											<img src="images/indushistograms/940.PNG" />									
 										</div>
 									</div>
-									<br>
+								</div>
+								<p>
+									<h3>Segmentation Trees</h3>
 									Another analysis tool we used were <b>segmentation trees</b>. We identified key sign pairs and calculated their connectivities. Using this, we created our segmentation trees. The higher 
 									the segmentation tree, the higher the connectivity between the sign pair. We can then compare this to Indus sign groups. The goal is to identify morphemes with similar distributions in both scripts.
 								</p>
 								<div id="my_dataviz"></div>
 							
-
 								<div style="text-align: center;">
 									<a href="#stat" class="to-top">Back to top</a>
 								</div>
