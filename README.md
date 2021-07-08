@@ -3,11 +3,11 @@
 This project is an attempt to decipher the ancient Indus Valley script by comparing it with modern Tamil (a Dravidan language).
 \
 Our strategy is to: <br>
-<strong> Convert Tamil script from syllabic to logosyllabic by converting morphemes to signs. Perform statistical analysis to compare the converted script with the Indus script. </strong> 
+<strong> Convert Tamil script from phonetic to logosyllabic by converting morphemes to signs. Perform statistical analysis to compare the converted script with the Indus script. </strong> 
 
 Here are notes on terminology: <br>
 <strong> Tamil </strong> - A Dravidian language <br>
-<strong> Syllabic script </strong> - A writing system whose characters represent syllables. <br>
+<strong> Phonetic script </strong> - A writing system whose characters represent phonemes or sounds (like English). <br>
 <strong> Logosyllabic script </strong> - A writing systems whose characters represent syllables, words and morphemes. <br>
 <strong> Morpheme </strong>  - The smallest part of a word that changes its meaning. Ex- 'ing' in 'following' <br>
 
@@ -48,7 +48,7 @@ A significant step towards decipherment has been made by Dr. Brian Wells and Dr.
 
 ### Our plan:
 
-### Use Python's pandas library on the tagged database to convert Tamil script from syllabic to logosyllabic.
+### Use Python's pandas library on the tagged database to convert Tamil script from phonetic to logosyllabic.
 The first tagged Tamil database has segmented some of the morphemes but not all of them. We completed segmenting the noun and verb morphemes using python and then assigned new signs to them.
 
 ### Use PostgreSQL on an AWS RDS instance to store cleaned data. 
