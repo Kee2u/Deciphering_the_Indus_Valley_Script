@@ -129,5 +129,6 @@ The file <strong>Multivariate_Segmentation.ipynb</strong> calculates the connect
 The file <strong>Histogram_Probability_Distribution.ipynb</strong> converts each histogram to a probability distribution and runs a deep neural network on it to see if syllables can be predicted based on probability distribution alone.
 
 REFERENCES
+
 [1] Wells, B. K., & Andreas, F. (2015). The Archaeology and Epigraphy of Indus Writing (UK ed.). Archaeopress Archaeology. Appendix
 
