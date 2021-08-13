@@ -1,6 +1,6 @@
 # Statistical Analysis
 
-The Statistical Analysis in this project follows the equations outlined by Dr. Andres Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of the following parts:
+The Statistical Analysis in this project follows the equations outlined by Dr. Andreas Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of the following parts:
 
 ## Calculating Modified Power Law
    Zipf's law is an empirical law which states that given a large sample of words used, the frequency of any word is inversely proportional to its rank in the frequency table.  This means that the most frequent word will occur about twice as often as the second most frequent word, three times as often as the third most frequent word, etc. After testing Zipf's law with signs, we can see that the distribution does not follow Zipf's law exactly but follows a modified power law instead:
