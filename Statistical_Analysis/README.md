@@ -1,6 +1,6 @@
 # Statistical Analysis
 
-The Statistical Analysis in this project follows the equations outlined by Dr. Andres Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". They were modified slightly to accommodate this dataset. It consists of the following parts:
+The Statistical Analysis in this project follows the equations outlined by Dr. Andreas Fuls in the appendix of "Archaeology and Epigraphy of Indus Writing". [1] They were modified slightly to accommodate this dataset. It consists of the following parts:
 
 ## Calculating Modified Power Law
    Zipf's law is an empirical law which states that given a large sample of words used, the frequency of any word is inversely proportional to its rank in the frequency table.  This means that the most frequent word will occur about twice as often as the second most frequent word, three times as often as the third most frequent word, etc. After testing Zipf's law with signs, we can see that the distribution does not follow Zipf's law exactly but follows a modified power law instead:
@@ -127,3 +127,8 @@ The file <strong>Histograms.ipynb</strong> calculates the Histograms for each si
 The file <strong>"Histograms2"</strong> contains all the Histograms for each sign in the Tamil Script </br>
 The file <strong>Multivariate_Segmentation.ipynb</strong> calculates the connectivities between sign pairs in the Tamil Script </br>
 The file <strong>Histogram_Probability_Distribution.ipynb</strong> converts each histogram to a probability distribution and runs a deep neural network on it to see if syllables can be predicted based on probability distribution alone.
+
+REFERENCES
+
+[1] Wells, B. K., & Andreas, F. (2015). The Archaeology and Epigraphy of Indus Writing (UK ed.). Archaeopress Archaeology. Appendix
+
